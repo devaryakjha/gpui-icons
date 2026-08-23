@@ -2,7 +2,7 @@
 name = "gpui-icons"
 version = "0.1.0"
 edition = "2024"
-rust-version = "1.88"
+rust-version = "1.95"
 description = "A small, asset-backed Lucide icon pack for GPUI."
 repository = "https://github.com/devaryakjha/gpui-icons"
 readme = "README.md"
