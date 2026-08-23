@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "crate": {
+    "name": "gpui-icons",
+    "version": "0.1.0",
+    "gpui_revision": "59b2ebf10351b5c0b5cd4403f01ed0460eeec06d"
+  },
+  "generator": {
+    "name": "gpui-icons asset bootstrap",
+    "version": "0.1.0"
+  },
+  "inspected_at": "2026-08-24",
+  "upstream": {
+    "repository": "https://github.com/lucide-icons/lucide",
+    "release": "1.33.0",
+    "tag": "1.33.0",
+    "commit": "59978cecf84986af59f1f9f503bcebdc89c6d166"
+  },
+  "licenses": {
+    "crate_code": "MIT",
+    "lucide_assets": "ISC with Feather-derived MIT terms",
+    "bundle": "LICENSE and LICENSES/gpui-icons-MIT"
+  },
+  "icons": [
+    {
+      "canonical_name": "check",
+      "rust_name": "LucideIcon::Check",
+      "asset_path": "icons/lucide/check.svg",
+      "upstream_svg_path": "icons/check.svg",
+      "upstream_json_path": "icons/check.json",
+      "svg_sha256": "7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0",
+      "json_sha256": "207d134f5439a663db7ad224b7447b8ff3e2540ee94670db151558c4521811f5",
+      "contributors": ["colebemis"],
+      "aliases": [],
+      "deprecated": false,
+      "feather_derived": true
+    },
+    {
+      "canonical_name": "minus",
+      "rust_name": "LucideIcon::Minus",
+      "asset_path": "icons/lucide/minus.svg",
+      "upstream_svg_path": "icons/minus.svg",
+      "upstream_json_path": "icons/minus.json",
+      "svg_sha256": "a0c743ab6dbf545d8a6e19ef3874f48ede686ce68d25e231bd81f540d97b1f19",
+      "json_sha256": "a9a6d48fb75755beef16833909dbf8cf11932d7a8afcadcbb33e70d082afeda8",
+      "contributors": ["colebemis", "ericfennis"],
+      "aliases": [],
+      "deprecated": false,
+      "feather_derived": true
+    },
+    {
+      "canonical_name": "x",
+      "rust_name": "LucideIcon::X",
+      "asset_path": "icons/lucide/x.svg",
+      "upstream_svg_path": "icons/x.svg",
+      "upstream_json_path": "icons/x.json",
+      "svg_sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "json_sha256": "bae566234907baa3171d7757a2049348ebf5ca5dbc0aba45e8cfbb889cb287a8",
+      "contributors": ["colebemis", "ericfennis"],
+      "aliases": [],
+      "deprecated": false,
+      "feather_derived": true
+    }
+  ]
+}
