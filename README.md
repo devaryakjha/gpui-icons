@@ -1,10 +1,6 @@
 # gpui-icons
 
-`gpui-icons` is an unofficial, asset-backed GPUI port of a small Lucide allow-list. It ships only the three icons needed by imajha/ui v0.1:
-
-- `LucideIcon::Check`
-- `LucideIcon::Minus`
-- `LucideIcon::X`
+`gpui-icons` is an unofficial, asset-backed GPUI port of a small Lucide allow-list. It ships the 15 icons currently needed by gpuicn's component catalog; `LucideIcon::ALL` is the exact list.
 
 It is not a full Lucide pack, a brand-icon pack, or a `gpui-component` adapter.
 

@@ -2,7 +2,7 @@
 //!
 //! `gpui-icons` is an unofficial GPUI port of the pinned Lucide 1.33.0 assets
 //! listed in [`RELEASE_MANIFEST`]. It intentionally contains only the icons
-//! needed by the imajha/ui v0.1 Button, Checkbox, and Dialog slice.
+//! needed by gpuicn's shipped component catalog.
 
 use std::{borrow::Cow, io};
 
@@ -17,23 +17,75 @@ pub const RELEASE_MANIFEST: &str = include_str!("../RELEASE-MANIFEST.json");
 /// An allow-listed Lucide icon.
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq)]
 pub enum LucideIcon {
+    /// The Lucide `bold` icon.
+    Bold,
     /// The Lucide `check` icon.
     Check,
+    /// The Lucide `chevron-down` icon.
+    ChevronDown,
+    /// The Lucide `chevron-right` icon.
+    ChevronRight,
+    /// The Lucide `circle` icon.
+    Circle,
+    /// The Lucide `copy` icon.
+    Copy,
+    /// The Lucide `italic` icon.
+    Italic,
     /// The Lucide `minus` icon.
     Minus,
+    /// The Lucide `plus` icon.
+    Plus,
+    /// The Lucide `search` icon.
+    Search,
+    /// The Lucide `text-align-center` icon.
+    TextAlignCenter,
+    /// The Lucide `text-align-end` icon.
+    TextAlignEnd,
+    /// The Lucide `text-align-start` icon.
+    TextAlignStart,
+    /// The Lucide `underline` icon.
+    Underline,
     /// The Lucide `x` icon.
     X,
 }
 
 impl LucideIcon {
     /// Every canonical icon in this release, in release-manifest order.
-    pub const ALL: [Self; 3] = [Self::Check, Self::Minus, Self::X];
+    pub const ALL: [Self; 15] = [
+        Self::Bold,
+        Self::Check,
+        Self::ChevronDown,
+        Self::ChevronRight,
+        Self::Circle,
+        Self::Copy,
+        Self::Italic,
+        Self::Minus,
+        Self::Plus,
+        Self::Search,
+        Self::TextAlignCenter,
+        Self::TextAlignEnd,
+        Self::TextAlignStart,
+        Self::Underline,
+        Self::X,
+    ];
 
     /// Returns the pinned Lucide canonical name.
     pub const fn canonical_name(self) -> &'static str {
         match self {
+            Self::Bold => "bold",
             Self::Check => "check",
+            Self::ChevronDown => "chevron-down",
+            Self::ChevronRight => "chevron-right",
+            Self::Circle => "circle",
+            Self::Copy => "copy",
+            Self::Italic => "italic",
             Self::Minus => "minus",
+            Self::Plus => "plus",
+            Self::Search => "search",
+            Self::TextAlignCenter => "text-align-center",
+            Self::TextAlignEnd => "text-align-end",
+            Self::TextAlignStart => "text-align-start",
+            Self::Underline => "underline",
             Self::X => "x",
         }
     }
@@ -41,8 +93,20 @@ impl LucideIcon {
     /// Returns this icon's stable, namespaced asset path.
     pub const fn asset_path(self) -> &'static str {
         match self {
+            Self::Bold => "icons/lucide/bold.svg",
             Self::Check => "icons/lucide/check.svg",
+            Self::ChevronDown => "icons/lucide/chevron-down.svg",
+            Self::ChevronRight => "icons/lucide/chevron-right.svg",
+            Self::Circle => "icons/lucide/circle.svg",
+            Self::Copy => "icons/lucide/copy.svg",
+            Self::Italic => "icons/lucide/italic.svg",
             Self::Minus => "icons/lucide/minus.svg",
+            Self::Plus => "icons/lucide/plus.svg",
+            Self::Search => "icons/lucide/search.svg",
+            Self::TextAlignCenter => "icons/lucide/text-align-center.svg",
+            Self::TextAlignEnd => "icons/lucide/text-align-end.svg",
+            Self::TextAlignStart => "icons/lucide/text-align-start.svg",
+            Self::Underline => "icons/lucide/underline.svg",
             Self::X => "icons/lucide/x.svg",
         }
     }
@@ -82,11 +146,41 @@ impl LucideAssetSource {
 impl AssetSource for LucideAssetSource {
     fn load(&self, path: &str) -> Result<Option<Cow<'static, [u8]>>> {
         let bytes = match path {
+            "icons/lucide/bold.svg" => Some(include_bytes!("../assets/lucide/bold.svg").as_slice()),
             "icons/lucide/check.svg" => {
                 Some(include_bytes!("../assets/lucide/check.svg").as_slice())
             }
+            "icons/lucide/chevron-down.svg" => {
+                Some(include_bytes!("../assets/lucide/chevron-down.svg").as_slice())
+            }
+            "icons/lucide/chevron-right.svg" => {
+                Some(include_bytes!("../assets/lucide/chevron-right.svg").as_slice())
+            }
+            "icons/lucide/circle.svg" => {
+                Some(include_bytes!("../assets/lucide/circle.svg").as_slice())
+            }
+            "icons/lucide/copy.svg" => Some(include_bytes!("../assets/lucide/copy.svg").as_slice()),
+            "icons/lucide/italic.svg" => {
+                Some(include_bytes!("../assets/lucide/italic.svg").as_slice())
+            }
             "icons/lucide/minus.svg" => {
                 Some(include_bytes!("../assets/lucide/minus.svg").as_slice())
+            }
+            "icons/lucide/plus.svg" => Some(include_bytes!("../assets/lucide/plus.svg").as_slice()),
+            "icons/lucide/search.svg" => {
+                Some(include_bytes!("../assets/lucide/search.svg").as_slice())
+            }
+            "icons/lucide/text-align-center.svg" => {
+                Some(include_bytes!("../assets/lucide/text-align-center.svg").as_slice())
+            }
+            "icons/lucide/text-align-end.svg" => {
+                Some(include_bytes!("../assets/lucide/text-align-end.svg").as_slice())
+            }
+            "icons/lucide/text-align-start.svg" => {
+                Some(include_bytes!("../assets/lucide/text-align-start.svg").as_slice())
+            }
+            "icons/lucide/underline.svg" => {
+                Some(include_bytes!("../assets/lucide/underline.svg").as_slice())
             }
             "icons/lucide/x.svg" => Some(include_bytes!("../assets/lucide/x.svg").as_slice()),
             _ if path.starts_with(LUCIDE_ASSET_NAMESPACE) => return missing_asset(path),
@@ -126,23 +220,18 @@ mod tests {
     }
 
     #[test]
-    fn release_contains_only_the_v01_allow_list() {
-        assert_eq!(
-            LucideIcon::ALL,
-            [LucideIcon::Check, LucideIcon::Minus, LucideIcon::X]
-        );
+    fn release_contains_the_catalog_allow_list() {
+        assert_eq!(LucideIcon::ALL.len(), 15);
     }
 
     #[test]
     fn canonical_names_and_asset_paths_are_stable() {
-        assert_eq!(
-            LucideIcon::ALL.map(|icon| (icon.canonical_name(), icon.asset_path())),
-            [
-                ("check", "icons/lucide/check.svg"),
-                ("minus", "icons/lucide/minus.svg"),
-                ("x", "icons/lucide/x.svg"),
-            ]
-        );
+        for icon in LucideIcon::ALL {
+            assert_eq!(
+                icon.asset_path(),
+                format!("icons/lucide/{}.svg", icon.canonical_name())
+            );
+        }
     }
 
     #[test]
@@ -155,23 +244,12 @@ mod tests {
                 .iter()
                 .find(|entry| entry["canonical_name"] == icon.canonical_name())
                 .unwrap();
-            let (svg, metadata) = match icon {
-                LucideIcon::Check => (
-                    include_bytes!("../assets/lucide/check.svg").as_slice(),
-                    include_bytes!("../assets/lucide/check.json").as_slice(),
-                ),
-                LucideIcon::Minus => (
-                    include_bytes!("../assets/lucide/minus.svg").as_slice(),
-                    include_bytes!("../assets/lucide/minus.json").as_slice(),
-                ),
-                LucideIcon::X => (
-                    include_bytes!("../assets/lucide/x.svg").as_slice(),
-                    include_bytes!("../assets/lucide/x.json").as_slice(),
-                ),
-            };
+            let svg = LucideAssetSource.load(icon.asset_path()).unwrap().unwrap();
+            let metadata =
+                std::fs::read(format!("assets/lucide/{}.json", icon.canonical_name())).unwrap();
 
-            assert_eq!(sha256(svg), entry["svg_sha256"]);
-            assert_eq!(sha256(metadata), entry["json_sha256"]);
+            assert_eq!(sha256(&svg), entry["svg_sha256"]);
+            assert_eq!(sha256(&metadata), entry["json_sha256"]);
         }
     }
 
@@ -201,11 +279,7 @@ mod tests {
 
     #[test]
     fn source_rejects_unknown_lucide_paths() {
-        assert!(
-            LucideAssetSource
-                .load("icons/lucide/chevron-down.svg")
-                .is_err()
-        );
+        assert!(LucideAssetSource.load("icons/lucide/missing.svg").is_err());
     }
 
     #[test]
@@ -217,11 +291,7 @@ mod tests {
                 .iter()
                 .map(|path| path.as_ref())
                 .collect::<Vec<_>>(),
-            [
-                "icons/lucide/check.svg",
-                "icons/lucide/minus.svg",
-                "icons/lucide/x.svg",
-            ]
+            LucideIcon::ALL.map(LucideIcon::asset_path)
         );
     }
 }
