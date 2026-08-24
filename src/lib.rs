@@ -25,6 +25,8 @@ pub enum LucideIcon {
     ChevronDown,
     /// The Lucide `chevron-right` icon.
     ChevronRight,
+    /// The Lucide `chevron-up` icon.
+    ChevronUp,
     /// The Lucide `circle` icon.
     Circle,
     /// The Lucide `copy` icon.
@@ -51,11 +53,12 @@ pub enum LucideIcon {
 
 impl LucideIcon {
     /// Every canonical icon in this release, in release-manifest order.
-    pub const ALL: [Self; 15] = [
+    pub const ALL: [Self; 16] = [
         Self::Bold,
         Self::Check,
         Self::ChevronDown,
         Self::ChevronRight,
+        Self::ChevronUp,
         Self::Circle,
         Self::Copy,
         Self::Italic,
@@ -76,6 +79,7 @@ impl LucideIcon {
             Self::Check => "check",
             Self::ChevronDown => "chevron-down",
             Self::ChevronRight => "chevron-right",
+            Self::ChevronUp => "chevron-up",
             Self::Circle => "circle",
             Self::Copy => "copy",
             Self::Italic => "italic",
@@ -97,6 +101,7 @@ impl LucideIcon {
             Self::Check => "icons/lucide/check.svg",
             Self::ChevronDown => "icons/lucide/chevron-down.svg",
             Self::ChevronRight => "icons/lucide/chevron-right.svg",
+            Self::ChevronUp => "icons/lucide/chevron-up.svg",
             Self::Circle => "icons/lucide/circle.svg",
             Self::Copy => "icons/lucide/copy.svg",
             Self::Italic => "icons/lucide/italic.svg",
@@ -155,6 +160,9 @@ impl AssetSource for LucideAssetSource {
             }
             "icons/lucide/chevron-right.svg" => {
                 Some(include_bytes!("../assets/lucide/chevron-right.svg").as_slice())
+            }
+            "icons/lucide/chevron-up.svg" => {
+                Some(include_bytes!("../assets/lucide/chevron-up.svg").as_slice())
             }
             "icons/lucide/circle.svg" => {
                 Some(include_bytes!("../assets/lucide/circle.svg").as_slice())
@@ -221,7 +229,7 @@ mod tests {
 
     #[test]
     fn release_contains_the_catalog_allow_list() {
-        assert_eq!(LucideIcon::ALL.len(), 15);
+        assert_eq!(LucideIcon::ALL.len(), 16);
     }
 
     #[test]

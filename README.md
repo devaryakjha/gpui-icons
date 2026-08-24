@@ -1,6 +1,6 @@
 # gpui-icons
 
-`gpui-icons` is an unofficial, asset-backed GPUI port of a small Lucide allow-list. It ships the 15 icons currently needed by gpuicn's component catalog; `LucideIcon::ALL` is the exact list.
+`gpui-icons` is an unofficial, asset-backed GPUI port of a small Lucide allow-list. It ships the 16 icons currently needed by gpuicn's component catalog; `LucideIcon::ALL` is the exact list.
 
 It is not a full Lucide pack, a brand-icon pack, or a `gpui-component` adapter.
 

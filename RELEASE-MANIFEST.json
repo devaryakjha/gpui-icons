@@ -101,6 +101,19 @@
       "feather_derived": true
     },
     {
+      "canonical_name": "chevron-up",
+      "rust_name": "LucideIcon::ChevronUp",
+      "asset_path": "icons/lucide/chevron-up.svg",
+      "upstream_svg_path": "icons/chevron-up.svg",
+      "upstream_json_path": "icons/chevron-up.json",
+      "svg_sha256": "d09f13fcbef3c493ead7e4663b5ee91804fec38d5edb5e7cc3acfbd547641cf4",
+      "json_sha256": "41ecf47f65f8fe97cebcf8480f11e5feebf4737c0e09822948754680f804592f",
+      "contributors": ["colebemis"],
+      "aliases": [],
+      "deprecated": false,
+      "feather_derived": true
+    },
+    {
       "canonical_name": "circle",
       "rust_name": "LucideIcon::Circle",
       "asset_path": "icons/lucide/circle.svg",
