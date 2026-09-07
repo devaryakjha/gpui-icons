@@ -1,9 +1,9 @@
 [package]
 name = "gpui-icons"
-version = "0.1.0"
+version = "0.3.0"
 edition = "2024"
 rust-version = "1.95"
-description = "A small, asset-backed Lucide icon pack for GPUI."
+description = "The complete, embedded Lucide icon set for GPUI."
 repository = "https://github.com/devaryakjha/gpui-icons"
 readme = "README.md"
 license = "MIT AND ISC"
@@ -11,6 +11,7 @@ keywords = ["gpui", "icons", "lucide"]
 categories = ["gui"]
 include = [
   "src/**",
+  "scripts/**",
   "assets/**",
   "LICENSES/**",
   "LICENSE",
