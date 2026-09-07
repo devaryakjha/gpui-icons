@@ -1,56 +1,88 @@
 # gpui-icons
 
-`gpui-icons` is an unofficial, asset-backed GPUI port of a small Lucide allow-list. It ships the 16 icons currently needed by gpuicn's component catalog; `LucideIcon::ALL` is the exact list.
+The complete Lucide icon set for GPUI: **1,776 canonical icons and 258 aliases**
+from Lucide 1.33.0. Every icon uses the original upstream SVG, embedded in your
+application. Native and WASM use the same assets without fetching anything at runtime.
 
-It is not a full Lucide pack, a brand-icon pack, or a `gpui-component` adapter.
-
-## Pins and provenance
-
-This release pins [Lucide 1.33.0](https://github.com/lucide-icons/lucide/tree/59978cecf84986af59f1f9f503bcebdc89c6d166) at `59978cecf84986af59f1f9f503bcebdc89c6d166` and GPUI at `59b2ebf10351b5c0b5cd4403f01ed0460eeec06d`.
-
-[`RELEASE-MANIFEST.json`](RELEASE-MANIFEST.json) records each upstream SVG and JSON source, hashes, contributors, aliases, deprecation state, and Feather-derived status. The SVGs are embedded with `include_bytes!`, so native and WASM use the same bytes without a network fetch.
+This is a standalone icon library. You can use it with any GPUI application;
+gpuicn is one consumer. It is not affiliated with Lucide.
 
 ## Use
 
-Compose `LucideAssetSource` into the application asset source. It serves `icons/lucide/` and delegates unrelated paths to your application source. An unknown path inside `icons/lucide/` returns an explicit not-found error.
+Register the asset source before rendering icons:
+
+```rust
+use gpui::{Styled, px, rgb};
+use gpui_icons::{LucideAssetSource, LucideIcon, lucide};
+
+// On your Application builder:
+// application.with_assets(LucideAssetSource).run(...);
+
+let search = lucide(LucideIcon::Search).size(px(16.)).text_color(rgb(0x171717));
+let folder = LucideIcon::Folder.element().size(px(24.)).text_color(rgb(0x171717));
+let icon = LucideIcon::from_name("alarm-clock").unwrap();
+```
+
+Set `.text_color(...)` explicitly from your theme: GPUI does not paint an
+SVG without it. Size icons at 16, 20, 24, or 32 pixels as appropriate. Give icon-only
+buttons an accessible label on the button; a decorative SVG is not a control.
+
+`LucideIcon::ALL` contains the full canonical set in name order. `from_name`
+accepts canonical kebab-case names and upstream aliases, including deprecated
+names such as `align-center`. Unknown names return `None`.
+
+## Combine with your app's assets
+
+`LucideAssetSource` owns `icons/lucide/`. It returns `Ok(None)` for unrelated
+paths and an explicit error for an unknown Lucide icon. Delegate only when it
+returns `None`:
 
 ```rust
 use std::borrow::Cow;
-
-use gpui::{App, AssetSource, Result, SharedString, Styled, px};
-use gpui_icons::{LucideAssetSource, LucideIcon, lucide};
+use gpui::{AssetSource, Result, SharedString};
+use gpui_icons::LucideAssetSource;
 
 struct AppAssets<S> {
     application: S,
-    lucide: LucideAssetSource,
 }
 
 impl<S: AssetSource> AssetSource for AppAssets<S> {
     fn load(&self, path: &str) -> Result<Option<Cow<'static, [u8]>>> {
-        match self.lucide.load(path)? {
+        match LucideAssetSource.load(path)? {
             Some(asset) => Ok(Some(asset)),
             None => self.application.load(path),
         }
     }
 
     fn list(&self, path: &str) -> Result<Vec<SharedString>> {
-        let lucide_assets = self.lucide.list(path)?;
-        if lucide_assets.is_empty() {
-            self.application.list(path)
-        } else {
-            Ok(lucide_assets)
+        match path {
+            "icons/lucide" | "icons/lucide/" => LucideAssetSource.list(path),
+            _ => self.application.list(path),
         }
     }
 }
-
-let close = lucide(LucideIcon::X).size(px(16.));
-let check = LucideIcon::Check.element().size(px(12.));
 ```
 
-`Svg` inherits surrounding text color. Apply `.text_color(...)` for an explicit monochrome color. Build the `App` with `App::with_assets(AppAssets { ... })` before rendering these elements.
+## Reproducible source
+
+GPUI is pinned to `59b2ebf10351b5c0b5cd4403f01ed0460eeec06d`. Use the same
+revision in your application to avoid incompatible GPUI types.
+
+The [release manifest](RELEASE-MANIFEST.json) records canonical names, aliases,
+tags, categories, contributors, and hashes for every upstream SVG and metadata
+file. Assets come from [Lucide 1.33.0](https://github.com/lucide-icons/lucide/tree/59978cecf84986af59f1f9f503bcebdc89c6d166).
+
+To regenerate, run `python3 scripts/generate.py`. The script downloads the
+pinned upstream archive and verifies its SHA-256 before reading it. You can
+also pass a local copy of that archive as its first argument. Python and
+rustfmt are the only generation tools; consumers do not run a build script.
+
+Run `cargo test --lib` to check every icon's lookup, asset path, bytes, metadata
+hash, aliases, and license against the pinned release. Run `cargo fmt --check`
+and `cargo clippy --lib --tests -- -D warnings` before a release.
 
 ## License
 
-The crate code is MIT-licensed in [`LICENSES/gpui-icons-MIT`](LICENSES/gpui-icons-MIT). The copied Lucide assets remain under Lucide's exact upstream ISC license, including the Feather-derived MIT terms, in [`LICENSE`](LICENSE). The package metadata therefore declares `MIT AND ISC`.
-
-Lucide is a separate project. This crate is not affiliated with or endorsed by Lucide or its contributors.
+The Rust code is MIT-licensed in [LICENSES/gpui-icons-MIT](LICENSES/gpui-icons-MIT).
+The exact upstream [LICENSE](LICENSE) covers Lucide's ISC and Feather-derived
+MIT terms. Package metadata declares `MIT AND ISC`.
