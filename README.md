@@ -1,7 +1,7 @@
 # gpui-icons
 
-The complete Lucide icon set for GPUI: **1,776 canonical icons and 258 aliases**
-from Lucide 1.33.0. Every icon uses the original upstream SVG, embedded in your
+The complete Lucide icon set for GPUI: **1,818 canonical icons and 259 aliases**
+from Lucide 1.43.0. Every icon uses the original upstream SVG, embedded in your
 application. Native and WASM use the same assets without fetching anything at runtime.
 
 This is a standalone icon library. You can use it with any GPUI application;
@@ -65,12 +65,19 @@ impl<S: AssetSource> AssetSource for AppAssets<S> {
 
 ## Reproducible source
 
-GPUI is pinned to `59b2ebf10351b5c0b5cd4403f01ed0460eeec06d`. Use the same
-revision in your application to avoid incompatible GPUI types.
+GPUI is pinned to `gpui-pre = 0.3.4`, matching GPUI Kit 0.6.1. Applications can
+use `gpui-kit = "=0.6.1"` or `gpui = { package = "gpui-pre", version = "=0.3.4" }`.
+Do not mix these types with a separate Zed Git dependency.
+
+GPUI Kit now includes its own Lucide catalog. Use its assets for applications
+that only need named icons. This crate retains canonical and alias lookup,
+search metadata, exact upstream hashes, and a complete embedded asset source
+on both native and WASM. `LucideIcon::Trash2` remains an alias for `Trash`.
 
 The [release manifest](RELEASE-MANIFEST.json) records canonical names, aliases,
 tags, categories, contributors, and hashes for every upstream SVG and metadata
-file. Assets come from [Lucide 1.33.0](https://github.com/lucide-icons/lucide/tree/59978cecf84986af59f1f9f503bcebdc89c6d166).
+file. Schema 3 records `crate.gpui_package` and `crate.gpui_version` in place
+of the former Git-only `crate.gpui_revision`. Assets come from [Lucide 1.43.0](https://github.com/lucide-icons/lucide/tree/ba95e4c988b1e1b39cf5544e73b25a74b76816ee).
 
 To regenerate, run `python3 scripts/generate.py`. The script downloads the
 pinned upstream archive and verifies its SHA-256 before reading it. You can

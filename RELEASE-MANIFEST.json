@@ -1,19 +1,20 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "crate": {
     "name": "gpui-icons",
-    "version": "0.2.0",
-    "gpui_revision": "59b2ebf10351b5c0b5cd4403f01ed0460eeec06d"
+    "version": "0.4.0",
+    "gpui_package": "gpui-pre",
+    "gpui_version": "=0.3.4"
   },
   "generator": {
     "name": "scripts/generate.py",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "upstream": {
     "repository": "https://github.com/lucide-icons/lucide",
-    "release": "1.33.0",
-    "commit": "59978cecf84986af59f1f9f503bcebdc89c6d166",
-    "archive_sha256": "d5c7d2a38f98c4169b13f71dfe40d1e149f4ca4b4873e1fbafb142997f738924"
+    "release": "1.43.0",
+    "commit": "ba95e4c988b1e1b39cf5544e73b25a74b76816ee",
+    "archive_sha256": "d57793fa27a720cf487249940c8d68544c7a0d2ed2a046baad65012a902536ed"
   },
   "licenses": {
     "crate_code": "MIT",
@@ -2806,15 +2807,26 @@
       "asset_path": "icons/lucide/asterisk.svg",
       "upstream_svg_path": "icons/asterisk.svg",
       "upstream_json_path": "icons/asterisk.json",
-      "svg_sha256": "afdf4860d253586e7babf1945d6067e3fd53d0df9e98a3ea0a6d21e040ed7454",
-      "json_sha256": "04692b60f2499633b6ee65cfaab1b72d2f2c4cab93b87683d15064aba62099cd",
+      "svg_sha256": "10d8ef9416577f24d2fa0e3c65156671f0da18825344734456a664b20d649250",
+      "json_sha256": "43cf8c3a120a731241bc6e2457fc88d4cb946887c4cf0563a6e66b744689b79b",
       "contributors": [
         "mittalyashu",
-        "ericfennis"
+        "ericfennis",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
       "tags": [
+        "symbol",
+        "sterisk",
+        "mark",
+        "pointer",
+        "pencil",
+        "sign",
+        "alert",
+        "notification",
+        "indicator",
+        "symbolic",
         "reference",
         "times",
         "multiply",
@@ -3345,7 +3357,7 @@
       "asset_path": "icons/lucide/badge-check.svg",
       "upstream_svg_path": "icons/badge-check.svg",
       "upstream_json_path": "icons/badge-check.json",
-      "svg_sha256": "52d60a49661538a74fdd1c15b04ad90ea4d01321344f88f5973d611be9b62284",
+      "svg_sha256": "a83b36e35ed35be896c5e5d39d0a63ba4368735ac22f09a26a31726259467775",
       "json_sha256": "67ef667bbfb55afe26652f75ff3f787415571d5d706383d26762e6633a9341e3",
       "contributors": [
         "karsa-mistmere",
@@ -3716,12 +3728,12 @@
       "upstream_svg_path": "icons/badge-swiss-franc.svg",
       "upstream_json_path": "icons/badge-swiss-franc.json",
       "svg_sha256": "9bbded0392026a0eb40d6213ad6b9208f2ab6a7549dd31e2725aad716f2a5e70",
-      "json_sha256": "cc0dbda79aebf81b7ac494130e7d6cb1f6cc7646a8eb20637a207b18e75bdbda",
+      "json_sha256": "26acaff70657bc04633ea288333869840b2f249bc9d77d736a38f353360ade75",
       "contributors": [
         "danielbayley"
       ],
       "aliases": [],
-      "deprecated": false,
+      "deprecated": true,
       "tags": [
         "discount",
         "offer",
@@ -4600,12 +4612,13 @@
       "asset_path": "icons/lucide/beef.svg",
       "upstream_svg_path": "icons/beef.svg",
       "upstream_json_path": "icons/beef.json",
-      "svg_sha256": "aed55c6fb78caabd1b93817cc0b8a0a267ae9e1222d7c3a4b31485350ffe4f5d",
-      "json_sha256": "f82e6f4f7a0c500e1d243badfc31eb135f852afc4b192704054c84f8ed6a4efd",
+      "svg_sha256": "e6ed2f9c6c7109434de4b3e2730aa0946baa2411590e27f7ac02cbe5a935276e",
+      "json_sha256": "e0fa68be6d59a588ec7394202d01587c3327d42fb64120c456ccccc2bde2c898",
       "contributors": [
         "kemie",
         "ericfennis",
-        "karsa-mistmere"
+        "karsa-mistmere",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
@@ -5352,10 +5365,11 @@
       "asset_path": "icons/lucide/blend.svg",
       "upstream_svg_path": "icons/blend.svg",
       "upstream_json_path": "icons/blend.json",
-      "svg_sha256": "0f76939b2becaa51186fa3ecdfed8d734c8fb4e18d04bde0024b472af91ce9fc",
-      "json_sha256": "7d8f3ef79a58f4462f3e64014ec690a3f6da950656d1d2993cfbda691a0f38ba",
+      "svg_sha256": "cff13925b80ff33a4f9c58114105c7077e2a24bbf1c5b9eb361d7bc706f92240",
+      "json_sha256": "19bbf97b9accd4a256c1a31714891a65fd8353dee9688927b1d1a3262ba2bd5c",
       "contributors": [
-        "danielbayley"
+        "danielbayley",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
@@ -5377,7 +5391,11 @@
         "brightness",
         "overlap",
         "colors",
-        "colours"
+        "colours",
+        "marriage",
+        "rings",
+        "couple",
+        "connection"
       ],
       "categories": [
         "design",
@@ -6843,7 +6861,7 @@
       "asset_path": "icons/lucide/book-x.svg",
       "upstream_svg_path": "icons/book-x.svg",
       "upstream_json_path": "icons/book-x.json",
-      "svg_sha256": "3784b90f607b88ccaa62f7b66fc9f6a5f1440dfef8a3f55faf927d6e1bb671e2",
+      "svg_sha256": "576666e46262ae86668a83c78a8afd84e349baa58f4b0688b0387575d9c92310",
       "json_sha256": "dff6d37d8d14e96565dd62c7321875733a53b44f6adf93aa3ddc673c323024e3",
       "contributors": [
         "danielbayley"
@@ -7592,6 +7610,45 @@
         "security",
         "home",
         "connectivity"
+      ]
+    },
+    {
+      "canonical_name": "bridge",
+      "rust_name": "LucideIcon::Bridge",
+      "asset_path": "icons/lucide/bridge.svg",
+      "upstream_svg_path": "icons/bridge.svg",
+      "upstream_json_path": "icons/bridge.json",
+      "svg_sha256": "88ee4286dd65c6a6a5aad528d95bfe2cddcfd1a80536f39acb389890a0317f9d",
+      "json_sha256": "c15fce380046c53764d7761dd071c9e544c73854d054a72d23229b675cfc2e0e",
+      "contributors": [
+        "Nykoula",
+        "jamiemlaw"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "overpass",
+        "cross over",
+        "traverse",
+        "viaduct",
+        "suspension",
+        "infrastructure",
+        "transportation",
+        "crossing",
+        "road",
+        "river",
+        "gate",
+        "golden",
+        "travel",
+        "landmark",
+        "route",
+        "maritime",
+        "clearance"
+      ],
+      "categories": [
+        "travel",
+        "transportation",
+        "buildings"
       ]
     },
     {
@@ -9043,6 +9100,64 @@
       ]
     },
     {
+      "canonical_name": "can",
+      "rust_name": "LucideIcon::Can",
+      "asset_path": "icons/lucide/can.svg",
+      "upstream_svg_path": "icons/can.svg",
+      "upstream_json_path": "icons/can.json",
+      "svg_sha256": "f04240bd6d9a36930d28f21092a6bb02abbfad08ffde29dca0a622cda9e9f046",
+      "json_sha256": "c3124af1903fb525021161fc6fe86802be3324df2f8faebd483629855816705e",
+      "contributors": [
+        "l0uisgrange",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "food",
+        "storage",
+        "groceries",
+        "tin",
+        "metal",
+        "recyclable",
+        "container",
+        "pantry",
+        "grocery",
+        "preserved"
+      ],
+      "categories": [
+        "food-beverage"
+      ]
+    },
+    {
+      "canonical_name": "can-soda",
+      "rust_name": "LucideIcon::CanSoda",
+      "asset_path": "icons/lucide/can-soda.svg",
+      "upstream_svg_path": "icons/can-soda.svg",
+      "upstream_json_path": "icons/can-soda.json",
+      "svg_sha256": "48be93f26646369401c99f5c8e9ab8e4206d600faa1dea457d199582fbcbf408",
+      "json_sha256": "bf4b68182b306e06201bf63476b7881d7ee1713dce0d3aafa139e8b0d380258e",
+      "contributors": [
+        "karsa-mistmere",
+        "jaynewey"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "beverage",
+        "drink",
+        "food",
+        "soda",
+        "tin",
+        "beer",
+        "alcohol",
+        "waste"
+      ],
+      "categories": [
+        "food-beverage"
+      ]
+    },
+    {
       "canonical_name": "candy",
       "rust_name": "LucideIcon::Candy",
       "asset_path": "icons/lucide/candy.svg",
@@ -9429,6 +9544,87 @@
         "vegetable",
         "food",
         "eat"
+      ],
+      "categories": [
+        "food-beverage"
+      ]
+    },
+    {
+      "canonical_name": "carton",
+      "rust_name": "LucideIcon::Carton",
+      "asset_path": "icons/lucide/carton.svg",
+      "upstream_svg_path": "icons/carton.svg",
+      "upstream_json_path": "icons/carton.json",
+      "svg_sha256": "315452e0b3d135b0682abc8d3e2d13a81d031b9e8a1e5a6dc4e1793091ab058d",
+      "json_sha256": "74fa476fd800ac6a649897339caa05c2abae29202744fee790980a11fe0562bd",
+      "contributors": [
+        "danielbayley",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "milk",
+        "dairy",
+        "beverage",
+        "drink",
+        "diet",
+        "lactose",
+        "liquid",
+        "liter",
+        "litre",
+        "pint",
+        "pints",
+        "pasteurized",
+        "skim",
+        "skimmed",
+        "container",
+        "packaging",
+        "grocery",
+        "juice",
+        "cream",
+        "cow"
+      ],
+      "categories": [
+        "food-beverage"
+      ]
+    },
+    {
+      "canonical_name": "carton-off",
+      "rust_name": "LucideIcon::CartonOff",
+      "asset_path": "icons/lucide/carton-off.svg",
+      "upstream_svg_path": "icons/carton-off.svg",
+      "upstream_json_path": "icons/carton-off.json",
+      "svg_sha256": "ebc5a69f8a1fef95a0260cff2f797ad17398b69a44e61bcffb9f0a99b077f35c",
+      "json_sha256": "35264774a735592faead75132fc2f6f33c19eb3d0e4f1b285a9d31507ff933e6",
+      "contributors": [
+        "danielbayley",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "milk",
+        "dairy",
+        "beverage",
+        "drink",
+        "diet",
+        "lactose free",
+        "non dairy",
+        "liquid",
+        "liter",
+        "litre",
+        "pint",
+        "pints",
+        "pasteurized",
+        "skim",
+        "skimmed",
+        "container",
+        "packaging",
+        "allergy",
+        "intolerance",
+        "vegan",
+        "unavailable"
       ],
       "categories": [
         "food-beverage"
@@ -11418,7 +11614,7 @@
       "asset_path": "icons/lucide/circle-check.svg",
       "upstream_svg_path": "icons/circle-check.svg",
       "upstream_json_path": "icons/circle-check.json",
-      "svg_sha256": "3e519680ab8e2a8ad8f56a340c10d61957d872237aaa868cf324b0900a74f384",
+      "svg_sha256": "9711e045a5999f8a3b0782eb88e09b04e0559bc7b379dcc0a4ae645223e10345",
       "json_sha256": "6246a94b59c2645c9a54934e9b39eb1291cd3a08ce77de8ede638e7d1b34d8b2",
       "contributors": [
         "mittalyashu",
@@ -11624,6 +11820,46 @@
       ]
     },
     {
+      "canonical_name": "circle-dashed-check",
+      "rust_name": "LucideIcon::CircleDashedCheck",
+      "asset_path": "icons/lucide/circle-dashed-check.svg",
+      "upstream_svg_path": "icons/circle-dashed-check.svg",
+      "upstream_json_path": "icons/circle-dashed-check.json",
+      "svg_sha256": "07890f729e82b616a7a477251262afb2810c7097feac7861d8fb2dc5fea19e16",
+      "json_sha256": "5d29b7ae06f2db1a743cf209536d50652e1a00a1eea3c2f683f877e5910fbbf1",
+      "contributors": [
+        "colebemis",
+        "danielbayley",
+        "jguddas",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "approved",
+        "pending",
+        "changes",
+        "revision",
+        "reapproval",
+        "published",
+        "schedule",
+        "assignment",
+        "request",
+        "review",
+        "progress",
+        "issue",
+        "draft",
+        "code",
+        "coding",
+        "version control"
+      ],
+      "categories": [
+        "shapes",
+        "development",
+        "notifications"
+      ]
+    },
+    {
       "canonical_name": "circle-divide",
       "rust_name": "LucideIcon::CircleDivide",
       "asset_path": "icons/lucide/circle-divide.svg",
@@ -11684,8 +11920,8 @@
       "asset_path": "icons/lucide/circle-dot.svg",
       "upstream_svg_path": "icons/circle-dot.svg",
       "upstream_json_path": "icons/circle-dot.json",
-      "svg_sha256": "f3815b15d3bdc275069119ac26e7d5a52b4e57ee36d3751a809c1c371ee85ae2",
-      "json_sha256": "2c2dd10eac05ee777f7902b1d70c1d28ebdf6cc033df169f0cb851bc362d4ce3",
+      "svg_sha256": "c263f6a08a089c06ad40f408ad5da9100359ab52d379e6c571cd7c5bd74eaa87",
+      "json_sha256": "111dffd34279c990c8a7c32eab0d8ee805c38344881654ecdcd8f8b4c7758e16",
       "contributors": [
         "karsa-mistmere"
       ],
@@ -11701,7 +11937,25 @@
         "version control",
         "choices",
         "multiple choice",
-        "choose"
+        "choose",
+        "album",
+        "music",
+        "songs",
+        "format",
+        "cd",
+        "dvd",
+        "vinyl",
+        "sleeve",
+        "cover",
+        "platinum",
+        "compilation",
+        "ep",
+        "recording",
+        "playback",
+        "spin",
+        "rotate",
+        "rpm",
+        "dj"
       ],
       "categories": [
         "development",
@@ -13008,7 +13262,7 @@
       "asset_path": "icons/lucide/clipboard-x.svg",
       "upstream_svg_path": "icons/clipboard-x.svg",
       "upstream_json_path": "icons/clipboard-x.json",
-      "svg_sha256": "5409582bda02512a3f8ad39aa1a1363ded486c627682ed24202e6d042ed97b5f",
+      "svg_sha256": "337b144ff1703f177c5a9f573cc0607a89b0d0f0a030ee09373d7667f00699ed",
       "json_sha256": "4b0aaec3833e3de1bf8b67f5d84c1b119e329181d289d3bf0ed48e763f73de40",
       "contributors": [
         "mittalyashu",
@@ -13490,7 +13744,7 @@
       "asset_path": "icons/lucide/clock-check.svg",
       "upstream_svg_path": "icons/clock-check.svg",
       "upstream_json_path": "icons/clock-check.json",
-      "svg_sha256": "ef0998dd2f4c6563717ed935fd77e36bccdb337a080aee237acb764ddb54d72b",
+      "svg_sha256": "55fe4415b0946e372043a27c31d814a6cda2205b81ce48864f396532c83a6157",
       "json_sha256": "cd21254a99936aaf95ceb333449ebc9c57e1cfaee92ca7e48228fe7e4788e01c",
       "contributors": [
         "colebemis",
@@ -14653,10 +14907,11 @@
       "asset_path": "icons/lucide/computer.svg",
       "upstream_svg_path": "icons/computer.svg",
       "upstream_json_path": "icons/computer.json",
-      "svg_sha256": "c96947b97299d443b4ce06b5d5b9da3067e9c51496e8c444f7171f416b6ffb26",
-      "json_sha256": "33c527c210d590fd7009d3b439f56463a4ae5e2e3c762a553c8e29ec9420c548",
+      "svg_sha256": "244f61cf1a8cd87175bf8541e90eee1905e1b92b2da46393bfca1ed15ca362d4",
+      "json_sha256": "4bceed44b6c6ef70084220fe9c182701a8962ac7f5f0c445ceb7e6e5bc83004f",
       "contributors": [
-        "danielbayley"
+        "danielbayley",
+        "karsa-mistmere"
       ],
       "aliases": [],
       "deprecated": false,
@@ -15080,7 +15335,7 @@
       "asset_path": "icons/lucide/copy-x.svg",
       "upstream_svg_path": "icons/copy-x.svg",
       "upstream_json_path": "icons/copy-x.json",
-      "svg_sha256": "792c594f61a48069cbd82022c41eb5746befe18aa2e2d2b738bd42c50dba0d17",
+      "svg_sha256": "320ae5b6a2eda179f786b175b768ba58de603892dd168922ed41cc8e095d15e0",
       "json_sha256": "959fb42d3dae2b439ffe1daa7a4749f4c3becb53a42af7ff8145ea060e833353",
       "contributors": [
         "danielbayley",
@@ -15408,6 +15663,219 @@
       "categories": [
         "account",
         "finance"
+      ]
+    },
+    {
+      "canonical_name": "credit-card-check",
+      "rust_name": "LucideIcon::CreditCardCheck",
+      "asset_path": "icons/lucide/credit-card-check.svg",
+      "upstream_svg_path": "icons/credit-card-check.svg",
+      "upstream_json_path": "icons/credit-card-check.json",
+      "svg_sha256": "d1ec5986e1a032a2681277fc3b4ae27d63be82f7538cdb0ba26b4dd97b9f101b",
+      "json_sha256": "35e1405776cfc35257623ca2af3cae7b85cccb773cad56ebe4d146a6760dcd29",
+      "contributors": [
+        "colebemis",
+        "ericfennis",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "debit",
+        "payment",
+        "banking",
+        "finance",
+        "transaction",
+        "wallet",
+        "purchase",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "verified",
+        "approved",
+        "authorized",
+        "valid",
+        "success",
+        "complete",
+        "check",
+        "bank",
+        "cc"
+      ],
+      "categories": [
+        "account",
+        "finance",
+        "shopping"
+      ]
+    },
+    {
+      "canonical_name": "credit-card-minus",
+      "rust_name": "LucideIcon::CreditCardMinus",
+      "asset_path": "icons/lucide/credit-card-minus.svg",
+      "upstream_svg_path": "icons/credit-card-minus.svg",
+      "upstream_json_path": "icons/credit-card-minus.json",
+      "svg_sha256": "260d4e37bf1b1c1cf55f42b2070a63fe60ff066697db549f25c2d9dbc7a9eb4c",
+      "json_sha256": "32cae50daf9c47246a995971d2ada7ab5e6918be0082f213892c98a6fe7446f1",
+      "contributors": [
+        "colebemis",
+        "ericfennis",
+        "karsa-mistmere",
+        "ameniti-mx"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "debit",
+        "payment",
+        "remove",
+        "delete",
+        "unlink",
+        "revoke",
+        "decline",
+        "canceled",
+        "banking",
+        "finance",
+        "wallet",
+        "transaction",
+        "billing",
+        "account",
+        "purchase",
+        "checkout",
+        "subtract",
+        "minus",
+        "bank",
+        "cc"
+      ],
+      "categories": [
+        "account",
+        "finance",
+        "shopping"
+      ]
+    },
+    {
+      "canonical_name": "credit-card-plus",
+      "rust_name": "LucideIcon::CreditCardPlus",
+      "asset_path": "icons/lucide/credit-card-plus.svg",
+      "upstream_svg_path": "icons/credit-card-plus.svg",
+      "upstream_json_path": "icons/credit-card-plus.json",
+      "svg_sha256": "cff0e0dc351656f12514b7b43a0fba42a53c85a17fd13f5e630f22d72c5014d3",
+      "json_sha256": "bde9e87072bb88400be67eec143696dd692db099f5888b7cec29c8631deada75",
+      "contributors": [
+        "colebemis",
+        "ericfennis",
+        "karsa-mistmere",
+        "ameniti-mx"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "debit",
+        "payment",
+        "banking",
+        "finance",
+        "transaction",
+        "wallet",
+        "purchase",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "add",
+        "new",
+        "link",
+        "save",
+        "method",
+        "plastic",
+        "bank",
+        "cc"
+      ],
+      "categories": [
+        "account",
+        "finance",
+        "shopping"
+      ]
+    },
+    {
+      "canonical_name": "credit-card-reader",
+      "rust_name": "LucideIcon::CreditCardReader",
+      "asset_path": "icons/lucide/credit-card-reader.svg",
+      "upstream_svg_path": "icons/credit-card-reader.svg",
+      "upstream_json_path": "icons/credit-card-reader.json",
+      "svg_sha256": "2f0a3508db622e5b13e3460133a5b4c17270edadef0860771f258948dc7a6172",
+      "json_sha256": "3010fc68aba14540b018a7c8500cb27e084217160e69af9cb4caf8f587b1cdfe",
+      "contributors": [
+        "jguddas",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "bank",
+        "purchase",
+        "payment",
+        "cc",
+        "atm",
+        "terminal",
+        "checkout",
+        "kiosk",
+        "pos",
+        "point of sale",
+        "transaction",
+        "contactless",
+        "chip",
+        "swipe",
+        "tap",
+        "banking",
+        "finance",
+        "retail"
+      ],
+      "categories": [
+        "finance",
+        "navigation",
+        "shopping"
+      ]
+    },
+    {
+      "canonical_name": "credit-card-x",
+      "rust_name": "LucideIcon::CreditCardX",
+      "asset_path": "icons/lucide/credit-card-x.svg",
+      "upstream_svg_path": "icons/credit-card-x.svg",
+      "upstream_json_path": "icons/credit-card-x.json",
+      "svg_sha256": "a79a4af9a1dcc7b139152bed6a6ca8fa1fc4b0d92986c046dbc1068a8e7ac1c4",
+      "json_sha256": "4f7e73d6b7f830c2581d56bcd398b79ac55fd9ec23f57138ed2fd39bdd9e388f",
+      "contributors": [
+        "colebemis",
+        "ericfennis",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "debit",
+        "payment",
+        "banking",
+        "finance",
+        "transaction",
+        "wallet",
+        "purchase",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "declined",
+        "rejected",
+        "failed",
+        "invalid",
+        "canceled",
+        "error",
+        "cancel",
+        "bank",
+        "cc"
+      ],
+      "categories": [
+        "account",
+        "finance",
+        "shopping"
       ]
     },
     {
@@ -16816,6 +17284,48 @@
       ]
     },
     {
+      "canonical_name": "dome",
+      "rust_name": "LucideIcon::Dome",
+      "asset_path": "icons/lucide/dome.svg",
+      "upstream_svg_path": "icons/dome.svg",
+      "upstream_json_path": "icons/dome.json",
+      "svg_sha256": "c83c805c1d64c9a86c08fec4907bd88a9a77ece6c58c4b30a6229b72f95eb948",
+      "json_sha256": "4f2e72eb93668e42098c2aeb6c5c8a7ca7ad0fd4ac428d5388aad73edd45f5d0",
+      "contributors": [
+        "swastik7805",
+        "rrod497",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "roof",
+        "cupola",
+        "rotunda",
+        "shelter",
+        "building",
+        "architecture",
+        "structure",
+        "church",
+        "christian",
+        "orthodox",
+        "byzantine",
+        "cathedral",
+        "basilica",
+        "chapel",
+        "monument",
+        "landmark",
+        "museum",
+        "observatory",
+        "heritage"
+      ],
+      "categories": [
+        "buildings",
+        "navigation",
+        "travel"
+      ]
+    },
+    {
       "canonical_name": "donut",
       "rust_name": "LucideIcon::Donut",
       "asset_path": "icons/lucide/donut.svg",
@@ -16852,7 +17362,7 @@
       "asset_path": "icons/lucide/door-closed.svg",
       "upstream_svg_path": "icons/door-closed.svg",
       "upstream_json_path": "icons/door-closed.json",
-      "svg_sha256": "9a01d0744bb53d8e4d8fa2d677ca59cd1749d715310f44a67c6f7494db3c2553",
+      "svg_sha256": "19d3f8698ccd8dff208ce78e880cdb5e2a4794cb551210a2170178d526bc9941",
       "json_sha256": "a6070c6edf83da553b6ad1d53229f62d6ebf0eb07bc6ea3fe09fa7b7e92bce2c",
       "contributors": [
         "karsa-mistmere"
@@ -16881,7 +17391,7 @@
       "asset_path": "icons/lucide/door-closed-locked.svg",
       "upstream_svg_path": "icons/door-closed-locked.svg",
       "upstream_json_path": "icons/door-closed-locked.json",
-      "svg_sha256": "97a13d5e87d9ea85b348f7253af601902c58bd8cd1621e86cf841f4f91727017",
+      "svg_sha256": "5ce0ade313a14080654bba4435727d4d6ecc2dc9bb4cd577580a0676edde5653",
       "json_sha256": "2dc34ccb52fc198a4687e763bc9c3db52ae9e493bfcb653bf5ac0ce537ee4e3d",
       "contributors": [
         "karsa-mistmere",
@@ -16912,7 +17422,7 @@
       "asset_path": "icons/lucide/door-open.svg",
       "upstream_svg_path": "icons/door-open.svg",
       "upstream_json_path": "icons/door-open.json",
-      "svg_sha256": "f63dc99020267e81b2167a13e36049118bb8b7b520d61006347e78cf6aeac1e2",
+      "svg_sha256": "67d80859b602bc2d959b172be95d1beb443e485e24042873a23958ba3752483c",
       "json_sha256": "a6070c6edf83da553b6ad1d53229f62d6ebf0eb07bc6ea3fe09fa7b7e92bce2c",
       "contributors": [
         "karsa-mistmere"
@@ -16933,6 +17443,48 @@
         "home",
         "travel",
         "security"
+      ]
+    },
+    {
+      "canonical_name": "door-stairwell",
+      "rust_name": "LucideIcon::DoorStairwell",
+      "asset_path": "icons/lucide/door-stairwell.svg",
+      "upstream_svg_path": "icons/door-stairwell.svg",
+      "upstream_json_path": "icons/door-stairwell.json",
+      "svg_sha256": "0271e2564330e8ec7ba7808df200cf4af03c005b799b1bd4f89a54ab6ee200da",
+      "json_sha256": "b95f1f78e9b535fa9c343026eebef522c4082ddaf77a47bbcadf30b4501f2947",
+      "contributors": [
+        "jguddas",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "staircase",
+        "stairway",
+        "stairs",
+        "steps",
+        "ladder",
+        "transition",
+        "access",
+        "structure",
+        "espiral",
+        "building",
+        "vertical",
+        "movement",
+        "floor",
+        "level",
+        "entrance",
+        "entry",
+        "exit",
+        "egress",
+        "route",
+        "indoor",
+        "emergency exit"
+      ],
+      "categories": [
+        "home",
+        "travel"
       ]
     },
     {
@@ -17695,6 +18247,39 @@
       ]
     },
     {
+      "canonical_name": "engine",
+      "rust_name": "LucideIcon::Engine",
+      "asset_path": "icons/lucide/engine.svg",
+      "upstream_svg_path": "icons/engine.svg",
+      "upstream_json_path": "icons/engine.json",
+      "svg_sha256": "ef54679713ce2321ed53996a60f7e831b3aed56fefa9736497c38747215dca32",
+      "json_sha256": "4b9e3842c8f0cd90110f3860b0ed54e617006c3d6f1be6e5188bb4873134bf55",
+      "contributors": [
+        "benhaube",
+        "jamiemlaw"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "vehicle",
+        "power",
+        "energy",
+        "drive",
+        "repair",
+        "car",
+        "motor",
+        "mechanical",
+        "diagnostics",
+        "maintenance",
+        "warning",
+        "dashboard",
+        "parts"
+      ],
+      "categories": [
+        "transportation"
+      ]
+    },
+    {
       "canonical_name": "equal",
       "rust_name": "LucideIcon::Equal",
       "asset_path": "icons/lucide/equal.svg",
@@ -17727,7 +18312,7 @@
       "upstream_svg_path": "icons/equal-approximately.svg",
       "upstream_json_path": "icons/equal-approximately.json",
       "svg_sha256": "5287d3e8f856372697f2ec218b719823c46b0a8ce6fabae8e0e01d3570fb14fb",
-      "json_sha256": "bffe485da941a449b64430b4ae9b1d0f598a0e577695aa650e3ad6a85910e6ee",
+      "json_sha256": "256662b2a8466e67b2c1f827f00249ab73c92315915ee6b4ab0d32ae7763df40",
       "contributors": [
         "ksk3110"
       ],
@@ -17737,10 +18322,47 @@
         "about",
         "calculate",
         "math",
-        "operater"
+        "operator"
       ],
       "categories": [
         "math"
+      ]
+    },
+    {
+      "canonical_name": "equal-approximately-not",
+      "rust_name": "LucideIcon::EqualApproximatelyNot",
+      "asset_path": "icons/lucide/equal-approximately-not.svg",
+      "upstream_svg_path": "icons/equal-approximately-not.svg",
+      "upstream_json_path": "icons/equal-approximately-not.json",
+      "svg_sha256": "10f28b2e6725c37eec0a4ce9ecdd538c6164d1d0f00c950a6ba93342eb58a41b",
+      "json_sha256": "745d342200b8a1276bb48bbf858006fd19fbe973f691b0e59c7a146f39e2728c",
+      "contributors": [
+        "ksk3110",
+        "ryck"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "calculate",
+        "math",
+        "operator",
+        "not",
+        "approximately",
+        "unequal",
+        "code",
+        "\u2247",
+        "tolerance",
+        "threshold",
+        "mismatch",
+        "comparison",
+        "assertion",
+        "variance"
+      ],
+      "categories": [
+        "math",
+        "development",
+        "charts",
+        "science"
       ]
     },
     {
@@ -18099,7 +18721,7 @@
       "asset_path": "icons/lucide/face-angry.svg",
       "upstream_svg_path": "icons/face-angry.svg",
       "upstream_json_path": "icons/face-angry.json",
-      "svg_sha256": "37c0b8c917b8d7174b3792b74daf493e8f8142d56f44fa98eea02f489ef795f8",
+      "svg_sha256": "87061acdc421476b388030eaed0e617ae46077d87bb32bbb8bbbe803f406af32",
       "json_sha256": "2f2219f86df3219831c04bf35be5e9b4e8d34da479d3d376b2b99728fd0f5792",
       "contributors": [
         "karsa-mistmere",
@@ -21997,6 +22619,39 @@
       ]
     },
     {
+      "canonical_name": "galaxy",
+      "rust_name": "LucideIcon::Galaxy",
+      "asset_path": "icons/lucide/galaxy.svg",
+      "upstream_svg_path": "icons/galaxy.svg",
+      "upstream_json_path": "icons/galaxy.json",
+      "svg_sha256": "45b2a0174a2daf713d31e8707421514380ef19b77e7e0d57d98b1ac902df5359",
+      "json_sha256": "cbbc65002bf3b33b7751b9d3dffab937ce447429cbfe8a0aa5cbdf129489d2af",
+      "contributors": [
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "astronomy",
+        "space",
+        "stars",
+        "cosmos",
+        "universe",
+        "spiral",
+        "milky way",
+        "nebula",
+        "cosmology",
+        "interstellar",
+        "celestial",
+        "constellation",
+        "stargazing",
+        "spaceflight"
+      ],
+      "categories": [
+        "science"
+      ]
+    },
+    {
       "canonical_name": "gallery-horizontal",
       "rust_name": "LucideIcon::GalleryHorizontal",
       "asset_path": "icons/lucide/gallery-horizontal.svg",
@@ -22233,6 +22888,72 @@
       ]
     },
     {
+      "canonical_name": "gap-horizontal",
+      "rust_name": "LucideIcon::GapHorizontal",
+      "asset_path": "icons/lucide/gap-horizontal.svg",
+      "upstream_svg_path": "icons/gap-horizontal.svg",
+      "upstream_json_path": "icons/gap-horizontal.json",
+      "svg_sha256": "7983fb2bc8143bde43ebe8da834ff22265097ec4884eafc5e9552522967aabdf",
+      "json_sha256": "885077d68c5f554a0cd55853662b749c6d86025e9ab896ccf32a9aeddd7fa83c",
+      "contributors": [
+        "samuelalake",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "gap",
+        "spacing",
+        "space",
+        "between",
+        "padding",
+        "margin",
+        "horizontal",
+        "auto layout",
+        "layout",
+        "distance",
+        "frame",
+        "distribute"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ]
+    },
+    {
+      "canonical_name": "gap-vertical",
+      "rust_name": "LucideIcon::GapVertical",
+      "asset_path": "icons/lucide/gap-vertical.svg",
+      "upstream_svg_path": "icons/gap-vertical.svg",
+      "upstream_json_path": "icons/gap-vertical.json",
+      "svg_sha256": "3cb70d8fb5134cefe177f94f266103b781b1f3c1f090baa989ac511d2b12d224",
+      "json_sha256": "1451485ee962d4e6ba27ef455d26f1bf7e064979b0c0a9e316132ef8ed18cd96",
+      "contributors": [
+        "samuelalake",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "gap",
+        "spacing",
+        "space",
+        "between",
+        "padding",
+        "margin",
+        "vertical",
+        "auto layout",
+        "layout",
+        "distance",
+        "frame",
+        "distribute"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ]
+    },
+    {
       "canonical_name": "gauge",
       "rust_name": "LucideIcon::Gauge",
       "asset_path": "icons/lucide/gauge.svg",
@@ -22356,22 +23077,143 @@
       ]
     },
     {
+      "canonical_name": "germ",
+      "rust_name": "LucideIcon::Germ",
+      "asset_path": "icons/lucide/germ.svg",
+      "upstream_svg_path": "icons/germ.svg",
+      "upstream_json_path": "icons/germ.json",
+      "svg_sha256": "585752db131e99755ae889463a37d25aaa205183aa1055e416a1875b8055e44b",
+      "json_sha256": "fee2d916b00d0e036a09d24e21cb75ca45e52ec7e6be8aa0ed8c4d2d4e8a48b3",
+      "contributors": [
+        "rrod497",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "virus",
+        "microbe",
+        "bacterium",
+        "bacteria",
+        "germ",
+        "organism",
+        "cilia",
+        "pathogen",
+        "infection",
+        "disease",
+        "contagion",
+        "contamination",
+        "microbiology",
+        "health",
+        "medicine",
+        "biology",
+        "science",
+        "microorganism",
+        "pandemic",
+        "epidemic",
+        "outbreak",
+        "amoeba",
+        "flu",
+        "security",
+        "single cell",
+        "unicellular",
+        "vaccine",
+        "immunity",
+        "quarantine"
+      ],
+      "categories": [
+        "medical",
+        "science",
+        "security"
+      ]
+    },
+    {
+      "canonical_name": "germ-off",
+      "rust_name": "LucideIcon::GermOff",
+      "asset_path": "icons/lucide/germ-off.svg",
+      "upstream_svg_path": "icons/germ-off.svg",
+      "upstream_json_path": "icons/germ-off.json",
+      "svg_sha256": "c2c64fea6dfb54b9e2eb89d356abe2f9db741ef39f399c4d3af0d9e639afcc76",
+      "json_sha256": "e4fa4a7b6683e5ab6577673d783d5460dc62c78f3ca1f90f90165d870b463a48",
+      "contributors": [
+        "rrod497",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "virus",
+        "microbe",
+        "bacterium",
+        "bacteria",
+        "germ",
+        "organism",
+        "cilia",
+        "pathogen",
+        "infection",
+        "disease",
+        "contagion",
+        "contamination",
+        "microbiology",
+        "health",
+        "medicine",
+        "biology",
+        "science",
+        "microorganism",
+        "pandemic",
+        "epidemic",
+        "outbreak",
+        "amoeba",
+        "flu",
+        "security",
+        "single cell",
+        "unicellular",
+        "vaccine",
+        "immunity",
+        "quarantine"
+      ],
+      "categories": [
+        "medical",
+        "science",
+        "security"
+      ]
+    },
+    {
       "canonical_name": "ghost",
       "rust_name": "LucideIcon::Ghost",
       "asset_path": "icons/lucide/ghost.svg",
       "upstream_svg_path": "icons/ghost.svg",
       "upstream_json_path": "icons/ghost.json",
-      "svg_sha256": "2c20f572e336d6b6a19d898924a4ae9b7996804559e3b5935f8c085645282d64",
-      "json_sha256": "57a2a954167315ae5b8a44295fccfd80aa75e82b1656a458edb0185ba7acf700",
+      "svg_sha256": "7577ea4e1390a8a8203509dff037fa74791ecebb145cdc5e3f3349de2f009278",
+      "json_sha256": "a3090668dd329a2d0e7f645844190539447f9e35502cb82ac8083342e013e52f",
       "contributors": [
         "mittalyashu",
-        "ericfennis"
+        "ericfennis",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
       "tags": [
+        "spirit",
+        "haunt",
+        "specter",
+        "apparition",
+        "wraith",
+        "shade",
+        "phantom",
+        "entity",
+        "shadow",
+        "silhouette",
         "pac-man",
-        "spooky"
+        "spooky",
+        "halloween",
+        "haunted",
+        "invisible",
+        "hidden",
+        "empty",
+        "dead",
+        "obsolete",
+        "outdated"
       ],
       "categories": [
         "gaming"
@@ -22663,7 +23505,7 @@
       "asset_path": "icons/lucide/git-merge-conflict.svg",
       "upstream_svg_path": "icons/git-merge-conflict.svg",
       "upstream_json_path": "icons/git-merge-conflict.json",
-      "svg_sha256": "5a0f1c0fa6a1aa569ac8b77f17721b424376e6f3443085eaf87aabeea4df0fa0",
+      "svg_sha256": "365531f9082201834764ec4984a59688a9b8575a063ca6d1a95ab54e95524a91",
       "json_sha256": "4faef6a65d8c20795cb02fe97c66c9a8f062af24d235f9966eb18e2fcfa5dd1b",
       "contributors": [
         "timmy471",
@@ -22739,7 +23581,7 @@
       "asset_path": "icons/lucide/git-pull-request-closed.svg",
       "upstream_svg_path": "icons/git-pull-request-closed.svg",
       "upstream_json_path": "icons/git-pull-request-closed.json",
-      "svg_sha256": "40b74c1908aaa414d71d6557b3d45cc13c272f0c505913cd1842d9d55b36b444",
+      "svg_sha256": "e9c7d54aebb4207baab682e71806edb9433d66f99bb440e4ad7eb9fed061adb7",
       "json_sha256": "0e3637de4484abecbc49537f6130bc1a4010e171bf05b8f3c0750c1c90822f48",
       "contributors": [
         "karsa-mistmere",
@@ -23306,7 +24148,7 @@
       "asset_path": "icons/lucide/grid-2x2-x.svg",
       "upstream_svg_path": "icons/grid-2x2-x.svg",
       "upstream_json_path": "icons/grid-2x2-x.json",
-      "svg_sha256": "9adc90a820e8bb1b216a35077cbbeb2ca77e14c4eb171c00bbe47d6130b30127",
+      "svg_sha256": "bc94406c7006be58013c1a77df39cb1cdb0ae736b50498e876e527ca7d56dd60",
       "json_sha256": "cd243924fa2fd8473d73ac97de985b3975c30e8b81eab455851efcfc32bf3eb6",
       "contributors": [
         "danielbayley",
@@ -25205,7 +26047,7 @@
       "asset_path": "icons/lucide/id-card.svg",
       "upstream_svg_path": "icons/id-card.svg",
       "upstream_json_path": "icons/id-card.json",
-      "svg_sha256": "a5c157569e3ce41ce4a3badf7177aef492dbe3b9bb083f195838eeb79d6beea9",
+      "svg_sha256": "b2a55b00b0cb4c7a84f2596610a9240f7d05e4d9cd260ec85028a79c4ab10ced",
       "json_sha256": "496369636f33f28900709a0c76a1d364f1e4249b501b0d61093433e079626c05",
       "contributors": [
         "jguddas",
@@ -25231,7 +26073,7 @@
       "asset_path": "icons/lucide/id-card-lanyard.svg",
       "upstream_svg_path": "icons/id-card-lanyard.svg",
       "upstream_json_path": "icons/id-card-lanyard.json",
-      "svg_sha256": "b2f5c42cbcfc4707ab5ebf2a60a4b3462a50b2748677aeaee6e87e47ec538837",
+      "svg_sha256": "93ace4f399437c7fed98f788eae1a4e33c1ea71e2cc7536ac675929192d18424",
       "json_sha256": "f195694956542a16ab0b650a73179e1f86f8deff0f4e7c0c4be7aa9be16c55ba",
       "contributors": [
         "python2911",
@@ -25844,7 +26686,7 @@
       "asset_path": "icons/lucide/key.svg",
       "upstream_svg_path": "icons/key.svg",
       "upstream_json_path": "icons/key.json",
-      "svg_sha256": "de99669ea21556611f59ab269d8435c1cdbc8665d4a85bd85457aa1eefec48af",
+      "svg_sha256": "1f0bdf32374dacfca8cfc7f942c59d27a438e409dccaef11a8ce57de9365ae60",
       "json_sha256": "5d0daf420ff67ef804d4659bcc3a7b91ee55041cf5fb27183de3bba797ba7fc3",
       "contributors": [
         "ashygee",
@@ -26892,7 +27734,7 @@
       "asset_path": "icons/lucide/leaf.svg",
       "upstream_svg_path": "icons/leaf.svg",
       "upstream_json_path": "icons/leaf.json",
-      "svg_sha256": "a6cd15ecfaed579da29311eedc19302209e82515be83bfeca114183b0318a56f",
+      "svg_sha256": "ac2b65d8d35b5038c9388cd1f161e74570fce6ef6a4c3d99a6b0c2bd68e0cb28",
       "json_sha256": "23a76a889af5836b1e64fa44755e691e7372f156cc92ef31b28ab9b530f37330",
       "contributors": [
         "karsa-mistmere",
@@ -27232,6 +28074,53 @@
       ],
       "categories": [
         "photography"
+      ]
+    },
+    {
+      "canonical_name": "lighthouse",
+      "rust_name": "LucideIcon::Lighthouse",
+      "asset_path": "icons/lucide/lighthouse.svg",
+      "upstream_svg_path": "icons/lighthouse.svg",
+      "upstream_json_path": "icons/lighthouse.json",
+      "svg_sha256": "77cc491fa4bf66f31921be548a821c72cdc3aea524cc0a555dc0d9af297dba65",
+      "json_sha256": "5c2f2f352fd6ab5378899dca9edd324565983978277b54a5c76f4bbfd9b6e5c9",
+      "contributors": [
+        "xougui",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "lighthouse",
+        "beacon",
+        "coast",
+        "navigation",
+        "tower",
+        "sea",
+        "ocean",
+        "maritime",
+        "guide",
+        "safety",
+        "light",
+        "shine",
+        "port",
+        "marine",
+        "faro",
+        "signal",
+        "nautical",
+        "harbor",
+        "shore",
+        "lightbeam",
+        "wayfinding",
+        "guidance",
+        "onboarding",
+        "help",
+        "landmark"
+      ],
+      "categories": [
+        "buildings",
+        "navigation",
+        "travel"
       ]
     },
     {
@@ -28630,6 +29519,44 @@
       ]
     },
     {
+      "canonical_name": "mail-clock",
+      "rust_name": "LucideIcon::MailClock",
+      "asset_path": "icons/lucide/mail-clock.svg",
+      "upstream_svg_path": "icons/mail-clock.svg",
+      "upstream_json_path": "icons/mail-clock.json",
+      "svg_sha256": "d9c3251f81a2ce876ed39bfe96ce6321cd73b02ee829431214e287c8dac0c15e",
+      "json_sha256": "0785aedc1062c1aaabfc3ce850057d6c0ac41b9c862c66246458573b3806e7cb",
+      "contributors": [
+        "colebemis",
+        "karsa-mistmere",
+        "ericfennis"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "email",
+        "message",
+        "letter",
+        "unread",
+        "scheduled",
+        "delayed",
+        "sendlater",
+        "delivery",
+        "reminder",
+        "pending",
+        "outgoing",
+        "timer"
+      ],
+      "categories": [
+        "text",
+        "account",
+        "mail",
+        "time",
+        "notifications",
+        "communication"
+      ]
+    },
+    {
       "canonical_name": "mail-minus",
       "rust_name": "LucideIcon::MailMinus",
       "asset_path": "icons/lucide/mail-minus.svg",
@@ -28673,6 +29600,40 @@
         "message",
         "letter",
         "read"
+      ],
+      "categories": [
+        "mail"
+      ]
+    },
+    {
+      "canonical_name": "mail-pen",
+      "rust_name": "LucideIcon::MailPen",
+      "asset_path": "icons/lucide/mail-pen.svg",
+      "upstream_svg_path": "icons/mail-pen.svg",
+      "upstream_json_path": "icons/mail-pen.json",
+      "svg_sha256": "28e77240d0b3abf983f64a74d6d8478fb2504869fe0f9a38b77336e89a28e656",
+      "json_sha256": "f6fd16eae332879c91666d1a256222ba9331cc05f52269a7e82c2674798676eb",
+      "contributors": [
+        "colebemis",
+        "karsa-mistmere",
+        "ericfennis",
+        "jguddas",
+        "jennieboops"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "email",
+        "message",
+        "letter",
+        "pen",
+        "edit",
+        "compose",
+        "draft",
+        "write",
+        "writing",
+        "create",
+        "reply"
       ],
       "categories": [
         "mail"
@@ -28790,7 +29751,7 @@
       "asset_path": "icons/lucide/mail-x.svg",
       "upstream_svg_path": "icons/mail-x.svg",
       "upstream_json_path": "icons/mail-x.json",
-      "svg_sha256": "dc0dd832de6f5c3ea7a55fe5d2efd40150e0953f95fc097b22e9f1a38e02b7d0",
+      "svg_sha256": "95747896e4fe4df17ca4ae9b7bfb43d5322093adf202cb47a6276db5235c32a1",
       "json_sha256": "4d03530e5960218f00ff7030037fa5905cb91198968eab7b905e8e506774a6f6",
       "contributors": [
         "karsa-mistmere",
@@ -29717,7 +30678,7 @@
       "asset_path": "icons/lucide/message-circle-check.svg",
       "upstream_svg_path": "icons/message-circle-check.svg",
       "upstream_json_path": "icons/message-circle-check.json",
-      "svg_sha256": "e68cbcc447f5837444771708473485e7d815e83e89098450c8144070f79b9675",
+      "svg_sha256": "5b28b8c9259e714cd0b87faf7876b49a5f28e6f386da1498886099f49aed8a6b",
       "json_sha256": "007f58ecbd22afbe6ec72038226c7e3a336ec35c452bc0574a50087a0f94c037",
       "contributors": [
         "Shrinks99"
@@ -29798,6 +30759,50 @@
       ],
       "categories": [
         "social"
+      ]
+    },
+    {
+      "canonical_name": "message-circle-dashed-check",
+      "rust_name": "LucideIcon::MessageCircleDashedCheck",
+      "asset_path": "icons/lucide/message-circle-dashed-check.svg",
+      "upstream_svg_path": "icons/message-circle-dashed-check.svg",
+      "upstream_json_path": "icons/message-circle-dashed-check.json",
+      "svg_sha256": "1804744c1eb31c7aa00a6b4f6194112358c8d5435efa819929ddd6b96808567c",
+      "json_sha256": "3a94f9e6ceab9014c1798a46d4a6ddd3865cc718fd8582e8d914efeb4d4a2fdf",
+      "contributors": [
+        "colebemis",
+        "csandman",
+        "ericfennis",
+        "jguddas",
+        "karsa-mistmere",
+        "aliyasirnac"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "comment",
+        "chat",
+        "conversation",
+        "dialog",
+        "feedback",
+        "speech bubble",
+        "draft",
+        "pending",
+        "provisional",
+        "verification",
+        "confirmation",
+        "success",
+        "status",
+        "check",
+        "approval",
+        "moderate",
+        "resolved",
+        "done",
+        "complete"
+      ],
+      "categories": [
+        "social",
+        "account"
       ]
     },
     {
@@ -31229,7 +32234,7 @@
       "upstream_svg_path": "icons/monitor.svg",
       "upstream_json_path": "icons/monitor.json",
       "svg_sha256": "d1a443233345724859de8e4fb48968ba91e885e12ddbd710701548bd91b39428",
-      "json_sha256": "12d45ed80378ebd7be2d288a4786e66c2ed7fe418abb6bac3d331526e7174abf",
+      "json_sha256": "651188e2c39e93dcf918e4f40c9d1334d4072bf3debc3e335bcbc0eb220e42c2",
       "contributors": [
         "colebemis",
         "ericfennis",
@@ -31241,8 +32246,12 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
+        "desktop",
         "screen",
         "display",
+        "external display",
+        "screen sharing",
         "virtual machine",
         "vm"
       ],
@@ -31258,7 +32267,7 @@
       "upstream_svg_path": "icons/monitor-check.svg",
       "upstream_json_path": "icons/monitor-check.json",
       "svg_sha256": "2e9cb7622cf478da338f9d6d286d91a6222218fbf36ceb6f6eddaf026e5bc0a2",
-      "json_sha256": "b9fc0cd614d105c3093c3cc3e9e7710e71458e340bf9f1f73c8c19b0cafc542f",
+      "json_sha256": "e2f0948dc5a552a59331b6f26f237ae8c7adab23699405c34175017b5479f41e",
       "contributors": [
         "danielbayley",
         "jguddas",
@@ -31268,9 +32277,15 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
+        "external display",
+        "screen sharing",
+        "connected",
+        "success",
+        "verified",
         "running",
         "active",
         "virtual machine",
@@ -31288,7 +32303,7 @@
       "upstream_svg_path": "icons/monitor-cloud.svg",
       "upstream_json_path": "icons/monitor-cloud.json",
       "svg_sha256": "193f0c39bdd80b01cdf948713aaef02cbe4483472213525572c2934abcc58b44",
-      "json_sha256": "e25f9ec05476171a3f4eca40570ccad347b9e5faef9875f91c2b550a7933ed28",
+      "json_sha256": "9b8de4c7ea3942459cf2bd294f3f05de1cb0ed92fa5e2c57973d1c389ff85f71",
       "contributors": [
         "colebemis",
         "ericfennis",
@@ -31299,6 +32314,12 @@
       "aliases": [],
       "deprecated": false,
       "tags": [
+        "tv",
+        "computer",
+        "screen",
+        "display",
+        "desktop",
+        "external display",
         "virtual machine",
         "virtual desktop",
         "vm",
@@ -31310,10 +32331,7 @@
         "software as a service",
         "saas",
         "workstation",
-        "environment",
-        "tv",
-        "screen",
-        "display"
+        "environment"
       ],
       "categories": [
         "connectivity",
@@ -31328,7 +32346,7 @@
       "upstream_svg_path": "icons/monitor-cog.svg",
       "upstream_json_path": "icons/monitor-cog.json",
       "svg_sha256": "ad9070756393f141d207256ad5507801158b7bf3a71374e15d5fddd3ae1d07d6",
-      "json_sha256": "af7c0dad3cae718e780cfe326fa8f0797e248c3e447e0b2049b3ce1ea120f4a5",
+      "json_sha256": "286456c934017633b2ab94af60a1908c5dddaf480f68bf2e04ee867bb27f837c",
       "contributors": [
         "karsa-mistmere",
         "colebemis",
@@ -31338,13 +32356,15 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
+        "desktop",
+        "external display",
         "virtual machine",
         "vm",
         "executable",
         "settings",
-        "cog",
         "edit",
         "gear",
         "configuration",
@@ -31366,7 +32386,7 @@
       "upstream_svg_path": "icons/monitor-dot.svg",
       "upstream_json_path": "icons/monitor-dot.json",
       "svg_sha256": "161f75ce514831004ec05f9b39ae286f8adb8e937be66bdb09018932af5db286",
-      "json_sha256": "b9fc0cd614d105c3093c3cc3e9e7710e71458e340bf9f1f73c8c19b0cafc542f",
+      "json_sha256": "d6920ed31c92db74875fec7879498591c0442e1f8e8e12a97c92c10aec7af267",
       "contributors": [
         "danielbayley",
         "jguddas",
@@ -31376,9 +32396,15 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
+        "external display",
+        "screen sharing",
+        "status",
+        "notification",
+        "indicator",
         "running",
         "active",
         "virtual machine",
@@ -31396,7 +32422,7 @@
       "upstream_svg_path": "icons/monitor-down.svg",
       "upstream_json_path": "icons/monitor-down.json",
       "svg_sha256": "f89ba6c51e55f7d57edd1c6ce9df138efff7a586452b0c19bf29d9c9101ddfa0",
-      "json_sha256": "b79d37fae11d6fdd927514584fbc4eb78e26d7f28ad8f31116050683accae8d3",
+      "json_sha256": "a573573b6d96fdf43ef99de6e085727cafaabc4544f8bcb086a6bf26a934f587",
       "contributors": [
         "danielbayley",
         "karsa-mistmere",
@@ -31406,10 +32432,15 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
-        "download"
+        "external display",
+        "screen sharing",
+        "download",
+        "remote",
+        "cast"
       ],
       "categories": [
         "connectivity",
@@ -31423,7 +32454,7 @@
       "upstream_svg_path": "icons/monitor-off.svg",
       "upstream_json_path": "icons/monitor-off.json",
       "svg_sha256": "bcd645a1bbdf4a4d25296237236d7bacf9a18360595254622a6c7b5b693e2207",
-      "json_sha256": "2f725e85cb7752d31f85f760c3a1ea6d014f96986a1e78c8adf00146cf729ba1",
+      "json_sha256": "172df303012d5405e0c1e9a889d79ba11d3e2a83ace6618c46823e05ec0e8f30",
       "contributors": [
         "yukosgiti",
         "ericfennis",
@@ -31432,7 +32463,17 @@
       "aliases": [],
       "deprecated": false,
       "tags": [
-        "share"
+        "tv",
+        "computer",
+        "screen",
+        "display",
+        "desktop",
+        "external display",
+        "screen sharing",
+        "offline",
+        "disabled",
+        "disconnected",
+        "power"
       ],
       "categories": [
         "connectivity",
@@ -31446,7 +32487,7 @@
       "upstream_svg_path": "icons/monitor-pause.svg",
       "upstream_json_path": "icons/monitor-pause.json",
       "svg_sha256": "87d6630a6b721d622725f601e77e774afa427ae13458ccece630574b6ef33692",
-      "json_sha256": "967f5ec587e388e60ce0ebca7fbc25e15e2a1edd3bcd8690f8d7781ffd234664",
+      "json_sha256": "82460a3b32f774943364e54790c32891941106c34473187b261f14f1d8a2868b",
       "contributors": [
         "danielbayley",
         "jguddas",
@@ -31456,12 +32497,16 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
+        "external display",
+        "screen sharing",
         "video",
         "movie",
         "film",
+        "pause",
         "suspend",
         "hibernate",
         "boot",
@@ -31481,7 +32526,7 @@
       "upstream_svg_path": "icons/monitor-play.svg",
       "upstream_json_path": "icons/monitor-play.json",
       "svg_sha256": "7442afcff62d2986f572f5bde40a68f47d0500984b72481362f038eb5a00f943",
-      "json_sha256": "9abbb6d0d3689d3d6c0c698a0e5ec62f05f063600e8e7bae3f3173fc76fe5ff5",
+      "json_sha256": "f26d83d6cfd6e7f9129b418d7c908f6a5fdd1e23411fd2b53363dd11a7a3be64",
       "contributors": [
         "danielbayley",
         "jguddas",
@@ -31491,12 +32536,16 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
+        "external display",
+        "screen sharing",
         "video",
         "movie",
         "film",
+        "play",
         "running",
         "start",
         "boot",
@@ -31516,7 +32565,7 @@
       "upstream_svg_path": "icons/monitor-smartphone.svg",
       "upstream_json_path": "icons/monitor-smartphone.json",
       "svg_sha256": "e623faa6b589762fb67ca6dc04dd0129796762c12eddf1160bf11d1482670931",
-      "json_sha256": "6ea5ebb4d31e7f421cfd0041b5ec270e22b414d5b50cbfa68bcfe98842595a1d",
+      "json_sha256": "fd449149f1397c62ab84fccd57af4490665b44af6a92f168d1b4bacdff8ceb8b",
       "contributors": [
         "badraxas",
         "karsa-mistmere",
@@ -31526,15 +32575,19 @@
       "aliases": [],
       "deprecated": false,
       "tags": [
-        "smartphone",
         "phone",
         "cellphone",
         "device",
         "mobile",
         "desktop",
-        "monitor",
+        "screen",
+        "display",
+        "external display",
+        "screen sharing",
         "responsive",
-        "screens"
+        "screens",
+        "sync",
+        "cast"
       ],
       "categories": [
         "connectivity",
@@ -31548,7 +32601,7 @@
       "upstream_svg_path": "icons/monitor-speaker.svg",
       "upstream_json_path": "icons/monitor-speaker.json",
       "svg_sha256": "57f7d0e7feb57c70c2a64ff71d9cb2b3efb40ddf89b62a7aba9bd8ec617383b3",
-      "json_sha256": "ba316b1fa057c7be644788badf71fb6195e351b5fa33226697f54fb946e78588",
+      "json_sha256": "a6653851d51eff51b476d4d0a8128e83632d9c5d136847c25e4c9441fb282d46",
       "contributors": [
         "mittalyashu",
         "ericfennis"
@@ -31556,9 +32609,18 @@
       "aliases": [],
       "deprecated": false,
       "tags": [
-        "devices",
+        "tv",
+        "computer",
+        "screen",
+        "display",
+        "desktop",
+        "external display",
         "connect",
-        "cast"
+        "cast",
+        "audio",
+        "sound",
+        "volume",
+        "presentation"
       ],
       "categories": [
         "connectivity",
@@ -31572,7 +32634,7 @@
       "upstream_svg_path": "icons/monitor-stop.svg",
       "upstream_json_path": "icons/monitor-stop.json",
       "svg_sha256": "90fad842a9e33155e63c8e4dbb6d6e23d783ccd1ceb7f4bf649c67522f73ae61",
-      "json_sha256": "d0ca805ecec0a1cc003317a5ec52df7ceecd8679df5965a677bca9139f311040",
+      "json_sha256": "8aa74ce67a6385601faecf3c2c783d7982c8f887010588a83505b84eefe36c5e",
       "contributors": [
         "danielbayley",
         "jguddas",
@@ -31582,9 +32644,12 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
+        "external display",
+        "screen sharing",
         "video",
         "movie",
         "film",
@@ -31606,7 +32671,7 @@
       "upstream_svg_path": "icons/monitor-up.svg",
       "upstream_json_path": "icons/monitor-up.json",
       "svg_sha256": "6d72719398041d19f6980d34162715ca6e22d745b31f5458680f987ff3d32a5a",
-      "json_sha256": "e6334fadd5d55db6dc89b7c486713c6c38b0d0a700d3031d223e36e56e7782e2",
+      "json_sha256": "4e1485acb55bb000ad6f98540184eeb1b54c6c14b8a6c8f71a0b07bef64385d4",
       "contributors": [
         "danielbayley",
         "karsa-mistmere",
@@ -31616,12 +32681,16 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
+        "desktop",
+        "external display",
         "upload",
         "connect",
         "remote",
-        "screen share"
+        "screen sharing",
+        "cast"
       ],
       "categories": [
         "connectivity",
@@ -31635,7 +32704,7 @@
       "upstream_svg_path": "icons/monitor-x.svg",
       "upstream_json_path": "icons/monitor-x.json",
       "svg_sha256": "9f1a50af23976d76745641f8c14e1aad2d26a77e47296fd43a49c2a1447b9f63",
-      "json_sha256": "6ac98acd86e668f720579f8b897517eb12e7e4c4e9424cb7c2d593d4470dab47",
+      "json_sha256": "602931da0d0068fa5a636ce6d6552525ae4e0f7f783995b173468624399d833b",
       "contributors": [
         "danielbayley",
         "jguddas",
@@ -31645,12 +32714,18 @@
       "deprecated": false,
       "tags": [
         "tv",
+        "computer",
         "screen",
         "display",
         "desktop",
+        "external display",
+        "screen sharing",
         "virtual machine",
         "vm",
         "close",
+        "error",
+        "failed",
+        "disconnected",
         "stop",
         "suspend",
         "remove",
@@ -33691,11 +34766,12 @@
       "asset_path": "icons/lucide/panda.svg",
       "upstream_svg_path": "icons/panda.svg",
       "upstream_json_path": "icons/panda.json",
-      "svg_sha256": "68927778c4b4e69b66b5979e9b5dd534c3841e7353e44ad01e94b925738a548f",
-      "json_sha256": "ceaf741e3c3805b6838e91af8459c4c2d7811305f54bfdc279d229e940b8e089",
+      "svg_sha256": "3690d312982a47ae362ca0406c5dba6d2512b5ca1fb410f6c134777c4850d9f3",
+      "json_sha256": "f58a2e55298b72b927f12c5018833eb8f78582aabaf6e90fdfde3dd693d90ff3",
       "contributors": [
         "chessurisme",
-        "karsa-mistmere"
+        "karsa-mistmere",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
@@ -35326,7 +36402,7 @@
       "asset_path": "icons/lucide/piano.svg",
       "upstream_svg_path": "icons/piano.svg",
       "upstream_json_path": "icons/piano.json",
-      "svg_sha256": "130c64347e0977bdfc4f832fea5f60e22108ec29988b2ed7431e38a7d25c498e",
+      "svg_sha256": "acdb781a29f075c0afb4abf48b6ca46420e22684ff5c98e3e05838a6d586c2d4",
       "json_sha256": "a9ec3a665a35b14ce7fab468f0e058601c4aead59e0365ffeabc2d96f57e35db",
       "contributors": [
         "danielbayley",
@@ -35852,6 +36928,141 @@
       ],
       "categories": [
         "multimedia"
+      ]
+    },
+    {
+      "canonical_name": "playing-card",
+      "rust_name": "LucideIcon::PlayingCard",
+      "asset_path": "icons/lucide/playing-card.svg",
+      "upstream_svg_path": "icons/playing-card.svg",
+      "upstream_json_path": "icons/playing-card.json",
+      "svg_sha256": "93f499cafc17185338e2221f256de4b101142ede37ffa47416fa90d41f6dee16",
+      "json_sha256": "dedc56957e45d53909acbd7c0c7dabbcb8bd18d3ee435c4002e28edaa11dd362",
+      "contributors": [
+        "Barakudum",
+        "jamiemlaw",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "deck",
+        "draw",
+        "deal",
+        "shuffle",
+        "chance",
+        "random",
+        "selection",
+        "tabletop",
+        "flashcard",
+        "study",
+        "learning",
+        "prompt",
+        "icebreaker",
+        "conversation",
+        "collectible",
+        "trading",
+        "poker",
+        "casino",
+        "game",
+        "gambling",
+        "suit"
+      ],
+      "categories": [
+        "gaming",
+        "development"
+      ]
+    },
+    {
+      "canonical_name": "playing-cards",
+      "rust_name": "LucideIcon::PlayingCards",
+      "asset_path": "icons/lucide/playing-cards.svg",
+      "upstream_svg_path": "icons/playing-cards.svg",
+      "upstream_json_path": "icons/playing-cards.json",
+      "svg_sha256": "565a19ffc433b6474fd519092154a1c4587b043f3cd83810f07045bed2a8107f",
+      "json_sha256": "dcf3eda7aab4e6f60936b935afe968c5afd6e1d107266b49e24b0e989d400bd8",
+      "contributors": [
+        "Barakudum",
+        "jamiemlaw",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "deck",
+        "stack",
+        "shuffle",
+        "deal",
+        "draw",
+        "hand",
+        "tabletop",
+        "planning poker",
+        "scrum",
+        "agile",
+        "estimation",
+        "estimate",
+        "flashcards",
+        "study",
+        "learning",
+        "collectible",
+        "collection",
+        "trading",
+        "poker",
+        "casino",
+        "game",
+        "gambling",
+        "suit"
+      ],
+      "categories": [
+        "gaming",
+        "development"
+      ]
+    },
+    {
+      "canonical_name": "playing-cards-fan",
+      "rust_name": "LucideIcon::PlayingCardsFan",
+      "asset_path": "icons/lucide/playing-cards-fan.svg",
+      "upstream_svg_path": "icons/playing-cards-fan.svg",
+      "upstream_json_path": "icons/playing-cards-fan.json",
+      "svg_sha256": "bf1fb23f4db1bf7d983b8d11071bb35c3b6fcebb3ee8ffca1f75bfef26c07074",
+      "json_sha256": "6f971a937200417845e98d74f2fa02f40bcfdae64b316e598afc41dafbe5d4f8",
+      "contributors": [
+        "Barakudum",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "deck",
+        "fan",
+        "spread",
+        "hand",
+        "deal",
+        "dealt",
+        "draw",
+        "shuffle",
+        "tabletop",
+        "planning poker",
+        "scrum",
+        "agile",
+        "estimation",
+        "estimate",
+        "prompt",
+        "icebreaker",
+        "conversation",
+        "collectible",
+        "collection",
+        "trading",
+        "poker",
+        "casino",
+        "game",
+        "gambling",
+        "suit"
+      ],
+      "categories": [
+        "gaming",
+        "development",
+        "social"
       ]
     },
     {
@@ -37091,13 +38302,13 @@
       "upstream_svg_path": "icons/receipt-swiss-franc.svg",
       "upstream_json_path": "icons/receipt-swiss-franc.json",
       "svg_sha256": "a2a6ce5291485a527ec1c31a52468099f197269aae5390e345d2baea153035b2",
-      "json_sha256": "a576f38e6c193e31244fb9052728fb029b23b24c44e2675a72e33d9a10020efd",
+      "json_sha256": "9063ad50932559a24f6104c2674b1f02f6e74f7d860682c6822d18485db7592b",
       "contributors": [
         "danielbayley",
         "karsa-mistmere"
       ],
       "aliases": [],
-      "deprecated": false,
+      "deprecated": true,
       "tags": [
         "bill",
         "voucher",
@@ -37921,6 +39132,76 @@
       ],
       "categories": [
         "transportation"
+      ]
+    },
+    {
+      "canonical_name": "robot-arm",
+      "rust_name": "LucideIcon::RobotArm",
+      "asset_path": "icons/lucide/robot-arm.svg",
+      "upstream_svg_path": "icons/robot-arm.svg",
+      "upstream_json_path": "icons/robot-arm.json",
+      "svg_sha256": "6e39b6dd23fc10691263c55fbdf176a8abe5c2d79680d3dec2556f7af0a655ed",
+      "json_sha256": "d09843386eb89c6143304ba9e88c963b6f0838012eba6065769b07ad21ba652a",
+      "contributors": [
+        "zoharma",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "mechanical",
+        "automation",
+        "factory",
+        "manufacture",
+        "technology",
+        "cyborg",
+        "industrial",
+        "hardware",
+        "machinery"
+      ],
+      "categories": [
+        "science",
+        "tools"
+      ]
+    },
+    {
+      "canonical_name": "robot-vacuum",
+      "rust_name": "LucideIcon::RobotVacuum",
+      "asset_path": "icons/lucide/robot-vacuum.svg",
+      "upstream_svg_path": "icons/robot-vacuum.svg",
+      "upstream_json_path": "icons/robot-vacuum.json",
+      "svg_sha256": "5fe735c97a26de2810fdbaeac01d80ca6f5b5c39de5bd146602ea37468a3f457",
+      "json_sha256": "f9cda6c1a16c4f0ad6c40af7ec44c06423cbb96f87aa515bc0829e5eb736b8da",
+      "contributors": [
+        "benhaube",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "appliance",
+        "cleaning",
+        "household",
+        "housekeeping",
+        "tool",
+        "maintenance",
+        "smarthome",
+        "sweeping",
+        "hygiene",
+        "chores",
+        "automation",
+        "smart home",
+        "device",
+        "floor",
+        "dust",
+        "debris",
+        "navigation",
+        "sensor"
+      ],
+      "categories": [
+        "devices",
+        "home",
+        "tools"
       ]
     },
     {
@@ -41469,7 +42750,7 @@
       "asset_path": "icons/lucide/ship.svg",
       "upstream_svg_path": "icons/ship.svg",
       "upstream_json_path": "icons/ship.json",
-      "svg_sha256": "ce2897147578f9dd4515d644158f0bbaa91dbcd72d893f29a5e71acb5c07e22e",
+      "svg_sha256": "bb958a2f8c37dbb3412b07493f2739bb32349713222108bd9a3468c8893a0eb5",
       "json_sha256": "76fa58dbd0fc4483ac05590bc994d37a41bf366d89a984ba9de4ca6a01dcb9c5",
       "contributors": [
         "karsa-mistmere",
@@ -41491,6 +42772,50 @@
         "navy",
         "trip",
         "releases"
+      ],
+      "categories": [
+        "transportation",
+        "navigation",
+        "travel"
+      ]
+    },
+    {
+      "canonical_name": "ship-cargo",
+      "rust_name": "LucideIcon::ShipCargo",
+      "asset_path": "icons/lucide/ship-cargo.svg",
+      "upstream_svg_path": "icons/ship-cargo.svg",
+      "upstream_json_path": "icons/ship-cargo.json",
+      "svg_sha256": "663ae26d44512e13fb9eaca740e7541e3301b0842ba137aced3edec7b986fc13",
+      "json_sha256": "328ce80eab6843983bf300954b19faba24281614125161dd96f6670fee1dbf06",
+      "contributors": [
+        "l0uisgrange",
+        "karsa-mistmere",
+        "jguddas"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "boat",
+        "knots",
+        "nautical mile",
+        "maritime",
+        "sailing",
+        "cruise",
+        "ocean liner",
+        "tanker",
+        "vessel",
+        "navy",
+        "cargo",
+        "container",
+        "freighter",
+        "freight",
+        "shipping",
+        "port",
+        "harbor",
+        "dock",
+        "logistics",
+        "import",
+        "export"
       ],
       "categories": [
         "transportation",
@@ -41616,13 +42941,14 @@
       "asset_path": "icons/lucide/shopping-cart.svg",
       "upstream_svg_path": "icons/shopping-cart.svg",
       "upstream_json_path": "icons/shopping-cart.json",
-      "svg_sha256": "f0e802256fcfac4ed69780fadf4c910f938ea6274ff61a2b4d525f6365e6a5c5",
-      "json_sha256": "86a053b4ea2a70726bc21768f7d66d986ef9a39fad6df1a3671be6b1d45edc57",
+      "svg_sha256": "7cdc07053044af9e5fd24fff5e089ce97b2a39ea978933a160c4bbfebf8a167c",
+      "json_sha256": "12fdb894610e43a2dc67c490253931882b43be23fe3ce302fe47c27aff9dafb4",
       "contributors": [
         "colebemis",
         "csandman",
         "ericfennis",
-        "karsa-mistmere"
+        "karsa-mistmere",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
@@ -41636,6 +42962,82 @@
         "products",
         "items",
         "ingredients"
+      ],
+      "categories": [
+        "shopping"
+      ]
+    },
+    {
+      "canonical_name": "shopping-cart-minus",
+      "rust_name": "LucideIcon::ShoppingCartMinus",
+      "asset_path": "icons/lucide/shopping-cart-minus.svg",
+      "upstream_svg_path": "icons/shopping-cart-minus.svg",
+      "upstream_json_path": "icons/shopping-cart-minus.json",
+      "svg_sha256": "a372e3a136db25c1494b7a80af09cba2a6d0f702fe844451aa9baedf33f01923",
+      "json_sha256": "323be254e1371b5c610459c22b61f0414ee23d4d8ff3dceba85627771f7e6459",
+      "contributors": [
+        "ajay199210",
+        "jguddas",
+        "ericfennis",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "trolley",
+        "cart",
+        "basket",
+        "e-commerce",
+        "ecommerce",
+        "store",
+        "purchase",
+        "products",
+        "items",
+        "checkout",
+        "order",
+        "retail",
+        "remove",
+        "decrease",
+        "quantity",
+        "subtract"
+      ],
+      "categories": [
+        "shopping"
+      ]
+    },
+    {
+      "canonical_name": "shopping-cart-plus",
+      "rust_name": "LucideIcon::ShoppingCartPlus",
+      "asset_path": "icons/lucide/shopping-cart-plus.svg",
+      "upstream_svg_path": "icons/shopping-cart-plus.svg",
+      "upstream_json_path": "icons/shopping-cart-plus.json",
+      "svg_sha256": "f0d53586a981e2126e9402f2173213922f22d44ed42d5b4e770a2124a4bbd9e1",
+      "json_sha256": "803242e6ba374810b2d47329db7cda058eb07cb3f367471d258a7130ac790230",
+      "contributors": [
+        "ajay199210",
+        "jguddas",
+        "ericfennis",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "trolley",
+        "cart",
+        "basket",
+        "e-commerce",
+        "ecommerce",
+        "store",
+        "purchase",
+        "products",
+        "items",
+        "checkout",
+        "order",
+        "retail",
+        "add",
+        "increase",
+        "quantity",
+        "buy"
       ],
       "categories": [
         "shopping"
@@ -41743,8 +43145,8 @@
       "asset_path": "icons/lucide/shrimp.svg",
       "upstream_svg_path": "icons/shrimp.svg",
       "upstream_json_path": "icons/shrimp.json",
-      "svg_sha256": "1aef82d40d2f114c7307eaef1ad6193ea93a9e351cd62201baab2b17d77ed1c0",
-      "json_sha256": "65806d2940331fcf9ebaa4d844b0afb2b3a82c46b2b19f85f4edd95a0a2a8f61",
+      "svg_sha256": "e23b6931ae523e06546e065fac9d3c6f25153e48fc2c148600244a9f9be8efc6",
+      "json_sha256": "807f0d3919fa66a04289c8aef5522f3d0a481aaa60ac5e9c4b8340cd36742d6f",
       "contributors": [
         "karsa-mistmere"
       ],
@@ -41760,10 +43162,57 @@
         "arthropod",
         "littleneck",
         "quahog",
-        "cherrystone"
+        "marine",
+        "creature",
+        "fisherman",
+        "ocean",
+        "fresh",
+        "cuisine",
+        "marine-life"
       ],
       "categories": [
-        "animals"
+        "animals",
+        "food-beverage"
+      ]
+    },
+    {
+      "canonical_name": "shrimp-off",
+      "rust_name": "LucideIcon::ShrimpOff",
+      "asset_path": "icons/lucide/shrimp-off.svg",
+      "upstream_svg_path": "icons/shrimp-off.svg",
+      "upstream_json_path": "icons/shrimp-off.json",
+      "svg_sha256": "fb614a8a4df07a3211c61a5a4d53ad2a8a07fe4c4fbc00dfbbcdc877c5f7141e",
+      "json_sha256": "38adcb524361d266411ddd7a091133d934a1e2eeb70b358d6c86d20ffe66e822",
+      "contributors": [
+        "karsa-mistmere",
+        "jguddas"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "marine",
+        "creature",
+        "fisherman",
+        "ocean",
+        "fresh",
+        "cuisine",
+        "marine-life",
+        "seafood",
+        "shellfish",
+        "crustacean",
+        "prawn",
+        "scallop",
+        "whelk",
+        "arthropod",
+        "littleneck",
+        "quahog",
+        "allergy",
+        "intolerance",
+        "diet"
+      ],
+      "categories": [
+        "animals",
+        "food-beverage"
       ]
     },
     {
@@ -42319,7 +43768,7 @@
       "upstream_svg_path": "icons/smartphone.svg",
       "upstream_json_path": "icons/smartphone.json",
       "svg_sha256": "f9fdb700b50feb5fc6436f53eb9813e9eb56a9071ac4cdcba69c7f7c1c13877d",
-      "json_sha256": "6302aecc8bf144396f3e77c37ab8b8643c01a39c54a4cf7eeae313f469c7e881",
+      "json_sha256": "3776546947e3f1713b1f12c194de8efdc12a7d46d716a95d8ab6a3241e92e03f",
       "contributors": [
         "colebemis",
         "mittalyashu",
@@ -42331,7 +43780,12 @@
         "phone",
         "cellphone",
         "device",
-        "screen"
+        "mobile",
+        "screen",
+        "display",
+        "touchscreen",
+        "portable",
+        "responsive"
       ],
       "categories": [
         "connectivity",
@@ -42739,7 +44193,7 @@
       "asset_path": "icons/lucide/spell-check.svg",
       "upstream_svg_path": "icons/spell-check.svg",
       "upstream_json_path": "icons/spell-check.json",
-      "svg_sha256": "3d787caa99fc2edb96f342283b6ad133e2bbcd93033456964dfc9feec6998c81",
+      "svg_sha256": "aa3afc695f40d0a27f5b1757ca6385a00e54cc761a07b9a77f8c4903f301dcbf",
       "json_sha256": "39d89dc5f0dfbb5c251c005d81e2073ce39405cd1b94922aea034c121ac415b3",
       "contributors": [
         "danielbayley",
@@ -43774,7 +45228,7 @@
       "asset_path": "icons/lucide/square-check.svg",
       "upstream_svg_path": "icons/square-check.svg",
       "upstream_json_path": "icons/square-check.json",
-      "svg_sha256": "929cdff3bf27aeaff13260d4acf9d1afe62997e0ca88222032fb568dfc93005c",
+      "svg_sha256": "7e7683faad24baa43520945a95f6d44028fb862791911b13505c422ccba6e339",
       "json_sha256": "f33d711911900f4a7f6cca2df1deaf42bd0bbf87a4600797b619877cd04c53c5",
       "contributors": [
         "danielbayley"
@@ -44383,6 +45837,38 @@
       ],
       "categories": [
         "math"
+      ]
+    },
+    {
+      "canonical_name": "square-exclamation-point",
+      "rust_name": "LucideIcon::SquareExclamationPoint",
+      "asset_path": "icons/lucide/square-exclamation-point.svg",
+      "upstream_svg_path": "icons/square-exclamation-point.svg",
+      "upstream_json_path": "icons/square-exclamation-point.json",
+      "svg_sha256": "9b4cbe72a25c2066a817bbf59e0c85c6cb2f25a746a50ae665082af83766b9ff",
+      "json_sha256": "44e47e4d7dba0158001543eae4b450fc21cab3e45b2281e52feac2118703370d",
+      "contributors": [
+        "viralcodex",
+        "colebemis",
+        "ericfennis"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "warning",
+        "alert",
+        "danger",
+        "exclamation mark",
+        "rectangle",
+        "square",
+        "notification",
+        "attention",
+        "important",
+        "caution"
+      ],
+      "categories": [
+        "notifications",
+        "shapes"
       ]
     },
     {
@@ -45235,11 +46721,12 @@
       "asset_path": "icons/lucide/square-split-horizontal.svg",
       "upstream_svg_path": "icons/square-split-horizontal.svg",
       "upstream_json_path": "icons/square-split-horizontal.json",
-      "svg_sha256": "e152ad611aaf3fcfde34ba3f11a232da37a8a15851d1f6ec26cae0cb63078050",
-      "json_sha256": "d0187d7ee3d8ede5c9cde050c24c3e093dc169ba9e128086007c7d4323698cdb",
+      "svg_sha256": "a4e9c0e37c2438b6ee094ab120abc5b6df79fad649a560a6115a1bf7209e7073",
+      "json_sha256": "5d7ed5c36e3153c57e263a69859be541620e8962d65029dd7ad9e0e1495115c4",
       "contributors": [
         "Patchethium",
-        "ericfennis"
+        "ericfennis",
+        "jguddas"
       ],
       "aliases": [
         {
@@ -45263,11 +46750,12 @@
       "asset_path": "icons/lucide/square-split-vertical.svg",
       "upstream_svg_path": "icons/square-split-vertical.svg",
       "upstream_json_path": "icons/square-split-vertical.json",
-      "svg_sha256": "5d865ea60b6dd5d5fbf36c6975aa250a24316d08ec63c8ff997d3c631bd18ad2",
-      "json_sha256": "a53efd7b2e1ebc43ccdddd211ac398d851befb9363a9813adfdae484b6831630",
+      "svg_sha256": "ffb9b4bc77f935b35c448dde4862bfdc035d4a15ccc5068f0bd948ea609da707",
+      "json_sha256": "e51b2052aa2d5f059a9a9f25ed6f7c52d0104a53496f0a1017e236a36412b470",
       "contributors": [
         "Patchethium",
-        "ericfennis"
+        "ericfennis",
+        "jguddas"
       ],
       "aliases": [
         {
@@ -46845,13 +48333,13 @@
       "upstream_svg_path": "icons/swiss-franc.svg",
       "upstream_json_path": "icons/swiss-franc.json",
       "svg_sha256": "761df95a5c49e6d6fac8a738e05c005f6c93a0be77deb8ce5ec6c4ddc635f48e",
-      "json_sha256": "21b2274433eda4c051852dc8ec9945614ff45a1901d12f9fa51dbf9762de9be2",
+      "json_sha256": "25a4b8d6f8b5b0e4ac2160ad11c6d9e78ef6045a78b5f49bbcd5a64357af3e05",
       "contributors": [
         "ericfennis",
         "mittalyashu"
       ],
       "aliases": [],
-      "deprecated": false,
+      "deprecated": true,
       "tags": [
         "currency",
         "money",
@@ -46893,8 +48381,8 @@
       "asset_path": "icons/lucide/sword.svg",
       "upstream_svg_path": "icons/sword.svg",
       "upstream_json_path": "icons/sword.json",
-      "svg_sha256": "85ae47cee7aca9cbd9522554faadb2834ed5bf9dd7fb6e6e0840c46b7a16f4e7",
-      "json_sha256": "d4f42fcf9b731d3759e36e0a6133b4ffd42cdc81d2737ba2ebf2f2f475dec79b",
+      "svg_sha256": "0649799fe0d04e803d0fc1b861f4adec694f8afbcc0946b8ec87bb18447efa3c",
+      "json_sha256": "033fc950253da1da033813a68cfd0f9ec0b34e6427a568db6c992713a108774e",
       "contributors": [
         "karsa-mistmere",
         "jguddas",
@@ -46905,9 +48393,19 @@
       "tags": [
         "battle",
         "challenge",
+        "combat",
+        "duel",
+        "fantasy",
         "game",
+        "knight",
+        "melee",
+        "medieval",
+        "offense",
+        "rpg",
+        "sharp",
+        "weapon",
         "war",
-        "weapon"
+        "warrior"
       ],
       "categories": [
         "gaming",
@@ -46920,20 +48418,34 @@
       "asset_path": "icons/lucide/swords.svg",
       "upstream_svg_path": "icons/swords.svg",
       "upstream_json_path": "icons/swords.json",
-      "svg_sha256": "6aad3bab627f5badf888461004aa9b5d2cdcde127a5791d21b96d729e16668d0",
-      "json_sha256": "dc3e7a0e132aec8bdf01b9caac59a9624221ff69f59c87d07c96a8c4d3f80ed0",
+      "svg_sha256": "2dcf7d618baa1fbf21064bc99eb754b8b6d589f444781975a6ea0008be4e2e82",
+      "json_sha256": "4ad3a8d805ed67512bbfd4d6247046d6816301e61b762c60da8d024ecef615e3",
       "contributors": [
         "karsa-mistmere",
-        "ericfennis"
+        "ericfennis",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
       "tags": [
         "battle",
         "challenge",
+        "combat",
+        "conflict",
+        "crossed",
+        "duel",
+        "faction",
+        "fantasy",
         "game",
+        "melee",
+        "medieval",
+        "opponent",
+        "rivalry",
+        "rpg",
+        "versus",
+        "weapon",
         "war",
-        "weapon"
+        "warrior"
       ],
       "categories": [
         "gaming",
@@ -47000,12 +48512,13 @@
       "asset_path": "icons/lucide/table-2.svg",
       "upstream_svg_path": "icons/table-2.svg",
       "upstream_json_path": "icons/table-2.json",
-      "svg_sha256": "d7590e0427ef0c993cea6d4d3892445e60d5f6c221222e288e6325dabb6b95ac",
-      "json_sha256": "20b10c6b5144c7170c57eed5bbe9d6c32c4bf6a2f231e06da601edcbab54a308",
+      "svg_sha256": "7b1808e170670d644af828bed77022fc8baba27a654e0805f3fb98e0bec62077",
+      "json_sha256": "62f50a59745a2be3a6264f617d937eaf90ce90e036631cef2235db2fe7f2ed2a",
       "contributors": [
         "abejenaru",
         "karsa-mistmere",
-        "ericfennis"
+        "ericfennis",
+        "jguddas"
       ],
       "aliases": [],
       "deprecated": false,
@@ -47185,7 +48698,7 @@
       "upstream_svg_path": "icons/tablet.svg",
       "upstream_json_path": "icons/tablet.json",
       "svg_sha256": "cf58f791bd83c5340362fc0694d3f766aa82b9abfe291ef72e15a3ac3da54125",
-      "json_sha256": "3150def922835e66f8add4fadebcf11012095ebbd9d7df7d4660693c07ba9414",
+      "json_sha256": "7e59ada81da484fe245af5605291b4e7b38603bceed821fb138a0d77bffc0aba",
       "contributors": [
         "colebemis",
         "ericfennis"
@@ -47193,7 +48706,13 @@
       "aliases": [],
       "deprecated": false,
       "tags": [
-        "device"
+        "device",
+        "mobile",
+        "screen",
+        "display",
+        "touchscreen",
+        "portable",
+        "responsive"
       ],
       "categories": [
         "devices"
@@ -47206,18 +48725,25 @@
       "upstream_svg_path": "icons/tablet-smartphone.svg",
       "upstream_json_path": "icons/tablet-smartphone.json",
       "svg_sha256": "e76e2a2e59df600551c94a51bc1175ada0131791b89b2cdecc93783cf9af4849",
-      "json_sha256": "b0b4b0865fca73159e5af781e50b2e1d4d48dd279a4b5766e4a0a559b3d23e36",
+      "json_sha256": "9d2ed37de703333d81264af58e19e8756d5f19abb3d9b2e8ec69b972a45c7bcc",
       "contributors": [
         "danielbayley"
       ],
       "aliases": [],
       "deprecated": false,
       "tags": [
+        "phone",
+        "cellphone",
+        "device",
+        "mobile",
+        "screen",
+        "display",
+        "touchscreen",
+        "portable",
         "responsive",
         "screens",
         "browser",
-        "testing",
-        "mobile"
+        "testing"
       ],
       "categories": [
         "devices",
@@ -48260,6 +49786,30 @@
       ]
     },
     {
+      "canonical_name": "tic-tac-toe",
+      "rust_name": "LucideIcon::TicTacToe",
+      "asset_path": "icons/lucide/tic-tac-toe.svg",
+      "upstream_svg_path": "icons/tic-tac-toe.svg",
+      "upstream_json_path": "icons/tic-tac-toe.json",
+      "svg_sha256": "3b52a30c78329208e4e37be54f0b2ba14cbf11d26afb75d6a827316d1b9ce3c4",
+      "json_sha256": "7f74920161ca2e69534ddb4dd2f415c8a9ac75c5847d959b4d99a469c85a72e2",
+      "contributors": [
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "game",
+        "board",
+        "grid",
+        "strategy",
+        "noughts and crosses"
+      ],
+      "categories": [
+        "gaming"
+      ]
+    },
+    {
       "canonical_name": "ticket",
       "rust_name": "LucideIcon::Ticket",
       "asset_path": "icons/lucide/ticket.svg",
@@ -49063,6 +50613,33 @@
       ]
     },
     {
+      "canonical_name": "trailer",
+      "rust_name": "LucideIcon::Trailer",
+      "asset_path": "icons/lucide/trailer.svg",
+      "upstream_svg_path": "icons/trailer.svg",
+      "upstream_json_path": "icons/trailer.json",
+      "svg_sha256": "52e3ac822c5d139a2f6f78531c275bac9a35746932c2401ca848c87dd4bec72c",
+      "json_sha256": "92eda9caa00fde5888fb2be6f0821b35a498a35beca65ad572ab1da4eb88d6e8",
+      "contributors": [
+        "MadsMadsDk",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "tow",
+        "shipping",
+        "delivery",
+        "haulage",
+        "vehicle",
+        "equipment",
+        "freight"
+      ],
+      "categories": [
+        "transportation"
+      ]
+    },
+    {
       "canonical_name": "train-front",
       "rust_name": "LucideIcon::TrainFront",
       "asset_path": "icons/lucide/train-front.svg",
@@ -49202,15 +50779,21 @@
       "asset_path": "icons/lucide/trash.svg",
       "upstream_svg_path": "icons/trash.svg",
       "upstream_json_path": "icons/trash.json",
-      "svg_sha256": "a38b5b9f55c5258ed1096b9d6bab414cce64a72a1213bf9f9b515e7b583ae3fc",
-      "json_sha256": "a540acb704782d6f9979aae65a5c4f8850e259f04fcef93b3d46301c5dc00976",
+      "svg_sha256": "27299f69ad7c6272be64b1b8e2d48cbd6dcf0ef0d4f92827a1affa945c91700e",
+      "json_sha256": "a370b7d2dbaac1a516a5221bd24a0cbe20570916c0822bf2576bbcbb21c56d5d",
       "contributors": [
         "colebemis",
         "csandman",
         "ericfennis",
         "karsa-mistmere"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "name": "trash-2",
+          "deprecated": true,
+          "deprecationReason": "alias.duplicate"
+        }
+      ],
       "deprecated": false,
       "tags": [
         "empty",
@@ -49234,26 +50817,43 @@
       ]
     },
     {
-      "canonical_name": "trash-2",
-      "rust_name": "LucideIcon::Trash2",
-      "asset_path": "icons/lucide/trash-2.svg",
-      "upstream_svg_path": "icons/trash-2.svg",
-      "upstream_json_path": "icons/trash-2.json",
-      "svg_sha256": "27299f69ad7c6272be64b1b8e2d48cbd6dcf0ef0d4f92827a1affa945c91700e",
-      "json_sha256": "85744df7c5b1a166919db4c0a3a68c29bde11798f02cbe24e0c0a568db0b39d7",
+      "canonical_name": "trash-off",
+      "rust_name": "LucideIcon::TrashOff",
+      "asset_path": "icons/lucide/trash-off.svg",
+      "upstream_svg_path": "icons/trash-off.svg",
+      "upstream_json_path": "icons/trash-off.json",
+      "svg_sha256": "618968e10a4f3a94c0c6f7f618459bc84ad641f19030c7ae5297cf2f8d2f160e",
+      "json_sha256": "ffa24e0b1956f0a57620ad38445f90286a350b499d6d5b8159dcdfeb352bc01c",
       "contributors": [
         "colebemis",
         "csandman",
         "ericfennis",
-        "karsa-mistmere"
+        "karsa-mistmere",
+        "drewcobleRH"
       ],
       "aliases": [],
       "deprecated": false,
       "tags": [
+        "empty",
+        "deletion",
+        "cleanup",
+        "junk",
+        "clear",
         "garbage",
         "delete",
         "remove",
-        "bin"
+        "bin",
+        "trash",
+        "waste",
+        "recycle",
+        "discard",
+        "rubbish",
+        "disabled",
+        "off",
+        "prevent",
+        "locked",
+        "unavailable",
+        "protected"
       ],
       "categories": [
         "files",
@@ -50444,6 +52044,43 @@
       ]
     },
     {
+      "canonical_name": "user-group",
+      "rust_name": "LucideIcon::UserGroup",
+      "asset_path": "icons/lucide/user-group.svg",
+      "upstream_svg_path": "icons/user-group.svg",
+      "upstream_json_path": "icons/user-group.json",
+      "svg_sha256": "6c06c6398aefef33ec58c97d2cb07cfd77529d24b437a2803edaae089d9d11b9",
+      "json_sha256": "87ec2b5f5d4d9ecd1f9ac621f3d891e94acfcc559b46cf6f0ccb28173786ede5",
+      "contributors": [
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "group",
+        "people",
+        "team",
+        "members",
+        "community",
+        "membership",
+        "collaboration",
+        "organization",
+        "contacts",
+        "directory",
+        "staff",
+        "family",
+        "ancestry",
+        "ancestors",
+        "lineage",
+        "parents"
+      ],
+      "categories": [
+        "account",
+        "people",
+        "social"
+      ]
+    },
+    {
       "canonical_name": "user-key",
       "rust_name": "LucideIcon::UserKey",
       "asset_path": "icons/lucide/user-key.svg",
@@ -50713,6 +52350,43 @@
       ]
     },
     {
+      "canonical_name": "user-round-group",
+      "rust_name": "LucideIcon::UserRoundGroup",
+      "asset_path": "icons/lucide/user-round-group.svg",
+      "upstream_svg_path": "icons/user-round-group.svg",
+      "upstream_json_path": "icons/user-round-group.json",
+      "svg_sha256": "a37d7c9ffb7a17e6f4cf70ca4706da164b664127405f756b8cbda3c7d6a188f4",
+      "json_sha256": "87ec2b5f5d4d9ecd1f9ac621f3d891e94acfcc559b46cf6f0ccb28173786ede5",
+      "contributors": [
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "group",
+        "people",
+        "team",
+        "members",
+        "community",
+        "membership",
+        "collaboration",
+        "organization",
+        "contacts",
+        "directory",
+        "staff",
+        "family",
+        "ancestry",
+        "ancestors",
+        "lineage",
+        "parents"
+      ],
+      "categories": [
+        "account",
+        "people",
+        "social"
+      ]
+    },
+    {
       "canonical_name": "user-round-key",
       "rust_name": "LucideIcon::UserRoundKey",
       "asset_path": "icons/lucide/user-round-key.svg",
@@ -50870,7 +52544,7 @@
       "asset_path": "icons/lucide/user-round-x.svg",
       "upstream_svg_path": "icons/user-round-x.svg",
       "upstream_json_path": "icons/user-round-x.json",
-      "svg_sha256": "ae0ef30c58cbab0846f5f6cb7dec613087ab184e7d9cce43b5f223acf7a2e8e1",
+      "svg_sha256": "2b1fb43249a7bd2e9ef9f72412fd86493b5bcace87f8eba7a40677326fd51c59",
       "json_sha256": "7f0ca7901d56885a92480a80785ce8598b4708fcec47dfc3cb610c1b467d8605",
       "contributors": [
         "karsa-mistmere"
@@ -51279,12 +52953,52 @@
       ]
     },
     {
+      "canonical_name": "vector-polygon",
+      "rust_name": "LucideIcon::VectorPolygon",
+      "asset_path": "icons/lucide/vector-polygon.svg",
+      "upstream_svg_path": "icons/vector-polygon.svg",
+      "upstream_json_path": "icons/vector-polygon.json",
+      "svg_sha256": "a96e4f83ed228a8b100b3282132149a2063c4405130bcb669c9f763cd90b8bcd",
+      "json_sha256": "e8326b4176b275fc9a0cd0611c86192fe879cced400f71413ca419d29c0d9f64",
+      "contributors": [
+        "daboudii",
+        "timmy471",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "map",
+        "vector",
+        "geometry",
+        "coordinates",
+        "shape",
+        "location",
+        "boundary",
+        "area",
+        "region",
+        "gis",
+        "geospatial",
+        "vertices",
+        "points",
+        "outline",
+        "drawing",
+        "design",
+        "math"
+      ],
+      "categories": [
+        "design",
+        "math",
+        "shapes"
+      ]
+    },
+    {
       "canonical_name": "vector-square",
       "rust_name": "LucideIcon::VectorSquare",
       "asset_path": "icons/lucide/vector-square.svg",
       "upstream_svg_path": "icons/vector-square.svg",
       "upstream_json_path": "icons/vector-square.json",
-      "svg_sha256": "aa1b9702bfc13f349ea21b2e83bb1e514e5972b6622755fcf2c0b203cefe07de",
+      "svg_sha256": "0ef64f0bdd5457789c44671aa1fec6e789b8c091404a2f13dc89dab97303001a",
       "json_sha256": "151cf3ed7041f4bc10214615c270c62cafc5228ad0094208b1abce9d97a9cbb9",
       "contributors": [
         "chessurisme",
@@ -51587,6 +53301,93 @@
       ]
     },
     {
+      "canonical_name": "virus",
+      "rust_name": "LucideIcon::Virus",
+      "asset_path": "icons/lucide/virus.svg",
+      "upstream_svg_path": "icons/virus.svg",
+      "upstream_json_path": "icons/virus.json",
+      "svg_sha256": "c5134299eaa078fb6f3c87121b05a94c18f76aab237b88ba64f3995bad7591fa",
+      "json_sha256": "e2d490ef3534d2179c4e44b87063c1fc256dfbbc41b1a75990d3822f6ca8cfa6",
+      "contributors": [
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "pathogen",
+        "infection",
+        "disease",
+        "illness",
+        "contagion",
+        "outbreak",
+        "pandemic",
+        "epidemic",
+        "covid",
+        "coronavirus",
+        "germ",
+        "microbe",
+        "microorganism",
+        "biology",
+        "medical",
+        "healthcare",
+        "malware",
+        "cybersecurity",
+        "threat"
+      ],
+      "categories": [
+        "medical",
+        "science",
+        "security"
+      ]
+    },
+    {
+      "canonical_name": "virus-off",
+      "rust_name": "LucideIcon::VirusOff",
+      "asset_path": "icons/lucide/virus-off.svg",
+      "upstream_svg_path": "icons/virus-off.svg",
+      "upstream_json_path": "icons/virus-off.json",
+      "svg_sha256": "7edb5819ea9c980ede0e59d153309251162c18586f4a5f72972d664c1ba78a20",
+      "json_sha256": "b4e5de6eb9d801eafaa5f8d03ccb91e2fd17fb365865cec56e5f531414d1a69f",
+      "contributors": [
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "pathogen",
+        "infection",
+        "disease",
+        "illness",
+        "contagion",
+        "outbreak",
+        "pandemic",
+        "epidemic",
+        "covid",
+        "coronavirus",
+        "germ",
+        "microbe",
+        "microorganism",
+        "biology",
+        "medical",
+        "healthcare",
+        "malware",
+        "cybersecurity",
+        "threat",
+        "antivirus",
+        "blocked",
+        "removed",
+        "clean",
+        "safe",
+        "prevention",
+        "quarantine"
+      ],
+      "categories": [
+        "medical",
+        "science",
+        "security"
+      ]
+    },
+    {
       "canonical_name": "voicemail",
       "rust_name": "LucideIcon::Voicemail",
       "asset_path": "icons/lucide/voicemail.svg",
@@ -51771,7 +53572,7 @@
       "asset_path": "icons/lucide/volume-x.svg",
       "upstream_svg_path": "icons/volume-x.svg",
       "upstream_json_path": "icons/volume-x.json",
-      "svg_sha256": "59b3477f34d36b7bdccde4ca162f4c93808d5c052c5aafd3e909b031c29201c5",
+      "svg_sha256": "f382e421b7aae01172989f2b749ee87e44c0c82c16970b13a9ad5a323b613be0",
       "json_sha256": "92c05a51fd9004dc8baf09f98f72411f9be8cc0cb0fe08ad1ec197b1f2d45f1e",
       "contributors": [
         "colebemis",
@@ -52496,6 +54297,49 @@
       ],
       "categories": [
         "food-beverage"
+      ]
+    },
+    {
+      "canonical_name": "whistle",
+      "rust_name": "LucideIcon::Whistle",
+      "asset_path": "icons/lucide/whistle.svg",
+      "upstream_svg_path": "icons/whistle.svg",
+      "upstream_json_path": "icons/whistle.json",
+      "svg_sha256": "7a65c904180c73fbddd13de04a24ad50a981d2af4f9d899304a84531eaa8cb8d",
+      "json_sha256": "10d87ebc7388c3da0e5a38720a3fe59f71106cf878017522c24c28ca16cc2eba",
+      "contributors": [
+        "briz123",
+        "UsamaKhan",
+        "ajokt123",
+        "timmy471",
+        "jguddas",
+        "karsa-mistmere"
+      ],
+      "aliases": [],
+      "deprecated": false,
+      "tags": [
+        "alert",
+        "signal",
+        "sound",
+        "blow",
+        "noise",
+        "coach",
+        "trainer",
+        "referee",
+        "gym",
+        "game",
+        "training",
+        "sports",
+        "traffic cops",
+        "police",
+        "lifeguard",
+        "safety",
+        "rescue",
+        "emergency"
+      ],
+      "categories": [
+        "sports",
+        "notifications"
       ]
     },
     {

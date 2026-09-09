@@ -9,11 +9,12 @@ import re
 import sys
 import subprocess
 import tarfile
+import tomllib
 import urllib.request
 
-COMMIT = "59978cecf84986af59f1f9f503bcebdc89c6d166"
-ARCHIVE_SHA256 = "d5c7d2a38f98c4169b13f71dfe40d1e149f4ca4b4873e1fbafb142997f738924"
-URL = f"https://codeload.github.com/lucide-icons/lucide/tar.gz/{COMMIT}"
+COMMIT = "ba95e4c988b1e1b39cf5544e73b25a74b76816ee"
+ARCHIVE_SHA256 = "d57793fa27a720cf487249940c8d68544c7a0d2ed2a046baad65012a902536ed"
+URL = "https://api.github.com/repos/lucide-icons/lucide/tarball/1.43.0"
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -27,9 +28,12 @@ def generate(archive):
         }
 
     names = sorted(path[6:-4] for path in files if re.fullmatch(r"icons/[a-z0-9-]+\.svg", path))
-    assert len(names) == 1776, "Incomplete pinned Lucide set"
+    assert len(names) == 1818, "Incomplete pinned Lucide set"
     assets = ROOT / "assets/lucide"
     assets.mkdir(parents=True, exist_ok=True)
+    for asset in assets.iterdir():
+        if asset.suffix in (".svg", ".json") and asset.stem not in names:
+            asset.unlink()
     variants = []
     entries = []
     aliases = {}
@@ -69,7 +73,7 @@ def generate(archive):
     code.extend(["}", "impl LucideIcon {", "    /// Every canonical icon, sorted by name.",
                  f"    pub const ALL: [Self; {len(names)}] = ["])
     code.extend(f"        Self::{variant}," for variant in variants)
-    code.extend(["    ];", "}", f"static ICONS: [(&str, &str, &[u8]); {len(names)}] = ["])
+    code.extend(["    ];", "    /// Legacy Lucide name; use `Trash`.", "    #[allow(non_upper_case_globals)]", "    pub const Trash2: Self = Self::Trash;", "}", "#[rustfmt::skip]", f"static ICONS: [(&str, &str, &[u8]); {len(names)}] = ["])
     for name in names:
         code.append(f'    ("{name}", "icons/lucide/{name}.svg", include_bytes!("../assets/lucide/{name}.svg")),')
     code.extend(["];", f"static ALIASES: [(&str, LucideIcon); {len(aliases)}] = ["])
@@ -78,17 +82,18 @@ def generate(archive):
     (ROOT / "src/generated.rs").write_text("\n".join(code))
     subprocess.run(["rustfmt", "--edition", "2024", str(ROOT / "src/generated.rs")], check=True)
     (ROOT / "LICENSE").write_bytes(files["LICENSE"])
+    package = tomllib.loads((ROOT / "Cargo.toml").read_text())
     manifest = {
-        "schema_version": 2,
-        "crate": {"name": "gpui-icons", "version": "0.2.0", "gpui_revision": "59b2ebf10351b5c0b5cd4403f01ed0460eeec06d"},
-        "generator": {"name": "scripts/generate.py", "version": "0.2.0"},
-        "upstream": {"repository": "https://github.com/lucide-icons/lucide", "release": "1.33.0", "commit": COMMIT,
+        "schema_version": 3,
+        "crate": {"name": "gpui-icons", "version": package["package"]["version"], "gpui_package": package["dependencies"]["gpui"]["package"], "gpui_version": package["dependencies"]["gpui"]["version"]},
+        "generator": {"name": "scripts/generate.py", "version": "0.3.0"},
+        "upstream": {"repository": "https://github.com/lucide-icons/lucide", "release": "1.43.0", "commit": COMMIT,
                      "archive_sha256": ARCHIVE_SHA256},
         "licenses": {"crate_code": "MIT", "lucide_assets": "ISC with Feather-derived MIT terms", "bundle": "LICENSE and LICENSES/gpui-icons-MIT"},
         "icons": entries,
     }
     (ROOT / "RELEASE-MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    print(f"Generated {len(names)} icons and {len(aliases)} aliases from Lucide 1.33.0.")
+    print(f"Generated {len(names)} icons and {len(aliases)} aliases from Lucide 1.43.0.")
 
 
 if __name__ == "__main__":
