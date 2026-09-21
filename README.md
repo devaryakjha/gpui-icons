@@ -65,8 +65,8 @@ impl<S: AssetSource> AssetSource for AppAssets<S> {
 
 ## Reproducible source
 
-GPUI is pinned to `gpui-pre = 0.3.4`, matching GPUI Kit 0.6.1. Applications can
-use `gpui-kit = "=0.6.1"` or `gpui = { package = "gpui-pre", version = "=0.3.4" }`.
+GPUI is pinned to `gpui-pre = 0.3.5`, matching GPUI Kit 0.6.4. Applications can
+use `gpui-kit = "=0.6.4"` or `gpui = { package = "gpui-pre", version = "=0.3.5" }`.
 Do not mix these types with a separate Zed Git dependency.
 
 GPUI Kit now includes its own Lucide catalog. Use its assets for applications
