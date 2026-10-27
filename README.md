@@ -7,6 +7,17 @@ application. Native and WASM use the same assets without fetching anything at ru
 This is a standalone icon library. You can use it with any GPUI application;
 gpuicn is one consumer. It is not affiliated with Lucide.
 
+## Install
+
+```toml
+[dependencies]
+gpui-icons = { git = "https://github.com/devaryakjha/gpui-icons", tag = "v0.4.1" }
+```
+
+The crate is packaged for crates.io; once published, `cargo add gpui-icons`
+replaces the Git dependency. It needs Rust 1.97 or newer and the GPUI runtime
+described in [Reproducible source](#reproducible-source).
+
 ## Use
 
 Register the asset source before rendering icons:
@@ -21,6 +32,8 @@ use gpui_icons::{LucideAssetSource, LucideIcon, lucide};
 let search = lucide(LucideIcon::Search).size(px(16.)).text_color(rgb(0x171717));
 let folder = LucideIcon::Folder.element().size(px(24.)).text_color(rgb(0x171717));
 let icon = LucideIcon::from_name("alarm-clock").unwrap();
+let parsed: LucideIcon = "trash-2".parse()?; // aliases work too
+assert_eq!(LucideIcon::AlarmClock.to_string(), "alarm-clock");
 ```
 
 Set `.text_color(...)` explicitly from your theme: GPUI does not paint an
@@ -29,7 +42,9 @@ buttons an accessible label on the button; a decorative SVG is not a control.
 
 `LucideIcon::ALL` contains the full canonical set in name order. `from_name`
 accepts canonical kebab-case names and upstream aliases, including deprecated
-names such as `align-center`. Unknown names return `None`.
+names such as `align-center`. Unknown names return `None`; `FromStr` and
+`TryFrom<&str>` return an `UnknownIcon` error instead, and `Display` writes the
+canonical name, so icon names round-trip through config files and settings.
 
 ## Combine with your app's assets
 
