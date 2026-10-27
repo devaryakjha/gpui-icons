@@ -59,6 +59,48 @@ impl LucideIcon {
     }
 }
 
+impl std::fmt::Display for LucideIcon {
+    /// Writes the canonical kebab-case name, such as `alarm-clock`.
+    fn fmt(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        formatter.write_str(self.canonical_name())
+    }
+}
+
+impl std::str::FromStr for LucideIcon {
+    type Err = UnknownIcon;
+
+    /// Parses a canonical name or an upstream alias, like [`LucideIcon::from_name`].
+    fn from_str(name: &str) -> std::result::Result<Self, Self::Err> {
+        Self::from_name(name).ok_or_else(|| UnknownIcon(name.to_owned()))
+    }
+}
+
+impl TryFrom<&str> for LucideIcon {
+    type Error = UnknownIcon;
+
+    fn try_from(name: &str) -> std::result::Result<Self, Self::Error> {
+        name.parse()
+    }
+}
+
+impl From<LucideIcon> for Svg {
+    fn from(icon: LucideIcon) -> Self {
+        icon.element()
+    }
+}
+
+/// A name that is neither a canonical Lucide icon nor an upstream alias.
+#[derive(Clone, Debug, Eq, PartialEq)]
+pub struct UnknownIcon(pub String);
+
+impl std::fmt::Display for UnknownIcon {
+    fn fmt(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(formatter, "unknown Lucide icon {:?}", self.0)
+    }
+}
+
+impl std::error::Error for UnknownIcon {}
+
 /// Creates a GPUI SVG element for an icon.
 pub fn lucide(icon: LucideIcon) -> Svg {
     icon.element()
@@ -164,6 +206,13 @@ mod tests {
         );
         assert_eq!(LucideIcon::from_name("trash-2"), Some(LucideIcon::Trash2));
         assert!(LucideIcon::from_name("not-an-icon").is_none());
+        assert_eq!(LucideIcon::AlarmClock.to_string(), "alarm-clock");
+        assert_eq!("alarm-clock".parse(), Ok(LucideIcon::AlarmClock));
+        assert_eq!(LucideIcon::try_from("trash-2"), Ok(LucideIcon::Trash2));
+        assert_eq!(
+            "not-an-icon".parse::<LucideIcon>().unwrap_err().to_string(),
+            "unknown Lucide icon \"not-an-icon\""
+        );
         assert!(
             LucideAssetSource
                 .load("icons/lucide/not-an-icon.svg")
