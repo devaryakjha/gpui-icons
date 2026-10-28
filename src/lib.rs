@@ -178,7 +178,9 @@ mod tests {
                 rendered
                     .as_bytes(0)
                     .unwrap()
-                    .chunks_exact(4)
+                    .as_chunks::<4>()
+                    .0
+                    .iter()
                     .any(|pixel| pixel[3] != 0),
                 "{} renders blank",
                 icon.canonical_name()
