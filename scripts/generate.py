@@ -9,18 +9,38 @@ import re
 import sys
 import subprocess
 import tarfile
+import tempfile
 import tomllib
-import urllib.request
 
-COMMIT = "ba95e4c988b1e1b39cf5544e73b25a74b76816ee"
-ARCHIVE_SHA256 = "d57793fa27a720cf487249940c8d68544c7a0d2ed2a046baad65012a902536ed"
-URL = "https://api.github.com/repos/lucide-icons/lucide/tarball/1.43.0"
+RELEASE = "1.63.0"
+COMMIT = "2ca268e74888d3506b3319fb8f94aaaaf70ceca9"
+REPOSITORY = "https://github.com/lucide-icons/lucide"
+ICON_COUNT = 1924
+# Formerly canonical icons that upstream renamed; each keeps a deprecated const.
+LEGACY = ["album", "archive-restore", "book-marked", "building-2", "flip-horizontal-2",
+          "flip-vertical-2", "music", "music-2", "music-3", "music-4", "trash-2"]
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def variant_name(name):
+    variant = "".join(part.capitalize() for part in name.split("-"))
+    return "Icon" + variant if variant[0].isdigit() else variant
+
+
+def fetch():
+    """Fetches the pinned commit with git and returns it as an uncompressed tar."""
+    with tempfile.TemporaryDirectory() as checkout:
+        git = ["git", "-C", checkout]
+        subprocess.run(["git", "init", "-q", checkout], check=True)
+        subprocess.run([*git, "fetch", "-q", "--depth", "1", REPOSITORY, COMMIT], check=True)
+        head = subprocess.run([*git, "rev-parse", "FETCH_HEAD"], check=True, capture_output=True, text=True)
+        assert head.stdout.strip() == COMMIT, "Unexpected Lucide commit"
+        return subprocess.run([*git, "archive", "--format=tar", "--prefix=lucide/", COMMIT],
+                              check=True, capture_output=True).stdout
+
+
 def generate(archive):
-    assert hashlib.sha256(archive).hexdigest() == ARCHIVE_SHA256, "Unexpected Lucide archive"
-    with tarfile.open(fileobj=io.BytesIO(archive), mode="r:gz") as tar:
+    with tarfile.open(fileobj=io.BytesIO(archive), mode="r:*") as tar:
         files = {
             member.name.split("/", 1)[1]: tar.extractfile(member).read()
             for member in tar.getmembers()
@@ -28,7 +48,7 @@ def generate(archive):
         }
 
     names = sorted(path[6:-4] for path in files if re.fullmatch(r"icons/[a-z0-9-]+\.svg", path))
-    assert len(names) == 1818, "Incomplete pinned Lucide set"
+    assert len(names) == ICON_COUNT, "Incomplete pinned Lucide set"
     assets = ROOT / "assets/lucide"
     assets.mkdir(parents=True, exist_ok=True)
     for asset in assets.iterdir():
@@ -38,9 +58,7 @@ def generate(archive):
     entries = []
     aliases = {}
     for name in names:
-        variant = "".join(part.capitalize() for part in name.split("-"))
-        if variant[0].isdigit():
-            variant = "Icon" + variant
+        variant = variant_name(name)
         assert variant not in variants, f"Rust name collision: {variant}"
         variants.append(variant)
         metadata = json.loads(files[f"icons/{name}.json"])
@@ -73,7 +91,13 @@ def generate(archive):
     code.extend(["}", "impl LucideIcon {", "    /// Every canonical icon, sorted by name.",
                  f"    pub const ALL: [Self; {len(names)}] = ["])
     code.extend(f"        Self::{variant}," for variant in variants)
-    code.extend(["    ];", "    /// Legacy Lucide name; use `Trash`.", "    #[allow(non_upper_case_globals)]", "    pub const Trash2: Self = Self::Trash;", "}", "#[rustfmt::skip]", f"static ICONS: [(&str, &str, &[u8]); {len(names)}] = ["])
+    code.append("    ];")
+    for name in LEGACY:
+        assert name not in names, f"Legacy name is canonical again: {name}"
+        target = aliases[name]
+        code.extend([f"    /// Legacy Lucide name; use `{target}`.", "    #[allow(non_upper_case_globals)]",
+                     f"    pub const {variant_name(name)}: Self = Self::{target};"])
+    code.extend(["}", "#[rustfmt::skip]", f"static ICONS: [(&str, &str, &[u8]); {len(names)}] = ["])
     for name in names:
         code.append(f'    ("{name}", "icons/lucide/{name}.svg", include_bytes!("../assets/lucide/{name}.svg")),')
     code.extend(["];", f"static ALIASES: [(&str, LucideIcon); {len(aliases)}] = ["])
@@ -84,18 +108,17 @@ def generate(archive):
     (ROOT / "LICENSE").write_bytes(files["LICENSE"])
     package = tomllib.loads((ROOT / "Cargo.toml").read_text())
     manifest = {
-        "schema_version": 3,
+        "schema_version": 4,
         "crate": {"name": "gpui-icons", "version": package["package"]["version"], "gpui_package": package["dependencies"]["gpui"]["package"], "gpui_version": package["dependencies"]["gpui"]["version"]},
-        "generator": {"name": "scripts/generate.py", "version": "0.3.0"},
-        "upstream": {"repository": "https://github.com/lucide-icons/lucide", "release": "1.43.0", "commit": COMMIT,
-                     "archive_sha256": ARCHIVE_SHA256},
+        "generator": {"name": "scripts/generate.py", "version": "0.4.0"},
+        "upstream": {"repository": REPOSITORY, "release": RELEASE, "commit": COMMIT},
         "licenses": {"crate_code": "MIT", "lucide_assets": "ISC with Feather-derived MIT terms", "bundle": "LICENSE and LICENSES/gpui-icons-MIT"},
         "icons": entries,
     }
     (ROOT / "RELEASE-MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    print(f"Generated {len(names)} icons and {len(aliases)} aliases from Lucide 1.43.0.")
+    print(f"Generated {len(names)} icons and {len(aliases)} aliases from Lucide {RELEASE}.")
 
 
 if __name__ == "__main__":
-    archive = Path(sys.argv[1]).read_bytes() if len(sys.argv) > 1 else urllib.request.urlopen(URL, timeout=60).read()
+    archive = Path(sys.argv[1]).read_bytes() if len(sys.argv) > 1 else fetch()
     generate(archive)
