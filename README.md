@@ -9,14 +9,19 @@ gpuicn is one consumer. It is not affiliated with Lucide.
 
 ## Install
 
-```toml
-[dependencies]
-gpui-icons = { git = "https://github.com/devaryakjha/gpui-icons", tag = "v0.4.2" }
+```sh
+cargo add gpui-icons
 ```
 
-The crate is packaged for crates.io; once published, `cargo add gpui-icons`
-replaces the Git dependency. It needs Rust 1.97 or newer and the GPUI runtime
-described in [Reproducible source](#reproducible-source).
+Or add it to `Cargo.toml` yourself:
+
+```toml
+[dependencies]
+gpui-icons = "0.4.2"
+```
+
+It needs Rust 1.97 or newer and the GPUI runtime described in
+[Reproducible source](#reproducible-source).
 
 ## Use
 
