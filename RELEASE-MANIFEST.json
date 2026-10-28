@@ -2,7 +2,7 @@
   "schema_version": 3,
   "crate": {
     "name": "gpui-icons",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "gpui_package": "gpui-pre",
     "gpui_version": "=0.3.5"
   },

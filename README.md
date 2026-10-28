@@ -11,7 +11,7 @@ gpuicn is one consumer. It is not affiliated with Lucide.
 
 ```toml
 [dependencies]
-gpui-icons = { git = "https://github.com/devaryakjha/gpui-icons", tag = "v0.4.1" }
+gpui-icons = { git = "https://github.com/devaryakjha/gpui-icons", tag = "v0.4.2" }
 ```
 
 The crate is packaged for crates.io; once published, `cargo add gpui-icons`
