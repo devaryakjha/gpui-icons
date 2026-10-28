@@ -31,8 +31,6 @@ pub enum LucideIcon {
     AlarmClockPlus,
     /// The Lucide `alarm-smoke` icon.
     AlarmSmoke,
-    /// The Lucide `album` icon.
-    Album,
     /// The Lucide `align-center-horizontal` icon.
     AlignCenterHorizontal,
     /// The Lucide `align-center-vertical` icon.
@@ -103,12 +101,16 @@ pub enum LucideIcon {
     Apple,
     /// The Lucide `archive` icon.
     Archive,
-    /// The Lucide `archive-restore` icon.
-    ArchiveRestore,
+    /// The Lucide `archive-arrow-down` icon.
+    ArchiveArrowDown,
+    /// The Lucide `archive-arrow-up` icon.
+    ArchiveArrowUp,
     /// The Lucide `archive-x` icon.
     ArchiveX,
     /// The Lucide `armchair` icon.
     Armchair,
+    /// The Lucide `armenian-dram` icon.
+    ArmenianDram,
     /// The Lucide `arrow-big-down` icon.
     ArrowBigDown,
     /// The Lucide `arrow-big-down-dash` icon.
@@ -211,16 +213,22 @@ pub enum LucideIcon {
     AudioLinesX,
     /// The Lucide `audio-waveform` icon.
     AudioWaveform,
+    /// The Lucide `avocado` icon.
+    Avocado,
     /// The Lucide `award` icon.
     Award,
     /// The Lucide `axe` icon.
     Axe,
     /// The Lucide `axis-3d` icon.
     Axis3d,
+    /// The Lucide `azerbaijani-manat` icon.
+    AzerbaijaniManat,
     /// The Lucide `baby` icon.
     Baby,
     /// The Lucide `backpack` icon.
     Backpack,
+    /// The Lucide `bacon` icon.
+    Bacon,
     /// The Lucide `badge` icon.
     Badge,
     /// The Lucide `badge-alert` icon.
@@ -259,6 +267,8 @@ pub enum LucideIcon {
     BadgeX,
     /// The Lucide `baggage-claim` icon.
     BaggageClaim,
+    /// The Lucide `ball-wave` icon.
+    BallWave,
     /// The Lucide `balloon` icon.
     Balloon,
     /// The Lucide `ban` icon.
@@ -267,6 +277,8 @@ pub enum LucideIcon {
     Banana,
     /// The Lucide `bandage` icon.
     Bandage,
+    /// The Lucide `bangladeshi-taka` icon.
+    BangladeshiTaka,
     /// The Lucide `banknote` icon.
     Banknote,
     /// The Lucide `banknote-arrow-down` icon.
@@ -319,6 +331,8 @@ pub enum LucideIcon {
     Beer,
     /// The Lucide `beer-off` icon.
     BeerOff,
+    /// The Lucide `belarusian-ruble` icon.
+    BelarusianRuble,
     /// The Lucide `bell` icon.
     Bell,
     /// The Lucide `bell-check` icon.
@@ -393,6 +407,8 @@ pub enum LucideIcon {
     BookAlert,
     /// The Lucide `book-audio` icon.
     BookAudio,
+    /// The Lucide `book-bookmark` icon.
+    BookBookmark,
     /// The Lucide `book-check` icon.
     BookCheck,
     /// The Lucide `book-copy` icon.
@@ -411,8 +427,6 @@ pub enum LucideIcon {
     BookKey,
     /// The Lucide `book-lock` icon.
     BookLock,
-    /// The Lucide `book-marked` icon.
-    BookMarked,
     /// The Lucide `book-minus` icon.
     BookMinus,
     /// The Lucide `book-open` icon.
@@ -465,6 +479,8 @@ pub enum LucideIcon {
     Box,
     /// The Lucide `boxes` icon.
     Boxes,
+    /// The Lucide `boxes-linked` icon.
+    BoxesLinked,
     /// The Lucide `braces` icon.
     Braces,
     /// The Lucide `brackets` icon.
@@ -475,6 +491,8 @@ pub enum LucideIcon {
     BrainCircuit,
     /// The Lucide `brain-cog` icon.
     BrainCog,
+    /// The Lucide `brain-off` icon.
+    BrainOff,
     /// The Lucide `brick-wall` icon.
     BrickWall,
     /// The Lucide `brick-wall-fire` icon.
@@ -491,6 +509,8 @@ pub enum LucideIcon {
     BriefcaseConveyorBelt,
     /// The Lucide `briefcase-medical` icon.
     BriefcaseMedical,
+    /// The Lucide `briefcase-plus` icon.
+    BriefcasePlus,
     /// The Lucide `bring-to-front` icon.
     BringToFront,
     /// The Lucide `broccoli` icon.
@@ -513,8 +533,10 @@ pub enum LucideIcon {
     BugPlay,
     /// The Lucide `building` icon.
     Building,
-    /// The Lucide `building-2` icon.
-    Building2,
+    /// The Lucide `building-complex` icon.
+    BuildingComplex,
+    /// The Lucide `building-complex-plus` icon.
+    BuildingComplexPlus,
     /// The Lucide `bus` icon.
     Bus,
     /// The Lucide `bus-front` icon.
@@ -535,12 +557,20 @@ pub enum LucideIcon {
     Calendar1,
     /// The Lucide `calendar-arrow-down` icon.
     CalendarArrowDown,
+    /// The Lucide `calendar-arrow-left` icon.
+    CalendarArrowLeft,
+    /// The Lucide `calendar-arrow-right` icon.
+    CalendarArrowRight,
     /// The Lucide `calendar-arrow-up` icon.
     CalendarArrowUp,
     /// The Lucide `calendar-check` icon.
     CalendarCheck,
     /// The Lucide `calendar-check-2` icon.
     CalendarCheck2,
+    /// The Lucide `calendar-chevrons-left` icon.
+    CalendarChevronsLeft,
+    /// The Lucide `calendar-chevrons-right` icon.
+    CalendarChevronsRight,
     /// The Lucide `calendar-clock` icon.
     CalendarClock,
     /// The Lucide `calendar-cog` icon.
@@ -631,6 +661,8 @@ pub enum LucideIcon {
     Cctv,
     /// The Lucide `cctv-off` icon.
     CctvOff,
+    /// The Lucide `certificate` icon.
+    Certificate,
     /// The Lucide `chart-area` icon.
     ChartArea,
     /// The Lucide `chart-bar` icon.
@@ -673,6 +705,10 @@ pub enum LucideIcon {
     ChartNoAxesGantt,
     /// The Lucide `chart-pie` icon.
     ChartPie,
+    /// The Lucide `chart-quadrant` icon.
+    ChartQuadrant,
+    /// The Lucide `chart-radar` icon.
+    ChartRadar,
     /// The Lucide `chart-scatter` icon.
     ChartScatter,
     /// The Lucide `chart-spline` icon.
@@ -767,6 +803,14 @@ pub enum LucideIcon {
     CircleChevronRight,
     /// The Lucide `circle-chevron-up` icon.
     CircleChevronUp,
+    /// The Lucide `circle-chevrons-down` icon.
+    CircleChevronsDown,
+    /// The Lucide `circle-chevrons-left` icon.
+    CircleChevronsLeft,
+    /// The Lucide `circle-chevrons-right` icon.
+    CircleChevronsRight,
+    /// The Lucide `circle-chevrons-up` icon.
+    CircleChevronsUp,
     /// The Lucide `circle-dashed` icon.
     CircleDashed,
     /// The Lucide `circle-dashed-check` icon.
@@ -787,6 +831,8 @@ pub enum LucideIcon {
     CircleEuro,
     /// The Lucide `circle-fading-arrow-up` icon.
     CircleFadingArrowUp,
+    /// The Lucide `circle-fading-play` icon.
+    CircleFadingPlay,
     /// The Lucide `circle-fading-plus` icon.
     CircleFadingPlus,
     /// The Lucide `circle-gauge` icon.
@@ -837,6 +883,12 @@ pub enum LucideIcon {
     Citrus,
     /// The Lucide `clapperboard` icon.
     Clapperboard,
+    /// The Lucide `clef-alto` icon.
+    ClefAlto,
+    /// The Lucide `clef-bass` icon.
+    ClefBass,
+    /// The Lucide `clef-treble` icon.
+    ClefTreble,
     /// The Lucide `clipboard` icon.
     Clipboard,
     /// The Lucide `clipboard-check` icon.
@@ -1031,6 +1083,8 @@ pub enum LucideIcon {
     CornerUpRight,
     /// The Lucide `cpu` icon.
     Cpu,
+    /// The Lucide `cpu-ai` icon.
+    CpuAi,
     /// The Lucide `creative-commons` icon.
     CreativeCommons,
     /// The Lucide `credit-card` icon.
@@ -1059,6 +1113,8 @@ pub enum LucideIcon {
     Cuboid,
     /// The Lucide `cup-soda` icon.
     CupSoda,
+    /// The Lucide `cupcake` icon.
+    Cupcake,
     /// The Lucide `currency` icon.
     Currency,
     /// The Lucide `cylinder` icon.
@@ -1075,6 +1131,8 @@ pub enum LucideIcon {
     DatabaseBackup,
     /// The Lucide `database-check` icon.
     DatabaseCheck,
+    /// The Lucide `database-cog` icon.
+    DatabaseCog,
     /// The Lucide `database-minus` icon.
     DatabaseMinus,
     /// The Lucide `database-plus` icon.
@@ -1145,8 +1203,12 @@ pub enum LucideIcon {
     Donut,
     /// The Lucide `door-closed` icon.
     DoorClosed,
+    /// The Lucide `door-closed-cog` icon.
+    DoorClosedCog,
     /// The Lucide `door-closed-locked` icon.
     DoorClosedLocked,
+    /// The Lucide `door-closed-package` icon.
+    DoorClosedPackage,
     /// The Lucide `door-open` icon.
     DoorOpen,
     /// The Lucide `door-stairwell` icon.
@@ -1179,6 +1241,10 @@ pub enum LucideIcon {
     Ear,
     /// The Lucide `ear-off` icon.
     EarOff,
+    /// The Lucide `earbuds` icon.
+    Earbuds,
+    /// The Lucide `earbuds-off` icon.
+    EarbudsOff,
     /// The Lucide `earth` icon.
     Earth,
     /// The Lucide `earth-lock` icon.
@@ -1191,6 +1257,10 @@ pub enum LucideIcon {
     EggFried,
     /// The Lucide `egg-off` icon.
     EggOff,
+    /// The Lucide `eighth-note` icon.
+    EighthNote,
+    /// The Lucide `eighth-notes` icon.
+    EighthNotes,
     /// The Lucide `eject` icon.
     Eject,
     /// The Lucide `ellipse` icon.
@@ -1199,6 +1269,8 @@ pub enum LucideIcon {
     Ellipsis,
     /// The Lucide `ellipsis-vertical` icon.
     EllipsisVertical,
+    /// The Lucide `emirati-dirham` icon.
+    EmiratiDirham,
     /// The Lucide `engine` icon.
     Engine,
     /// The Lucide `equal` icon.
@@ -1249,6 +1321,8 @@ pub enum LucideIcon {
     Fan,
     /// The Lucide `fast-forward` icon.
     FastForward,
+    /// The Lucide `faucet` icon.
+    Faucet,
     /// The Lucide `feather` icon.
     Feather,
     /// The Lucide `fence` icon.
@@ -1405,10 +1479,6 @@ pub enum LucideIcon {
     FlaskConicalOff,
     /// The Lucide `flask-round` icon.
     FlaskRound,
-    /// The Lucide `flip-horizontal-2` icon.
-    FlipHorizontal2,
-    /// The Lucide `flip-vertical-2` icon.
-    FlipVertical2,
     /// The Lucide `flower` icon.
     Flower,
     /// The Lucide `flower-2` icon.
@@ -1479,6 +1549,10 @@ pub enum LucideIcon {
     FolderTree,
     /// The Lucide `folder-up` icon.
     FolderUp,
+    /// The Lucide `folder-user` icon.
+    FolderUser,
+    /// The Lucide `folder-users` icon.
+    FolderUsers,
     /// The Lucide `folder-x` icon.
     FolderX,
     /// The Lucide `folders` icon.
@@ -1583,6 +1657,8 @@ pub enum LucideIcon {
     Globe,
     /// The Lucide `globe-check` icon.
     GlobeCheck,
+    /// The Lucide `globe-code` icon.
+    GlobeCode,
     /// The Lucide `globe-lock` icon.
     GlobeLock,
     /// The Lucide `globe-off` icon.
@@ -1597,6 +1673,10 @@ pub enum LucideIcon {
     GraduationCap,
     /// The Lucide `grape` icon.
     Grape,
+    /// The Lucide `graph-hub` icon.
+    GraphHub,
+    /// The Lucide `graph-star` icon.
+    GraphStar,
     /// The Lucide `grid-2x2` icon.
     Grid2x2,
     /// The Lucide `grid-2x2-check` icon.
@@ -1615,10 +1695,16 @@ pub enum LucideIcon {
     GripHorizontal,
     /// The Lucide `grip-vertical` icon.
     GripVertical,
+    /// The Lucide `groceries` icon.
+    Groceries,
     /// The Lucide `group` icon.
     Group,
     /// The Lucide `guitar` icon.
     Guitar,
+    /// The Lucide `guitar-electric` icon.
+    GuitarElectric,
+    /// The Lucide `half-note` icon.
+    HalfNote,
     /// The Lucide `ham` icon.
     Ham,
     /// The Lucide `hamburger` icon.
@@ -1643,6 +1729,8 @@ pub enum LucideIcon {
     HandPlatter,
     /// The Lucide `handbag` icon.
     Handbag,
+    /// The Lucide `handle-bottom-right` icon.
+    HandleBottomRight,
     /// The Lucide `handshake` icon.
     Handshake,
     /// The Lucide `hard-drive` icon.
@@ -1707,18 +1795,28 @@ pub enum LucideIcon {
     Hexagon,
     /// The Lucide `highlighter` icon.
     Highlighter,
+    /// The Lucide `hiking-stick` icon.
+    HikingStick,
+    /// The Lucide `hockey-stick` icon.
+    HockeyStick,
     /// The Lucide `hop` icon.
     Hop,
     /// The Lucide `hop-off` icon.
     HopOff,
     /// The Lucide `hospital` icon.
     Hospital,
+    /// The Lucide `hot-air-balloon` icon.
+    HotAirBalloon,
     /// The Lucide `hotel` icon.
     Hotel,
     /// The Lucide `hourglass` icon.
     Hourglass,
+    /// The Lucide `hourglass-cog` icon.
+    HourglassCog,
     /// The Lucide `house` icon.
     House,
+    /// The Lucide `house-cog` icon.
+    HouseCog,
     /// The Lucide `house-heart` icon.
     HouseHeart,
     /// The Lucide `house-plug` icon.
@@ -1727,6 +1825,8 @@ pub enum LucideIcon {
     HousePlus,
     /// The Lucide `house-wifi` icon.
     HouseWifi,
+    /// The Lucide `houses` icon.
+    Houses,
     /// The Lucide `ice-cream-bowl` icon.
     IceCreamBowl,
     /// The Lucide `ice-cream-cone` icon.
@@ -1771,6 +1871,8 @@ pub enum LucideIcon {
     IterationCcw,
     /// The Lucide `iteration-cw` icon.
     IterationCw,
+    /// The Lucide `iv-bag` icon.
+    IvBag,
     /// The Lucide `japanese-yen` icon.
     JapaneseYen,
     /// The Lucide `joystick` icon.
@@ -1779,6 +1881,8 @@ pub enum LucideIcon {
     Kanban,
     /// The Lucide `kayak` icon.
     Kayak,
+    /// The Lucide `kazakh-tenge` icon.
+    KazakhTenge,
     /// The Lucide `key` icon.
     Key,
     /// The Lucide `key-round` icon.
@@ -1791,6 +1895,8 @@ pub enum LucideIcon {
     KeyboardMusic,
     /// The Lucide `keyboard-off` icon.
     KeyboardOff,
+    /// The Lucide `lambda` icon.
+    Lambda,
     /// The Lucide `lamp` icon.
     Lamp,
     /// The Lucide `lamp-ceiling` icon.
@@ -1815,6 +1921,8 @@ pub enum LucideIcon {
     LaptopMinimal,
     /// The Lucide `laptop-minimal-check` icon.
     LaptopMinimalCheck,
+    /// The Lucide `laser` icon.
+    Laser,
     /// The Lucide `lasso` icon.
     Lasso,
     /// The Lucide `lasso-select` icon.
@@ -1835,12 +1943,18 @@ pub enum LucideIcon {
     LayersMinus,
     /// The Lucide `layers-plus` icon.
     LayersPlus,
+    /// The Lucide `layout-arrow-down` icon.
+    LayoutArrowDown,
+    /// The Lucide `layout-arrow-right` icon.
+    LayoutArrowRight,
     /// The Lucide `layout-dashboard` icon.
     LayoutDashboard,
     /// The Lucide `layout-freeform` icon.
     LayoutFreeform,
     /// The Lucide `layout-grid` icon.
     LayoutGrid,
+    /// The Lucide `layout-grid-circles` icon.
+    LayoutGridCircles,
     /// The Lucide `layout-list` icon.
     LayoutList,
     /// The Lucide `layout-panel-left` icon.
@@ -1855,10 +1969,16 @@ pub enum LucideIcon {
     LeafyGreen,
     /// The Lucide `lectern` icon.
     Lectern,
+    /// The Lucide `lens` icon.
+    Lens,
     /// The Lucide `lens-concave` icon.
     LensConcave,
     /// The Lucide `lens-convex` icon.
     LensConvex,
+    /// The Lucide `letter-spacing` icon.
+    LetterSpacing,
+    /// The Lucide `letters` icon.
+    Letters,
     /// The Lucide `library` icon.
     Library,
     /// The Lucide `library-big` icon.
@@ -1873,8 +1993,16 @@ pub enum LucideIcon {
     LightbulbOff,
     /// The Lucide `lighthouse` icon.
     Lighthouse,
+    /// The Lucide `line-dot-bottom-vertical` icon.
+    LineDotBottomVertical,
+    /// The Lucide `line-dot-left-horizontal` icon.
+    LineDotLeftHorizontal,
     /// The Lucide `line-dot-right-horizontal` icon.
     LineDotRightHorizontal,
+    /// The Lucide `line-dot-top-vertical` icon.
+    LineDotTopVertical,
+    /// The Lucide `line-height` icon.
+    LineHeight,
     /// The Lucide `line-squiggle` icon.
     LineSquiggle,
     /// The Lucide `line-style` icon.
@@ -1973,6 +2101,8 @@ pub enum LucideIcon {
     MailCheck,
     /// The Lucide `mail-clock` icon.
     MailClock,
+    /// The Lucide `mail-dot` icon.
+    MailDot,
     /// The Lucide `mail-minus` icon.
     MailMinus,
     /// The Lucide `mail-open` icon.
@@ -2071,6 +2201,8 @@ pub enum LucideIcon {
     MessageCircleQuestionMark,
     /// The Lucide `message-circle-reply` icon.
     MessageCircleReply,
+    /// The Lucide `message-circle-text` icon.
+    MessageCircleText,
     /// The Lucide `message-circle-warning` icon.
     MessageCircleWarning,
     /// The Lucide `message-circle-x` icon.
@@ -2109,6 +2241,8 @@ pub enum LucideIcon {
     MessageSquareWarning,
     /// The Lucide `message-square-x` icon.
     MessageSquareX,
+    /// The Lucide `messages-circle` icon.
+    MessagesCircle,
     /// The Lucide `messages-square` icon.
     MessagesSquare,
     /// The Lucide `metronome` icon.
@@ -2163,6 +2297,8 @@ pub enum LucideIcon {
     MonitorOff,
     /// The Lucide `monitor-pause` icon.
     MonitorPause,
+    /// The Lucide `monitor-pc` icon.
+    MonitorPc,
     /// The Lucide `monitor-play` icon.
     MonitorPlay,
     /// The Lucide `monitor-smartphone` icon.
@@ -2209,6 +2345,10 @@ pub enum LucideIcon {
     MousePointerClick,
     /// The Lucide `mouse-right` icon.
     MouseRight,
+    /// The Lucide `mouth` icon.
+    Mouth,
+    /// The Lucide `mouth-off` icon.
+    MouthOff,
     /// The Lucide `move` icon.
     Move,
     /// The Lucide `move-3d` icon.
@@ -2237,14 +2377,6 @@ pub enum LucideIcon {
     MoveUpRight,
     /// The Lucide `move-vertical` icon.
     MoveVertical,
-    /// The Lucide `music` icon.
-    Music,
-    /// The Lucide `music-2` icon.
-    Music2,
-    /// The Lucide `music-3` icon.
-    Music3,
-    /// The Lucide `music-4` icon.
-    Music4,
     /// The Lucide `navigation` icon.
     Navigation,
     /// The Lucide `navigation-2` icon.
@@ -2253,6 +2385,8 @@ pub enum LucideIcon {
     Navigation2Off,
     /// The Lucide `navigation-off` icon.
     NavigationOff,
+    /// The Lucide `nepali-rupee` icon.
+    NepaliRupee,
     /// The Lucide `network` icon.
     Network,
     /// The Lucide `newspaper` icon.
@@ -2263,6 +2397,8 @@ pub enum LucideIcon {
     NonBinary,
     /// The Lucide `notebook` icon.
     Notebook,
+    /// The Lucide `notebook-dot` icon.
+    NotebookDot,
     /// The Lucide `notebook-pen` icon.
     NotebookPen,
     /// The Lucide `notebook-tabs` icon.
@@ -2373,6 +2509,8 @@ pub enum LucideIcon {
     Parasol,
     /// The Lucide `parentheses` icon.
     Parentheses,
+    /// The Lucide `park` icon.
+    Park,
     /// The Lucide `parking-meter` icon.
     ParkingMeter,
     /// The Lucide `party-popper` icon.
@@ -2405,6 +2543,8 @@ pub enum LucideIcon {
     Pentagon,
     /// The Lucide `percent` icon.
     Percent,
+    /// The Lucide `perfume-bottle` icon.
+    PerfumeBottle,
     /// The Lucide `person-standing` icon.
     PersonStanding,
     /// The Lucide `phi` icon.
@@ -2419,6 +2559,8 @@ pub enum LucideIcon {
     PhoneForwarded,
     /// The Lucide `phone-incoming` icon.
     PhoneIncoming,
+    /// The Lucide `phone-log` icon.
+    PhoneLog,
     /// The Lucide `phone-missed` icon.
     PhoneMissed,
     /// The Lucide `phone-off` icon.
@@ -2461,6 +2603,8 @@ pub enum LucideIcon {
     PlaneLanding,
     /// The Lucide `plane-takeoff` icon.
     PlaneTakeoff,
+    /// The Lucide `plant-pot` icon.
+    PlantPot,
     /// The Lucide `play` icon.
     Play,
     /// The Lucide `play-off` icon.
@@ -2501,6 +2645,8 @@ pub enum LucideIcon {
     Presentation,
     /// The Lucide `printer` icon.
     Printer,
+    /// The Lucide `printer-3d` icon.
+    Printer3d,
     /// The Lucide `printer-check` icon.
     PrinterCheck,
     /// The Lucide `printer-x` icon.
@@ -2639,6 +2785,8 @@ pub enum LucideIcon {
     RotateCcwSquare,
     /// The Lucide `rotate-cw` icon.
     RotateCw,
+    /// The Lucide `rotate-cw-clock` icon.
+    RotateCwClock,
     /// The Lucide `rotate-cw-fading-clock` icon.
     RotateCwFadingClock,
     /// The Lucide `rotate-cw-square` icon.
@@ -2657,6 +2805,8 @@ pub enum LucideIcon {
     Rows4,
     /// The Lucide `rss` icon.
     Rss,
+    /// The Lucide `rugby-ball` icon.
+    RugbyBall,
     /// The Lucide `ruler` icon.
     Ruler,
     /// The Lucide `ruler-dimension-line` icon.
@@ -2723,10 +2873,14 @@ pub enum LucideIcon {
     ScissorsLineDashed,
     /// The Lucide `scooter` icon.
     Scooter,
+    /// The Lucide `scratch-blocks` icon.
+    ScratchBlocks,
     /// The Lucide `screen-share` icon.
     ScreenShare,
     /// The Lucide `screen-share-off` icon.
     ScreenShareOff,
+    /// The Lucide `screw` icon.
+    Screw,
     /// The Lucide `scroll` icon.
     Scroll,
     /// The Lucide `scroll-text` icon.
@@ -2761,6 +2915,8 @@ pub enum LucideIcon {
     ServerCog,
     /// The Lucide `server-crash` icon.
     ServerCrash,
+    /// The Lucide `server-nas` icon.
+    ServerNas,
     /// The Lucide `server-off` icon.
     ServerOff,
     /// The Lucide `server-plus` icon.
@@ -2797,6 +2953,8 @@ pub enum LucideIcon {
     ShieldEllipsis,
     /// The Lucide `shield-half` icon.
     ShieldHalf,
+    /// The Lucide `shield-house` icon.
+    ShieldHouse,
     /// The Lucide `shield-keyhole` icon.
     ShieldKeyhole,
     /// The Lucide `shield-lock` icon.
@@ -2867,6 +3025,10 @@ pub enum LucideIcon {
     SignpostBig,
     /// The Lucide `siren` icon.
     Siren,
+    /// The Lucide `siren-off` icon.
+    SirenOff,
+    /// The Lucide `sixteenth-notes` icon.
+    SixteenthNotes,
     /// The Lucide `skip-back` icon.
     SkipBack,
     /// The Lucide `skip-forward` icon.
@@ -2887,6 +3049,8 @@ pub enum LucideIcon {
     SmartphoneCharging,
     /// The Lucide `smartphone-nfc` icon.
     SmartphoneNfc,
+    /// The Lucide `smartphone-user-round` icon.
+    SmartphoneUserRound,
     /// The Lucide `snail` icon.
     Snail,
     /// The Lucide `snowflake` icon.
@@ -2965,6 +3129,8 @@ pub enum LucideIcon {
     SquareArrowUpRight,
     /// The Lucide `square-asterisk` icon.
     SquareAsterisk,
+    /// The Lucide `square-bookmark` icon.
+    SquareBookmark,
     /// The Lucide `square-bottom-dashed-scissors` icon.
     SquareBottomDashedScissors,
     /// The Lucide `square-centerline-dashed-horizontal` icon.
@@ -2985,6 +3151,14 @@ pub enum LucideIcon {
     SquareChevronRight,
     /// The Lucide `square-chevron-up` icon.
     SquareChevronUp,
+    /// The Lucide `square-chevrons-down` icon.
+    SquareChevronsDown,
+    /// The Lucide `square-chevrons-left` icon.
+    SquareChevronsLeft,
+    /// The Lucide `square-chevrons-right` icon.
+    SquareChevronsRight,
+    /// The Lucide `square-chevrons-up` icon.
+    SquareChevronsUp,
     /// The Lucide `square-code` icon.
     SquareCode,
     /// The Lucide `square-dashed` icon.
@@ -2997,10 +3171,16 @@ pub enum LucideIcon {
     SquareDashedKanban,
     /// The Lucide `square-dashed-mouse-pointer` icon.
     SquareDashedMousePointer,
+    /// The Lucide `square-dashed-plus` icon.
+    SquareDashedPlus,
     /// The Lucide `square-dashed-text` icon.
     SquareDashedText,
     /// The Lucide `square-dashed-top-solid` icon.
     SquareDashedTopSolid,
+    /// The Lucide `square-dashed-x` icon.
+    SquareDashedX,
+    /// The Lucide `square-dashed-x-corner` icon.
+    SquareDashedXCorner,
     /// The Lucide `square-dimensions` icon.
     SquareDimensions,
     /// The Lucide `square-divide` icon.
@@ -3057,6 +3237,8 @@ pub enum LucideIcon {
     SquareSigma,
     /// The Lucide `square-slash` icon.
     SquareSlash,
+    /// The Lucide `square-sparkles` icon.
+    SquareSparkles,
     /// The Lucide `square-split-horizontal` icon.
     SquareSplitHorizontal,
     /// The Lucide `square-split-vertical` icon.
@@ -3237,6 +3419,12 @@ pub enum LucideIcon {
     TextAlignEnd,
     /// The Lucide `text-align-justify` icon.
     TextAlignJustify,
+    /// The Lucide `text-align-justify-center` icon.
+    TextAlignJustifyCenter,
+    /// The Lucide `text-align-justify-end` icon.
+    TextAlignJustifyEnd,
+    /// The Lucide `text-align-justify-start` icon.
+    TextAlignJustifyStart,
     /// The Lucide `text-align-start` icon.
     TextAlignStart,
     /// The Lucide `text-cursor` icon.
@@ -3297,10 +3485,16 @@ pub enum LucideIcon {
     ToggleRight,
     /// The Lucide `toilet` icon.
     Toilet,
+    /// The Lucide `tombstone` icon.
+    Tombstone,
     /// The Lucide `tool-case` icon.
     ToolCase,
     /// The Lucide `toolbox` icon.
     Toolbox,
+    /// The Lucide `toothbrush` icon.
+    Toothbrush,
+    /// The Lucide `toothbrush-sparkles` icon.
+    ToothbrushSparkles,
     /// The Lucide `tornado` icon.
     Tornado,
     /// The Lucide `torus` icon.
@@ -3357,12 +3551,18 @@ pub enum LucideIcon {
     TriangleDashed,
     /// The Lucide `triangle-right` icon.
     TriangleRight,
+    /// The Lucide `triangles-centerline-dashed-horizontal` icon.
+    TrianglesCenterlineDashedHorizontal,
+    /// The Lucide `triangles-centerline-dashed-vertical` icon.
+    TrianglesCenterlineDashedVertical,
     /// The Lucide `trophy` icon.
     Trophy,
     /// The Lucide `truck` icon.
     Truck,
     /// The Lucide `truck-electric` icon.
     TruckElectric,
+    /// The Lucide `tube-lotion` icon.
+    TubeLotion,
     /// The Lucide `turkish-lira` icon.
     TurkishLira,
     /// The Lucide `turntable` icon.
@@ -3449,6 +3649,10 @@ pub enum LucideIcon {
     UserRoundPlus,
     /// The Lucide `user-round-search` icon.
     UserRoundSearch,
+    /// The Lucide `user-round-shield` icon.
+    UserRoundShield,
+    /// The Lucide `user-round-star` icon.
+    UserRoundStar,
     /// The Lucide `user-round-x` icon.
     UserRoundX,
     /// The Lucide `user-search` icon.
@@ -3461,8 +3665,12 @@ pub enum LucideIcon {
     UserX,
     /// The Lucide `users` icon.
     Users,
+    /// The Lucide `users-collaboration` icon.
+    UsersCollaboration,
     /// The Lucide `users-round` icon.
     UsersRound,
+    /// The Lucide `users-round-collaboration` icon.
+    UsersRoundCollaboration,
     /// The Lucide `utensils` icon.
     Utensils,
     /// The Lucide `utensils-crossed` icon.
@@ -3575,6 +3783,8 @@ pub enum LucideIcon {
     WifiCog,
     /// The Lucide `wifi-high` icon.
     WifiHigh,
+    /// The Lucide `wifi-lock` icon.
+    WifiLock,
     /// The Lucide `wifi-low` icon.
     WifiLow,
     /// The Lucide `wifi-off` icon.
@@ -3589,6 +3799,8 @@ pub enum LucideIcon {
     Wind,
     /// The Lucide `wind-arrow-down` icon.
     WindArrowDown,
+    /// The Lucide `wind-arrow-up` icon.
+    WindArrowUp,
     /// The Lucide `wine` icon.
     Wine,
     /// The Lucide `wine-off` icon.
@@ -3642,7 +3854,7 @@ pub enum LucideIcon {
 }
 impl LucideIcon {
     /// Every canonical icon, sorted by name.
-    pub const ALL: [Self; 1818] = [
+    pub const ALL: [Self; 1924] = [
         Self::AArrowDown,
         Self::AArrowUp,
         Self::ALargeSmall,
@@ -3657,7 +3869,6 @@ impl LucideIcon {
         Self::AlarmClockOff,
         Self::AlarmClockPlus,
         Self::AlarmSmoke,
-        Self::Album,
         Self::AlignCenterHorizontal,
         Self::AlignCenterVertical,
         Self::AlignEndHorizontal,
@@ -3693,9 +3904,11 @@ impl LucideIcon {
         Self::AppWindowMac,
         Self::Apple,
         Self::Archive,
-        Self::ArchiveRestore,
+        Self::ArchiveArrowDown,
+        Self::ArchiveArrowUp,
         Self::ArchiveX,
         Self::Armchair,
+        Self::ArmenianDram,
         Self::ArrowBigDown,
         Self::ArrowBigDownDash,
         Self::ArrowBigLeft,
@@ -3747,11 +3960,14 @@ impl LucideIcon {
         Self::AudioLinesOff,
         Self::AudioLinesX,
         Self::AudioWaveform,
+        Self::Avocado,
         Self::Award,
         Self::Axe,
         Self::Axis3d,
+        Self::AzerbaijaniManat,
         Self::Baby,
         Self::Backpack,
+        Self::Bacon,
         Self::Badge,
         Self::BadgeAlert,
         Self::BadgeCent,
@@ -3771,10 +3987,12 @@ impl LucideIcon {
         Self::BadgeTurkishLira,
         Self::BadgeX,
         Self::BaggageClaim,
+        Self::BallWave,
         Self::Balloon,
         Self::Ban,
         Self::Banana,
         Self::Bandage,
+        Self::BangladeshiTaka,
         Self::Banknote,
         Self::BanknoteArrowDown,
         Self::BanknoteArrowUp,
@@ -3801,6 +4019,7 @@ impl LucideIcon {
         Self::BeefOff,
         Self::Beer,
         Self::BeerOff,
+        Self::BelarusianRuble,
         Self::Bell,
         Self::BellCheck,
         Self::BellDot,
@@ -3838,6 +4057,7 @@ impl LucideIcon {
         Self::BookA,
         Self::BookAlert,
         Self::BookAudio,
+        Self::BookBookmark,
         Self::BookCheck,
         Self::BookCopy,
         Self::BookDashed,
@@ -3847,7 +4067,6 @@ impl LucideIcon {
         Self::BookImage,
         Self::BookKey,
         Self::BookLock,
-        Self::BookMarked,
         Self::BookMinus,
         Self::BookOpen,
         Self::BookOpenCheck,
@@ -3874,11 +4093,13 @@ impl LucideIcon {
         Self::BowArrow,
         Self::Box,
         Self::Boxes,
+        Self::BoxesLinked,
         Self::Braces,
         Self::Brackets,
         Self::Brain,
         Self::BrainCircuit,
         Self::BrainCog,
+        Self::BrainOff,
         Self::BrickWall,
         Self::BrickWallFire,
         Self::BrickWallShield,
@@ -3887,6 +4108,7 @@ impl LucideIcon {
         Self::BriefcaseBusiness,
         Self::BriefcaseConveyorBelt,
         Self::BriefcaseMedical,
+        Self::BriefcasePlus,
         Self::BringToFront,
         Self::Broccoli,
         Self::Broom,
@@ -3898,7 +4120,8 @@ impl LucideIcon {
         Self::BugOff,
         Self::BugPlay,
         Self::Building,
-        Self::Building2,
+        Self::BuildingComplex,
+        Self::BuildingComplexPlus,
         Self::Bus,
         Self::BusFront,
         Self::Cable,
@@ -3909,9 +4132,13 @@ impl LucideIcon {
         Self::Calendar,
         Self::Calendar1,
         Self::CalendarArrowDown,
+        Self::CalendarArrowLeft,
+        Self::CalendarArrowRight,
         Self::CalendarArrowUp,
         Self::CalendarCheck,
         Self::CalendarCheck2,
+        Self::CalendarChevronsLeft,
+        Self::CalendarChevronsRight,
         Self::CalendarClock,
         Self::CalendarCog,
         Self::CalendarDays,
@@ -3957,6 +4184,7 @@ impl LucideIcon {
         Self::Cat,
         Self::Cctv,
         Self::CctvOff,
+        Self::Certificate,
         Self::ChartArea,
         Self::ChartBar,
         Self::ChartBarBig,
@@ -3978,6 +4206,8 @@ impl LucideIcon {
         Self::ChartNoAxesCombined,
         Self::ChartNoAxesGantt,
         Self::ChartPie,
+        Self::ChartQuadrant,
+        Self::ChartRadar,
         Self::ChartScatter,
         Self::ChartSpline,
         Self::Check,
@@ -4025,6 +4255,10 @@ impl LucideIcon {
         Self::CircleChevronLeft,
         Self::CircleChevronRight,
         Self::CircleChevronUp,
+        Self::CircleChevronsDown,
+        Self::CircleChevronsLeft,
+        Self::CircleChevronsRight,
+        Self::CircleChevronsUp,
         Self::CircleDashed,
         Self::CircleDashedCheck,
         Self::CircleDivide,
@@ -4035,6 +4269,7 @@ impl LucideIcon {
         Self::CircleEqual,
         Self::CircleEuro,
         Self::CircleFadingArrowUp,
+        Self::CircleFadingPlay,
         Self::CircleFadingPlus,
         Self::CircleGauge,
         Self::CircleMinus,
@@ -4060,6 +4295,9 @@ impl LucideIcon {
         Self::CircuitBoard,
         Self::Citrus,
         Self::Clapperboard,
+        Self::ClefAlto,
+        Self::ClefBass,
+        Self::ClefTreble,
         Self::Clipboard,
         Self::ClipboardCheck,
         Self::ClipboardClock,
@@ -4157,6 +4395,7 @@ impl LucideIcon {
         Self::CornerUpLeft,
         Self::CornerUpRight,
         Self::Cpu,
+        Self::CpuAi,
         Self::CreativeCommons,
         Self::CreditCard,
         Self::CreditCardCheck,
@@ -4171,6 +4410,7 @@ impl LucideIcon {
         Self::Crown,
         Self::Cuboid,
         Self::CupSoda,
+        Self::Cupcake,
         Self::Currency,
         Self::Cylinder,
         Self::Dam,
@@ -4179,6 +4419,7 @@ impl LucideIcon {
         Self::DatabaseArrowUp,
         Self::DatabaseBackup,
         Self::DatabaseCheck,
+        Self::DatabaseCog,
         Self::DatabaseMinus,
         Self::DatabasePlus,
         Self::DatabaseSearch,
@@ -4214,7 +4455,9 @@ impl LucideIcon {
         Self::Dome,
         Self::Donut,
         Self::DoorClosed,
+        Self::DoorClosedCog,
         Self::DoorClosedLocked,
+        Self::DoorClosedPackage,
         Self::DoorOpen,
         Self::DoorStairwell,
         Self::Dot,
@@ -4231,16 +4474,21 @@ impl LucideIcon {
         Self::Dumbbell,
         Self::Ear,
         Self::EarOff,
+        Self::Earbuds,
+        Self::EarbudsOff,
         Self::Earth,
         Self::EarthLock,
         Self::Eclipse,
         Self::Egg,
         Self::EggFried,
         Self::EggOff,
+        Self::EighthNote,
+        Self::EighthNotes,
         Self::Eject,
         Self::Ellipse,
         Self::Ellipsis,
         Self::EllipsisVertical,
+        Self::EmiratiDirham,
         Self::Engine,
         Self::Equal,
         Self::EqualApproximately,
@@ -4266,6 +4514,7 @@ impl LucideIcon {
         Self::Factory,
         Self::Fan,
         Self::FastForward,
+        Self::Faucet,
         Self::Feather,
         Self::Fence,
         Self::FerrisWheel,
@@ -4344,8 +4593,6 @@ impl LucideIcon {
         Self::FlaskConical,
         Self::FlaskConicalOff,
         Self::FlaskRound,
-        Self::FlipHorizontal2,
-        Self::FlipVertical2,
         Self::Flower,
         Self::Flower2,
         Self::Focus,
@@ -4381,6 +4628,8 @@ impl LucideIcon {
         Self::FolderSync,
         Self::FolderTree,
         Self::FolderUp,
+        Self::FolderUser,
+        Self::FolderUsers,
         Self::FolderX,
         Self::Folders,
         Self::Footprints,
@@ -4433,6 +4682,7 @@ impl LucideIcon {
         Self::Glasses,
         Self::Globe,
         Self::GlobeCheck,
+        Self::GlobeCode,
         Self::GlobeLock,
         Self::GlobeOff,
         Self::GlobeX,
@@ -4440,6 +4690,8 @@ impl LucideIcon {
         Self::Gpu,
         Self::GraduationCap,
         Self::Grape,
+        Self::GraphHub,
+        Self::GraphStar,
         Self::Grid2x2,
         Self::Grid2x2Check,
         Self::Grid2x2Plus,
@@ -4449,8 +4701,11 @@ impl LucideIcon {
         Self::Grip,
         Self::GripHorizontal,
         Self::GripVertical,
+        Self::Groceries,
         Self::Group,
         Self::Guitar,
+        Self::GuitarElectric,
+        Self::HalfNote,
         Self::Ham,
         Self::Hamburger,
         Self::Hammer,
@@ -4463,6 +4718,7 @@ impl LucideIcon {
         Self::HandMetal,
         Self::HandPlatter,
         Self::Handbag,
+        Self::HandleBottomRight,
         Self::Handshake,
         Self::HardDrive,
         Self::HardDriveDownload,
@@ -4495,16 +4751,22 @@ impl LucideIcon {
         Self::Helicopter,
         Self::Hexagon,
         Self::Highlighter,
+        Self::HikingStick,
+        Self::HockeyStick,
         Self::Hop,
         Self::HopOff,
         Self::Hospital,
+        Self::HotAirBalloon,
         Self::Hotel,
         Self::Hourglass,
+        Self::HourglassCog,
         Self::House,
+        Self::HouseCog,
         Self::HouseHeart,
         Self::HousePlug,
         Self::HousePlus,
         Self::HouseWifi,
+        Self::Houses,
         Self::IceCreamBowl,
         Self::IceCreamCone,
         Self::IdCard,
@@ -4527,16 +4789,19 @@ impl LucideIcon {
         Self::Italic,
         Self::IterationCcw,
         Self::IterationCw,
+        Self::IvBag,
         Self::JapaneseYen,
         Self::Joystick,
         Self::Kanban,
         Self::Kayak,
+        Self::KazakhTenge,
         Self::Key,
         Self::KeyRound,
         Self::KeySquare,
         Self::Keyboard,
         Self::KeyboardMusic,
         Self::KeyboardOff,
+        Self::Lambda,
         Self::Lamp,
         Self::LampCeiling,
         Self::LampDesk,
@@ -4549,6 +4814,7 @@ impl LucideIcon {
         Self::Laptop,
         Self::LaptopMinimal,
         Self::LaptopMinimalCheck,
+        Self::Laser,
         Self::Lasso,
         Self::LassoSelect,
         Self::LayerArrowDown,
@@ -4559,9 +4825,12 @@ impl LucideIcon {
         Self::LayersArrowUp,
         Self::LayersMinus,
         Self::LayersPlus,
+        Self::LayoutArrowDown,
+        Self::LayoutArrowRight,
         Self::LayoutDashboard,
         Self::LayoutFreeform,
         Self::LayoutGrid,
+        Self::LayoutGridCircles,
         Self::LayoutList,
         Self::LayoutPanelLeft,
         Self::LayoutPanelTop,
@@ -4569,8 +4838,11 @@ impl LucideIcon {
         Self::Leaf,
         Self::LeafyGreen,
         Self::Lectern,
+        Self::Lens,
         Self::LensConcave,
         Self::LensConvex,
+        Self::LetterSpacing,
+        Self::Letters,
         Self::Library,
         Self::LibraryBig,
         Self::LifeBuoy,
@@ -4578,7 +4850,11 @@ impl LucideIcon {
         Self::Lightbulb,
         Self::LightbulbOff,
         Self::Lighthouse,
+        Self::LineDotBottomVertical,
+        Self::LineDotLeftHorizontal,
         Self::LineDotRightHorizontal,
+        Self::LineDotTopVertical,
+        Self::LineHeight,
         Self::LineSquiggle,
         Self::LineStyle,
         Self::Link,
@@ -4628,6 +4904,7 @@ impl LucideIcon {
         Self::MailBadge,
         Self::MailCheck,
         Self::MailClock,
+        Self::MailDot,
         Self::MailMinus,
         Self::MailOpen,
         Self::MailPen,
@@ -4677,6 +4954,7 @@ impl LucideIcon {
         Self::MessageCirclePlus,
         Self::MessageCircleQuestionMark,
         Self::MessageCircleReply,
+        Self::MessageCircleText,
         Self::MessageCircleWarning,
         Self::MessageCircleX,
         Self::MessageSquare,
@@ -4696,6 +4974,7 @@ impl LucideIcon {
         Self::MessageSquareText,
         Self::MessageSquareWarning,
         Self::MessageSquareX,
+        Self::MessagesCircle,
         Self::MessagesSquare,
         Self::Metronome,
         Self::Mic,
@@ -4723,6 +5002,7 @@ impl LucideIcon {
         Self::MonitorDown,
         Self::MonitorOff,
         Self::MonitorPause,
+        Self::MonitorPc,
         Self::MonitorPlay,
         Self::MonitorSmartphone,
         Self::MonitorSpeaker,
@@ -4746,6 +5026,8 @@ impl LucideIcon {
         Self::MousePointerBan,
         Self::MousePointerClick,
         Self::MouseRight,
+        Self::Mouth,
+        Self::MouthOff,
         Self::Move,
         Self::Move3d,
         Self::MoveDiagonal,
@@ -4760,19 +5042,17 @@ impl LucideIcon {
         Self::MoveUpLeft,
         Self::MoveUpRight,
         Self::MoveVertical,
-        Self::Music,
-        Self::Music2,
-        Self::Music3,
-        Self::Music4,
         Self::Navigation,
         Self::Navigation2,
         Self::Navigation2Off,
         Self::NavigationOff,
+        Self::NepaliRupee,
         Self::Network,
         Self::Newspaper,
         Self::Nfc,
         Self::NonBinary,
         Self::Notebook,
+        Self::NotebookDot,
         Self::NotebookPen,
         Self::NotebookTabs,
         Self::NotebookText,
@@ -4828,6 +5108,7 @@ impl LucideIcon {
         Self::Paperclip,
         Self::Parasol,
         Self::Parentheses,
+        Self::Park,
         Self::ParkingMeter,
         Self::PartyPopper,
         Self::Pause,
@@ -4844,6 +5125,7 @@ impl LucideIcon {
         Self::PencilSparkles,
         Self::Pentagon,
         Self::Percent,
+        Self::PerfumeBottle,
         Self::PersonStanding,
         Self::Phi,
         Self::PhilippinePeso,
@@ -4851,6 +5133,7 @@ impl LucideIcon {
         Self::PhoneCall,
         Self::PhoneForwarded,
         Self::PhoneIncoming,
+        Self::PhoneLog,
         Self::PhoneMissed,
         Self::PhoneOff,
         Self::PhoneOutgoing,
@@ -4872,6 +5155,7 @@ impl LucideIcon {
         Self::Plane,
         Self::PlaneLanding,
         Self::PlaneTakeoff,
+        Self::PlantPot,
         Self::Play,
         Self::PlayOff,
         Self::PlayingCard,
@@ -4892,6 +5176,7 @@ impl LucideIcon {
         Self::PowerOff,
         Self::Presentation,
         Self::Printer,
+        Self::Printer3d,
         Self::PrinterCheck,
         Self::PrinterX,
         Self::Projector,
@@ -4961,6 +5246,7 @@ impl LucideIcon {
         Self::RotateCcwKey,
         Self::RotateCcwSquare,
         Self::RotateCw,
+        Self::RotateCwClock,
         Self::RotateCwFadingClock,
         Self::RotateCwSquare,
         Self::Route,
@@ -4970,6 +5256,7 @@ impl LucideIcon {
         Self::Rows3,
         Self::Rows4,
         Self::Rss,
+        Self::RugbyBall,
         Self::Ruler,
         Self::RulerDimensionLine,
         Self::RussianRuble,
@@ -5003,8 +5290,10 @@ impl LucideIcon {
         Self::Scissors,
         Self::ScissorsLineDashed,
         Self::Scooter,
+        Self::ScratchBlocks,
         Self::ScreenShare,
         Self::ScreenShareOff,
+        Self::Screw,
         Self::Scroll,
         Self::ScrollText,
         Self::Search,
@@ -5022,6 +5311,7 @@ impl LucideIcon {
         Self::Server,
         Self::ServerCog,
         Self::ServerCrash,
+        Self::ServerNas,
         Self::ServerOff,
         Self::ServerPlus,
         Self::Settings,
@@ -5040,6 +5330,7 @@ impl LucideIcon {
         Self::ShieldCogCorner,
         Self::ShieldEllipsis,
         Self::ShieldHalf,
+        Self::ShieldHouse,
         Self::ShieldKeyhole,
         Self::ShieldLock,
         Self::ShieldMinus,
@@ -5075,6 +5366,8 @@ impl LucideIcon {
         Self::Signpost,
         Self::SignpostBig,
         Self::Siren,
+        Self::SirenOff,
+        Self::SixteenthNotes,
         Self::SkipBack,
         Self::SkipForward,
         Self::Skull,
@@ -5085,6 +5378,7 @@ impl LucideIcon {
         Self::Smartphone,
         Self::SmartphoneCharging,
         Self::SmartphoneNfc,
+        Self::SmartphoneUserRound,
         Self::Snail,
         Self::Snowflake,
         Self::SoapDispenserDroplet,
@@ -5124,6 +5418,7 @@ impl LucideIcon {
         Self::SquareArrowUpLeft,
         Self::SquareArrowUpRight,
         Self::SquareAsterisk,
+        Self::SquareBookmark,
         Self::SquareBottomDashedScissors,
         Self::SquareCenterlineDashedHorizontal,
         Self::SquareCenterlineDashedVertical,
@@ -5134,14 +5429,21 @@ impl LucideIcon {
         Self::SquareChevronLeft,
         Self::SquareChevronRight,
         Self::SquareChevronUp,
+        Self::SquareChevronsDown,
+        Self::SquareChevronsLeft,
+        Self::SquareChevronsRight,
+        Self::SquareChevronsUp,
         Self::SquareCode,
         Self::SquareDashed,
         Self::SquareDashedBottom,
         Self::SquareDashedBottomCode,
         Self::SquareDashedKanban,
         Self::SquareDashedMousePointer,
+        Self::SquareDashedPlus,
         Self::SquareDashedText,
         Self::SquareDashedTopSolid,
+        Self::SquareDashedX,
+        Self::SquareDashedXCorner,
         Self::SquareDimensions,
         Self::SquareDivide,
         Self::SquareDot,
@@ -5170,6 +5472,7 @@ impl LucideIcon {
         Self::SquareScissors,
         Self::SquareSigma,
         Self::SquareSlash,
+        Self::SquareSparkles,
         Self::SquareSplitHorizontal,
         Self::SquareSplitVertical,
         Self::SquareSquare,
@@ -5260,6 +5563,9 @@ impl LucideIcon {
         Self::TextAlignCenter,
         Self::TextAlignEnd,
         Self::TextAlignJustify,
+        Self::TextAlignJustifyCenter,
+        Self::TextAlignJustifyEnd,
+        Self::TextAlignJustifyStart,
         Self::TextAlignStart,
         Self::TextCursor,
         Self::TextCursorInput,
@@ -5290,8 +5596,11 @@ impl LucideIcon {
         Self::ToggleLeft,
         Self::ToggleRight,
         Self::Toilet,
+        Self::Tombstone,
         Self::ToolCase,
         Self::Toolbox,
+        Self::Toothbrush,
+        Self::ToothbrushSparkles,
         Self::Tornado,
         Self::Torus,
         Self::Touchpad,
@@ -5320,9 +5629,12 @@ impl LucideIcon {
         Self::TriangleAlert,
         Self::TriangleDashed,
         Self::TriangleRight,
+        Self::TrianglesCenterlineDashedHorizontal,
+        Self::TrianglesCenterlineDashedVertical,
         Self::Trophy,
         Self::Truck,
         Self::TruckElectric,
+        Self::TubeLotion,
         Self::TurkishLira,
         Self::Turntable,
         Self::Turtle,
@@ -5366,13 +5678,17 @@ impl LucideIcon {
         Self::UserRoundPen,
         Self::UserRoundPlus,
         Self::UserRoundSearch,
+        Self::UserRoundShield,
+        Self::UserRoundStar,
         Self::UserRoundX,
         Self::UserSearch,
         Self::UserShield,
         Self::UserStar,
         Self::UserX,
         Self::Users,
+        Self::UsersCollaboration,
         Self::UsersRound,
+        Self::UsersRoundCollaboration,
         Self::Utensils,
         Self::UtensilsCrossed,
         Self::UtilityPole,
@@ -5429,6 +5745,7 @@ impl LucideIcon {
         Self::Wifi,
         Self::WifiCog,
         Self::WifiHigh,
+        Self::WifiLock,
         Self::WifiLow,
         Self::WifiOff,
         Self::WifiPen,
@@ -5436,6 +5753,7 @@ impl LucideIcon {
         Self::WifiZero,
         Self::Wind,
         Self::WindArrowDown,
+        Self::WindArrowUp,
         Self::Wine,
         Self::WineOff,
         Self::Workflow,
@@ -5462,12 +5780,42 @@ impl LucideIcon {
         Self::ZoomIn,
         Self::ZoomOut,
     ];
+    /// Legacy Lucide name; use `SquareBookmark`.
+    #[allow(non_upper_case_globals)]
+    pub const Album: Self = Self::SquareBookmark;
+    /// Legacy Lucide name; use `ArchiveArrowUp`.
+    #[allow(non_upper_case_globals)]
+    pub const ArchiveRestore: Self = Self::ArchiveArrowUp;
+    /// Legacy Lucide name; use `BookBookmark`.
+    #[allow(non_upper_case_globals)]
+    pub const BookMarked: Self = Self::BookBookmark;
+    /// Legacy Lucide name; use `BuildingComplex`.
+    #[allow(non_upper_case_globals)]
+    pub const Building2: Self = Self::BuildingComplex;
+    /// Legacy Lucide name; use `TrianglesCenterlineDashedHorizontal`.
+    #[allow(non_upper_case_globals)]
+    pub const FlipHorizontal2: Self = Self::TrianglesCenterlineDashedHorizontal;
+    /// Legacy Lucide name; use `TrianglesCenterlineDashedVertical`.
+    #[allow(non_upper_case_globals)]
+    pub const FlipVertical2: Self = Self::TrianglesCenterlineDashedVertical;
+    /// Legacy Lucide name; use `EighthNotes`.
+    #[allow(non_upper_case_globals)]
+    pub const Music: Self = Self::EighthNotes;
+    /// Legacy Lucide name; use `EighthNote`.
+    #[allow(non_upper_case_globals)]
+    pub const Music2: Self = Self::EighthNote;
+    /// Legacy Lucide name; use `HalfNote`.
+    #[allow(non_upper_case_globals)]
+    pub const Music3: Self = Self::HalfNote;
+    /// Legacy Lucide name; use `SixteenthNotes`.
+    #[allow(non_upper_case_globals)]
+    pub const Music4: Self = Self::SixteenthNotes;
     /// Legacy Lucide name; use `Trash`.
     #[allow(non_upper_case_globals)]
     pub const Trash2: Self = Self::Trash;
 }
 #[rustfmt::skip]
-static ICONS: [(&str, &str, &[u8]); 1818] = [
+static ICONS: [(&str, &str, &[u8]); 1924] = [
     ("a-arrow-down", "icons/lucide/a-arrow-down.svg", include_bytes!("../assets/lucide/a-arrow-down.svg")),
     ("a-arrow-up", "icons/lucide/a-arrow-up.svg", include_bytes!("../assets/lucide/a-arrow-up.svg")),
     ("a-large-small", "icons/lucide/a-large-small.svg", include_bytes!("../assets/lucide/a-large-small.svg")),
@@ -5482,7 +5830,6 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("alarm-clock-off", "icons/lucide/alarm-clock-off.svg", include_bytes!("../assets/lucide/alarm-clock-off.svg")),
     ("alarm-clock-plus", "icons/lucide/alarm-clock-plus.svg", include_bytes!("../assets/lucide/alarm-clock-plus.svg")),
     ("alarm-smoke", "icons/lucide/alarm-smoke.svg", include_bytes!("../assets/lucide/alarm-smoke.svg")),
-    ("album", "icons/lucide/album.svg", include_bytes!("../assets/lucide/album.svg")),
     ("align-center-horizontal", "icons/lucide/align-center-horizontal.svg", include_bytes!("../assets/lucide/align-center-horizontal.svg")),
     ("align-center-vertical", "icons/lucide/align-center-vertical.svg", include_bytes!("../assets/lucide/align-center-vertical.svg")),
     ("align-end-horizontal", "icons/lucide/align-end-horizontal.svg", include_bytes!("../assets/lucide/align-end-horizontal.svg")),
@@ -5518,9 +5865,11 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("app-window-mac", "icons/lucide/app-window-mac.svg", include_bytes!("../assets/lucide/app-window-mac.svg")),
     ("apple", "icons/lucide/apple.svg", include_bytes!("../assets/lucide/apple.svg")),
     ("archive", "icons/lucide/archive.svg", include_bytes!("../assets/lucide/archive.svg")),
-    ("archive-restore", "icons/lucide/archive-restore.svg", include_bytes!("../assets/lucide/archive-restore.svg")),
+    ("archive-arrow-down", "icons/lucide/archive-arrow-down.svg", include_bytes!("../assets/lucide/archive-arrow-down.svg")),
+    ("archive-arrow-up", "icons/lucide/archive-arrow-up.svg", include_bytes!("../assets/lucide/archive-arrow-up.svg")),
     ("archive-x", "icons/lucide/archive-x.svg", include_bytes!("../assets/lucide/archive-x.svg")),
     ("armchair", "icons/lucide/armchair.svg", include_bytes!("../assets/lucide/armchair.svg")),
+    ("armenian-dram", "icons/lucide/armenian-dram.svg", include_bytes!("../assets/lucide/armenian-dram.svg")),
     ("arrow-big-down", "icons/lucide/arrow-big-down.svg", include_bytes!("../assets/lucide/arrow-big-down.svg")),
     ("arrow-big-down-dash", "icons/lucide/arrow-big-down-dash.svg", include_bytes!("../assets/lucide/arrow-big-down-dash.svg")),
     ("arrow-big-left", "icons/lucide/arrow-big-left.svg", include_bytes!("../assets/lucide/arrow-big-left.svg")),
@@ -5572,11 +5921,14 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("audio-lines-off", "icons/lucide/audio-lines-off.svg", include_bytes!("../assets/lucide/audio-lines-off.svg")),
     ("audio-lines-x", "icons/lucide/audio-lines-x.svg", include_bytes!("../assets/lucide/audio-lines-x.svg")),
     ("audio-waveform", "icons/lucide/audio-waveform.svg", include_bytes!("../assets/lucide/audio-waveform.svg")),
+    ("avocado", "icons/lucide/avocado.svg", include_bytes!("../assets/lucide/avocado.svg")),
     ("award", "icons/lucide/award.svg", include_bytes!("../assets/lucide/award.svg")),
     ("axe", "icons/lucide/axe.svg", include_bytes!("../assets/lucide/axe.svg")),
     ("axis-3d", "icons/lucide/axis-3d.svg", include_bytes!("../assets/lucide/axis-3d.svg")),
+    ("azerbaijani-manat", "icons/lucide/azerbaijani-manat.svg", include_bytes!("../assets/lucide/azerbaijani-manat.svg")),
     ("baby", "icons/lucide/baby.svg", include_bytes!("../assets/lucide/baby.svg")),
     ("backpack", "icons/lucide/backpack.svg", include_bytes!("../assets/lucide/backpack.svg")),
+    ("bacon", "icons/lucide/bacon.svg", include_bytes!("../assets/lucide/bacon.svg")),
     ("badge", "icons/lucide/badge.svg", include_bytes!("../assets/lucide/badge.svg")),
     ("badge-alert", "icons/lucide/badge-alert.svg", include_bytes!("../assets/lucide/badge-alert.svg")),
     ("badge-cent", "icons/lucide/badge-cent.svg", include_bytes!("../assets/lucide/badge-cent.svg")),
@@ -5596,10 +5948,12 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("badge-turkish-lira", "icons/lucide/badge-turkish-lira.svg", include_bytes!("../assets/lucide/badge-turkish-lira.svg")),
     ("badge-x", "icons/lucide/badge-x.svg", include_bytes!("../assets/lucide/badge-x.svg")),
     ("baggage-claim", "icons/lucide/baggage-claim.svg", include_bytes!("../assets/lucide/baggage-claim.svg")),
+    ("ball-wave", "icons/lucide/ball-wave.svg", include_bytes!("../assets/lucide/ball-wave.svg")),
     ("balloon", "icons/lucide/balloon.svg", include_bytes!("../assets/lucide/balloon.svg")),
     ("ban", "icons/lucide/ban.svg", include_bytes!("../assets/lucide/ban.svg")),
     ("banana", "icons/lucide/banana.svg", include_bytes!("../assets/lucide/banana.svg")),
     ("bandage", "icons/lucide/bandage.svg", include_bytes!("../assets/lucide/bandage.svg")),
+    ("bangladeshi-taka", "icons/lucide/bangladeshi-taka.svg", include_bytes!("../assets/lucide/bangladeshi-taka.svg")),
     ("banknote", "icons/lucide/banknote.svg", include_bytes!("../assets/lucide/banknote.svg")),
     ("banknote-arrow-down", "icons/lucide/banknote-arrow-down.svg", include_bytes!("../assets/lucide/banknote-arrow-down.svg")),
     ("banknote-arrow-up", "icons/lucide/banknote-arrow-up.svg", include_bytes!("../assets/lucide/banknote-arrow-up.svg")),
@@ -5626,6 +5980,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("beef-off", "icons/lucide/beef-off.svg", include_bytes!("../assets/lucide/beef-off.svg")),
     ("beer", "icons/lucide/beer.svg", include_bytes!("../assets/lucide/beer.svg")),
     ("beer-off", "icons/lucide/beer-off.svg", include_bytes!("../assets/lucide/beer-off.svg")),
+    ("belarusian-ruble", "icons/lucide/belarusian-ruble.svg", include_bytes!("../assets/lucide/belarusian-ruble.svg")),
     ("bell", "icons/lucide/bell.svg", include_bytes!("../assets/lucide/bell.svg")),
     ("bell-check", "icons/lucide/bell-check.svg", include_bytes!("../assets/lucide/bell-check.svg")),
     ("bell-dot", "icons/lucide/bell-dot.svg", include_bytes!("../assets/lucide/bell-dot.svg")),
@@ -5663,6 +6018,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("book-a", "icons/lucide/book-a.svg", include_bytes!("../assets/lucide/book-a.svg")),
     ("book-alert", "icons/lucide/book-alert.svg", include_bytes!("../assets/lucide/book-alert.svg")),
     ("book-audio", "icons/lucide/book-audio.svg", include_bytes!("../assets/lucide/book-audio.svg")),
+    ("book-bookmark", "icons/lucide/book-bookmark.svg", include_bytes!("../assets/lucide/book-bookmark.svg")),
     ("book-check", "icons/lucide/book-check.svg", include_bytes!("../assets/lucide/book-check.svg")),
     ("book-copy", "icons/lucide/book-copy.svg", include_bytes!("../assets/lucide/book-copy.svg")),
     ("book-dashed", "icons/lucide/book-dashed.svg", include_bytes!("../assets/lucide/book-dashed.svg")),
@@ -5672,7 +6028,6 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("book-image", "icons/lucide/book-image.svg", include_bytes!("../assets/lucide/book-image.svg")),
     ("book-key", "icons/lucide/book-key.svg", include_bytes!("../assets/lucide/book-key.svg")),
     ("book-lock", "icons/lucide/book-lock.svg", include_bytes!("../assets/lucide/book-lock.svg")),
-    ("book-marked", "icons/lucide/book-marked.svg", include_bytes!("../assets/lucide/book-marked.svg")),
     ("book-minus", "icons/lucide/book-minus.svg", include_bytes!("../assets/lucide/book-minus.svg")),
     ("book-open", "icons/lucide/book-open.svg", include_bytes!("../assets/lucide/book-open.svg")),
     ("book-open-check", "icons/lucide/book-open-check.svg", include_bytes!("../assets/lucide/book-open-check.svg")),
@@ -5699,11 +6054,13 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("bow-arrow", "icons/lucide/bow-arrow.svg", include_bytes!("../assets/lucide/bow-arrow.svg")),
     ("box", "icons/lucide/box.svg", include_bytes!("../assets/lucide/box.svg")),
     ("boxes", "icons/lucide/boxes.svg", include_bytes!("../assets/lucide/boxes.svg")),
+    ("boxes-linked", "icons/lucide/boxes-linked.svg", include_bytes!("../assets/lucide/boxes-linked.svg")),
     ("braces", "icons/lucide/braces.svg", include_bytes!("../assets/lucide/braces.svg")),
     ("brackets", "icons/lucide/brackets.svg", include_bytes!("../assets/lucide/brackets.svg")),
     ("brain", "icons/lucide/brain.svg", include_bytes!("../assets/lucide/brain.svg")),
     ("brain-circuit", "icons/lucide/brain-circuit.svg", include_bytes!("../assets/lucide/brain-circuit.svg")),
     ("brain-cog", "icons/lucide/brain-cog.svg", include_bytes!("../assets/lucide/brain-cog.svg")),
+    ("brain-off", "icons/lucide/brain-off.svg", include_bytes!("../assets/lucide/brain-off.svg")),
     ("brick-wall", "icons/lucide/brick-wall.svg", include_bytes!("../assets/lucide/brick-wall.svg")),
     ("brick-wall-fire", "icons/lucide/brick-wall-fire.svg", include_bytes!("../assets/lucide/brick-wall-fire.svg")),
     ("brick-wall-shield", "icons/lucide/brick-wall-shield.svg", include_bytes!("../assets/lucide/brick-wall-shield.svg")),
@@ -5712,6 +6069,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("briefcase-business", "icons/lucide/briefcase-business.svg", include_bytes!("../assets/lucide/briefcase-business.svg")),
     ("briefcase-conveyor-belt", "icons/lucide/briefcase-conveyor-belt.svg", include_bytes!("../assets/lucide/briefcase-conveyor-belt.svg")),
     ("briefcase-medical", "icons/lucide/briefcase-medical.svg", include_bytes!("../assets/lucide/briefcase-medical.svg")),
+    ("briefcase-plus", "icons/lucide/briefcase-plus.svg", include_bytes!("../assets/lucide/briefcase-plus.svg")),
     ("bring-to-front", "icons/lucide/bring-to-front.svg", include_bytes!("../assets/lucide/bring-to-front.svg")),
     ("broccoli", "icons/lucide/broccoli.svg", include_bytes!("../assets/lucide/broccoli.svg")),
     ("broom", "icons/lucide/broom.svg", include_bytes!("../assets/lucide/broom.svg")),
@@ -5723,7 +6081,8 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("bug-off", "icons/lucide/bug-off.svg", include_bytes!("../assets/lucide/bug-off.svg")),
     ("bug-play", "icons/lucide/bug-play.svg", include_bytes!("../assets/lucide/bug-play.svg")),
     ("building", "icons/lucide/building.svg", include_bytes!("../assets/lucide/building.svg")),
-    ("building-2", "icons/lucide/building-2.svg", include_bytes!("../assets/lucide/building-2.svg")),
+    ("building-complex", "icons/lucide/building-complex.svg", include_bytes!("../assets/lucide/building-complex.svg")),
+    ("building-complex-plus", "icons/lucide/building-complex-plus.svg", include_bytes!("../assets/lucide/building-complex-plus.svg")),
     ("bus", "icons/lucide/bus.svg", include_bytes!("../assets/lucide/bus.svg")),
     ("bus-front", "icons/lucide/bus-front.svg", include_bytes!("../assets/lucide/bus-front.svg")),
     ("cable", "icons/lucide/cable.svg", include_bytes!("../assets/lucide/cable.svg")),
@@ -5734,9 +6093,13 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("calendar", "icons/lucide/calendar.svg", include_bytes!("../assets/lucide/calendar.svg")),
     ("calendar-1", "icons/lucide/calendar-1.svg", include_bytes!("../assets/lucide/calendar-1.svg")),
     ("calendar-arrow-down", "icons/lucide/calendar-arrow-down.svg", include_bytes!("../assets/lucide/calendar-arrow-down.svg")),
+    ("calendar-arrow-left", "icons/lucide/calendar-arrow-left.svg", include_bytes!("../assets/lucide/calendar-arrow-left.svg")),
+    ("calendar-arrow-right", "icons/lucide/calendar-arrow-right.svg", include_bytes!("../assets/lucide/calendar-arrow-right.svg")),
     ("calendar-arrow-up", "icons/lucide/calendar-arrow-up.svg", include_bytes!("../assets/lucide/calendar-arrow-up.svg")),
     ("calendar-check", "icons/lucide/calendar-check.svg", include_bytes!("../assets/lucide/calendar-check.svg")),
     ("calendar-check-2", "icons/lucide/calendar-check-2.svg", include_bytes!("../assets/lucide/calendar-check-2.svg")),
+    ("calendar-chevrons-left", "icons/lucide/calendar-chevrons-left.svg", include_bytes!("../assets/lucide/calendar-chevrons-left.svg")),
+    ("calendar-chevrons-right", "icons/lucide/calendar-chevrons-right.svg", include_bytes!("../assets/lucide/calendar-chevrons-right.svg")),
     ("calendar-clock", "icons/lucide/calendar-clock.svg", include_bytes!("../assets/lucide/calendar-clock.svg")),
     ("calendar-cog", "icons/lucide/calendar-cog.svg", include_bytes!("../assets/lucide/calendar-cog.svg")),
     ("calendar-days", "icons/lucide/calendar-days.svg", include_bytes!("../assets/lucide/calendar-days.svg")),
@@ -5782,6 +6145,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("cat", "icons/lucide/cat.svg", include_bytes!("../assets/lucide/cat.svg")),
     ("cctv", "icons/lucide/cctv.svg", include_bytes!("../assets/lucide/cctv.svg")),
     ("cctv-off", "icons/lucide/cctv-off.svg", include_bytes!("../assets/lucide/cctv-off.svg")),
+    ("certificate", "icons/lucide/certificate.svg", include_bytes!("../assets/lucide/certificate.svg")),
     ("chart-area", "icons/lucide/chart-area.svg", include_bytes!("../assets/lucide/chart-area.svg")),
     ("chart-bar", "icons/lucide/chart-bar.svg", include_bytes!("../assets/lucide/chart-bar.svg")),
     ("chart-bar-big", "icons/lucide/chart-bar-big.svg", include_bytes!("../assets/lucide/chart-bar-big.svg")),
@@ -5803,6 +6167,8 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("chart-no-axes-combined", "icons/lucide/chart-no-axes-combined.svg", include_bytes!("../assets/lucide/chart-no-axes-combined.svg")),
     ("chart-no-axes-gantt", "icons/lucide/chart-no-axes-gantt.svg", include_bytes!("../assets/lucide/chart-no-axes-gantt.svg")),
     ("chart-pie", "icons/lucide/chart-pie.svg", include_bytes!("../assets/lucide/chart-pie.svg")),
+    ("chart-quadrant", "icons/lucide/chart-quadrant.svg", include_bytes!("../assets/lucide/chart-quadrant.svg")),
+    ("chart-radar", "icons/lucide/chart-radar.svg", include_bytes!("../assets/lucide/chart-radar.svg")),
     ("chart-scatter", "icons/lucide/chart-scatter.svg", include_bytes!("../assets/lucide/chart-scatter.svg")),
     ("chart-spline", "icons/lucide/chart-spline.svg", include_bytes!("../assets/lucide/chart-spline.svg")),
     ("check", "icons/lucide/check.svg", include_bytes!("../assets/lucide/check.svg")),
@@ -5850,6 +6216,10 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("circle-chevron-left", "icons/lucide/circle-chevron-left.svg", include_bytes!("../assets/lucide/circle-chevron-left.svg")),
     ("circle-chevron-right", "icons/lucide/circle-chevron-right.svg", include_bytes!("../assets/lucide/circle-chevron-right.svg")),
     ("circle-chevron-up", "icons/lucide/circle-chevron-up.svg", include_bytes!("../assets/lucide/circle-chevron-up.svg")),
+    ("circle-chevrons-down", "icons/lucide/circle-chevrons-down.svg", include_bytes!("../assets/lucide/circle-chevrons-down.svg")),
+    ("circle-chevrons-left", "icons/lucide/circle-chevrons-left.svg", include_bytes!("../assets/lucide/circle-chevrons-left.svg")),
+    ("circle-chevrons-right", "icons/lucide/circle-chevrons-right.svg", include_bytes!("../assets/lucide/circle-chevrons-right.svg")),
+    ("circle-chevrons-up", "icons/lucide/circle-chevrons-up.svg", include_bytes!("../assets/lucide/circle-chevrons-up.svg")),
     ("circle-dashed", "icons/lucide/circle-dashed.svg", include_bytes!("../assets/lucide/circle-dashed.svg")),
     ("circle-dashed-check", "icons/lucide/circle-dashed-check.svg", include_bytes!("../assets/lucide/circle-dashed-check.svg")),
     ("circle-divide", "icons/lucide/circle-divide.svg", include_bytes!("../assets/lucide/circle-divide.svg")),
@@ -5860,6 +6230,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("circle-equal", "icons/lucide/circle-equal.svg", include_bytes!("../assets/lucide/circle-equal.svg")),
     ("circle-euro", "icons/lucide/circle-euro.svg", include_bytes!("../assets/lucide/circle-euro.svg")),
     ("circle-fading-arrow-up", "icons/lucide/circle-fading-arrow-up.svg", include_bytes!("../assets/lucide/circle-fading-arrow-up.svg")),
+    ("circle-fading-play", "icons/lucide/circle-fading-play.svg", include_bytes!("../assets/lucide/circle-fading-play.svg")),
     ("circle-fading-plus", "icons/lucide/circle-fading-plus.svg", include_bytes!("../assets/lucide/circle-fading-plus.svg")),
     ("circle-gauge", "icons/lucide/circle-gauge.svg", include_bytes!("../assets/lucide/circle-gauge.svg")),
     ("circle-minus", "icons/lucide/circle-minus.svg", include_bytes!("../assets/lucide/circle-minus.svg")),
@@ -5885,6 +6256,9 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("circuit-board", "icons/lucide/circuit-board.svg", include_bytes!("../assets/lucide/circuit-board.svg")),
     ("citrus", "icons/lucide/citrus.svg", include_bytes!("../assets/lucide/citrus.svg")),
     ("clapperboard", "icons/lucide/clapperboard.svg", include_bytes!("../assets/lucide/clapperboard.svg")),
+    ("clef-alto", "icons/lucide/clef-alto.svg", include_bytes!("../assets/lucide/clef-alto.svg")),
+    ("clef-bass", "icons/lucide/clef-bass.svg", include_bytes!("../assets/lucide/clef-bass.svg")),
+    ("clef-treble", "icons/lucide/clef-treble.svg", include_bytes!("../assets/lucide/clef-treble.svg")),
     ("clipboard", "icons/lucide/clipboard.svg", include_bytes!("../assets/lucide/clipboard.svg")),
     ("clipboard-check", "icons/lucide/clipboard-check.svg", include_bytes!("../assets/lucide/clipboard-check.svg")),
     ("clipboard-clock", "icons/lucide/clipboard-clock.svg", include_bytes!("../assets/lucide/clipboard-clock.svg")),
@@ -5982,6 +6356,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("corner-up-left", "icons/lucide/corner-up-left.svg", include_bytes!("../assets/lucide/corner-up-left.svg")),
     ("corner-up-right", "icons/lucide/corner-up-right.svg", include_bytes!("../assets/lucide/corner-up-right.svg")),
     ("cpu", "icons/lucide/cpu.svg", include_bytes!("../assets/lucide/cpu.svg")),
+    ("cpu-ai", "icons/lucide/cpu-ai.svg", include_bytes!("../assets/lucide/cpu-ai.svg")),
     ("creative-commons", "icons/lucide/creative-commons.svg", include_bytes!("../assets/lucide/creative-commons.svg")),
     ("credit-card", "icons/lucide/credit-card.svg", include_bytes!("../assets/lucide/credit-card.svg")),
     ("credit-card-check", "icons/lucide/credit-card-check.svg", include_bytes!("../assets/lucide/credit-card-check.svg")),
@@ -5996,6 +6371,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("crown", "icons/lucide/crown.svg", include_bytes!("../assets/lucide/crown.svg")),
     ("cuboid", "icons/lucide/cuboid.svg", include_bytes!("../assets/lucide/cuboid.svg")),
     ("cup-soda", "icons/lucide/cup-soda.svg", include_bytes!("../assets/lucide/cup-soda.svg")),
+    ("cupcake", "icons/lucide/cupcake.svg", include_bytes!("../assets/lucide/cupcake.svg")),
     ("currency", "icons/lucide/currency.svg", include_bytes!("../assets/lucide/currency.svg")),
     ("cylinder", "icons/lucide/cylinder.svg", include_bytes!("../assets/lucide/cylinder.svg")),
     ("dam", "icons/lucide/dam.svg", include_bytes!("../assets/lucide/dam.svg")),
@@ -6004,6 +6380,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("database-arrow-up", "icons/lucide/database-arrow-up.svg", include_bytes!("../assets/lucide/database-arrow-up.svg")),
     ("database-backup", "icons/lucide/database-backup.svg", include_bytes!("../assets/lucide/database-backup.svg")),
     ("database-check", "icons/lucide/database-check.svg", include_bytes!("../assets/lucide/database-check.svg")),
+    ("database-cog", "icons/lucide/database-cog.svg", include_bytes!("../assets/lucide/database-cog.svg")),
     ("database-minus", "icons/lucide/database-minus.svg", include_bytes!("../assets/lucide/database-minus.svg")),
     ("database-plus", "icons/lucide/database-plus.svg", include_bytes!("../assets/lucide/database-plus.svg")),
     ("database-search", "icons/lucide/database-search.svg", include_bytes!("../assets/lucide/database-search.svg")),
@@ -6039,7 +6416,9 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("dome", "icons/lucide/dome.svg", include_bytes!("../assets/lucide/dome.svg")),
     ("donut", "icons/lucide/donut.svg", include_bytes!("../assets/lucide/donut.svg")),
     ("door-closed", "icons/lucide/door-closed.svg", include_bytes!("../assets/lucide/door-closed.svg")),
+    ("door-closed-cog", "icons/lucide/door-closed-cog.svg", include_bytes!("../assets/lucide/door-closed-cog.svg")),
     ("door-closed-locked", "icons/lucide/door-closed-locked.svg", include_bytes!("../assets/lucide/door-closed-locked.svg")),
+    ("door-closed-package", "icons/lucide/door-closed-package.svg", include_bytes!("../assets/lucide/door-closed-package.svg")),
     ("door-open", "icons/lucide/door-open.svg", include_bytes!("../assets/lucide/door-open.svg")),
     ("door-stairwell", "icons/lucide/door-stairwell.svg", include_bytes!("../assets/lucide/door-stairwell.svg")),
     ("dot", "icons/lucide/dot.svg", include_bytes!("../assets/lucide/dot.svg")),
@@ -6056,16 +6435,21 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("dumbbell", "icons/lucide/dumbbell.svg", include_bytes!("../assets/lucide/dumbbell.svg")),
     ("ear", "icons/lucide/ear.svg", include_bytes!("../assets/lucide/ear.svg")),
     ("ear-off", "icons/lucide/ear-off.svg", include_bytes!("../assets/lucide/ear-off.svg")),
+    ("earbuds", "icons/lucide/earbuds.svg", include_bytes!("../assets/lucide/earbuds.svg")),
+    ("earbuds-off", "icons/lucide/earbuds-off.svg", include_bytes!("../assets/lucide/earbuds-off.svg")),
     ("earth", "icons/lucide/earth.svg", include_bytes!("../assets/lucide/earth.svg")),
     ("earth-lock", "icons/lucide/earth-lock.svg", include_bytes!("../assets/lucide/earth-lock.svg")),
     ("eclipse", "icons/lucide/eclipse.svg", include_bytes!("../assets/lucide/eclipse.svg")),
     ("egg", "icons/lucide/egg.svg", include_bytes!("../assets/lucide/egg.svg")),
     ("egg-fried", "icons/lucide/egg-fried.svg", include_bytes!("../assets/lucide/egg-fried.svg")),
     ("egg-off", "icons/lucide/egg-off.svg", include_bytes!("../assets/lucide/egg-off.svg")),
+    ("eighth-note", "icons/lucide/eighth-note.svg", include_bytes!("../assets/lucide/eighth-note.svg")),
+    ("eighth-notes", "icons/lucide/eighth-notes.svg", include_bytes!("../assets/lucide/eighth-notes.svg")),
     ("eject", "icons/lucide/eject.svg", include_bytes!("../assets/lucide/eject.svg")),
     ("ellipse", "icons/lucide/ellipse.svg", include_bytes!("../assets/lucide/ellipse.svg")),
     ("ellipsis", "icons/lucide/ellipsis.svg", include_bytes!("../assets/lucide/ellipsis.svg")),
     ("ellipsis-vertical", "icons/lucide/ellipsis-vertical.svg", include_bytes!("../assets/lucide/ellipsis-vertical.svg")),
+    ("emirati-dirham", "icons/lucide/emirati-dirham.svg", include_bytes!("../assets/lucide/emirati-dirham.svg")),
     ("engine", "icons/lucide/engine.svg", include_bytes!("../assets/lucide/engine.svg")),
     ("equal", "icons/lucide/equal.svg", include_bytes!("../assets/lucide/equal.svg")),
     ("equal-approximately", "icons/lucide/equal-approximately.svg", include_bytes!("../assets/lucide/equal-approximately.svg")),
@@ -6091,6 +6475,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("factory", "icons/lucide/factory.svg", include_bytes!("../assets/lucide/factory.svg")),
     ("fan", "icons/lucide/fan.svg", include_bytes!("../assets/lucide/fan.svg")),
     ("fast-forward", "icons/lucide/fast-forward.svg", include_bytes!("../assets/lucide/fast-forward.svg")),
+    ("faucet", "icons/lucide/faucet.svg", include_bytes!("../assets/lucide/faucet.svg")),
     ("feather", "icons/lucide/feather.svg", include_bytes!("../assets/lucide/feather.svg")),
     ("fence", "icons/lucide/fence.svg", include_bytes!("../assets/lucide/fence.svg")),
     ("ferris-wheel", "icons/lucide/ferris-wheel.svg", include_bytes!("../assets/lucide/ferris-wheel.svg")),
@@ -6169,8 +6554,6 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("flask-conical", "icons/lucide/flask-conical.svg", include_bytes!("../assets/lucide/flask-conical.svg")),
     ("flask-conical-off", "icons/lucide/flask-conical-off.svg", include_bytes!("../assets/lucide/flask-conical-off.svg")),
     ("flask-round", "icons/lucide/flask-round.svg", include_bytes!("../assets/lucide/flask-round.svg")),
-    ("flip-horizontal-2", "icons/lucide/flip-horizontal-2.svg", include_bytes!("../assets/lucide/flip-horizontal-2.svg")),
-    ("flip-vertical-2", "icons/lucide/flip-vertical-2.svg", include_bytes!("../assets/lucide/flip-vertical-2.svg")),
     ("flower", "icons/lucide/flower.svg", include_bytes!("../assets/lucide/flower.svg")),
     ("flower-2", "icons/lucide/flower-2.svg", include_bytes!("../assets/lucide/flower-2.svg")),
     ("focus", "icons/lucide/focus.svg", include_bytes!("../assets/lucide/focus.svg")),
@@ -6206,6 +6589,8 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("folder-sync", "icons/lucide/folder-sync.svg", include_bytes!("../assets/lucide/folder-sync.svg")),
     ("folder-tree", "icons/lucide/folder-tree.svg", include_bytes!("../assets/lucide/folder-tree.svg")),
     ("folder-up", "icons/lucide/folder-up.svg", include_bytes!("../assets/lucide/folder-up.svg")),
+    ("folder-user", "icons/lucide/folder-user.svg", include_bytes!("../assets/lucide/folder-user.svg")),
+    ("folder-users", "icons/lucide/folder-users.svg", include_bytes!("../assets/lucide/folder-users.svg")),
     ("folder-x", "icons/lucide/folder-x.svg", include_bytes!("../assets/lucide/folder-x.svg")),
     ("folders", "icons/lucide/folders.svg", include_bytes!("../assets/lucide/folders.svg")),
     ("footprints", "icons/lucide/footprints.svg", include_bytes!("../assets/lucide/footprints.svg")),
@@ -6258,6 +6643,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("glasses", "icons/lucide/glasses.svg", include_bytes!("../assets/lucide/glasses.svg")),
     ("globe", "icons/lucide/globe.svg", include_bytes!("../assets/lucide/globe.svg")),
     ("globe-check", "icons/lucide/globe-check.svg", include_bytes!("../assets/lucide/globe-check.svg")),
+    ("globe-code", "icons/lucide/globe-code.svg", include_bytes!("../assets/lucide/globe-code.svg")),
     ("globe-lock", "icons/lucide/globe-lock.svg", include_bytes!("../assets/lucide/globe-lock.svg")),
     ("globe-off", "icons/lucide/globe-off.svg", include_bytes!("../assets/lucide/globe-off.svg")),
     ("globe-x", "icons/lucide/globe-x.svg", include_bytes!("../assets/lucide/globe-x.svg")),
@@ -6265,6 +6651,8 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("gpu", "icons/lucide/gpu.svg", include_bytes!("../assets/lucide/gpu.svg")),
     ("graduation-cap", "icons/lucide/graduation-cap.svg", include_bytes!("../assets/lucide/graduation-cap.svg")),
     ("grape", "icons/lucide/grape.svg", include_bytes!("../assets/lucide/grape.svg")),
+    ("graph-hub", "icons/lucide/graph-hub.svg", include_bytes!("../assets/lucide/graph-hub.svg")),
+    ("graph-star", "icons/lucide/graph-star.svg", include_bytes!("../assets/lucide/graph-star.svg")),
     ("grid-2x2", "icons/lucide/grid-2x2.svg", include_bytes!("../assets/lucide/grid-2x2.svg")),
     ("grid-2x2-check", "icons/lucide/grid-2x2-check.svg", include_bytes!("../assets/lucide/grid-2x2-check.svg")),
     ("grid-2x2-plus", "icons/lucide/grid-2x2-plus.svg", include_bytes!("../assets/lucide/grid-2x2-plus.svg")),
@@ -6274,8 +6662,11 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("grip", "icons/lucide/grip.svg", include_bytes!("../assets/lucide/grip.svg")),
     ("grip-horizontal", "icons/lucide/grip-horizontal.svg", include_bytes!("../assets/lucide/grip-horizontal.svg")),
     ("grip-vertical", "icons/lucide/grip-vertical.svg", include_bytes!("../assets/lucide/grip-vertical.svg")),
+    ("groceries", "icons/lucide/groceries.svg", include_bytes!("../assets/lucide/groceries.svg")),
     ("group", "icons/lucide/group.svg", include_bytes!("../assets/lucide/group.svg")),
     ("guitar", "icons/lucide/guitar.svg", include_bytes!("../assets/lucide/guitar.svg")),
+    ("guitar-electric", "icons/lucide/guitar-electric.svg", include_bytes!("../assets/lucide/guitar-electric.svg")),
+    ("half-note", "icons/lucide/half-note.svg", include_bytes!("../assets/lucide/half-note.svg")),
     ("ham", "icons/lucide/ham.svg", include_bytes!("../assets/lucide/ham.svg")),
     ("hamburger", "icons/lucide/hamburger.svg", include_bytes!("../assets/lucide/hamburger.svg")),
     ("hammer", "icons/lucide/hammer.svg", include_bytes!("../assets/lucide/hammer.svg")),
@@ -6288,6 +6679,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("hand-metal", "icons/lucide/hand-metal.svg", include_bytes!("../assets/lucide/hand-metal.svg")),
     ("hand-platter", "icons/lucide/hand-platter.svg", include_bytes!("../assets/lucide/hand-platter.svg")),
     ("handbag", "icons/lucide/handbag.svg", include_bytes!("../assets/lucide/handbag.svg")),
+    ("handle-bottom-right", "icons/lucide/handle-bottom-right.svg", include_bytes!("../assets/lucide/handle-bottom-right.svg")),
     ("handshake", "icons/lucide/handshake.svg", include_bytes!("../assets/lucide/handshake.svg")),
     ("hard-drive", "icons/lucide/hard-drive.svg", include_bytes!("../assets/lucide/hard-drive.svg")),
     ("hard-drive-download", "icons/lucide/hard-drive-download.svg", include_bytes!("../assets/lucide/hard-drive-download.svg")),
@@ -6320,16 +6712,22 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("helicopter", "icons/lucide/helicopter.svg", include_bytes!("../assets/lucide/helicopter.svg")),
     ("hexagon", "icons/lucide/hexagon.svg", include_bytes!("../assets/lucide/hexagon.svg")),
     ("highlighter", "icons/lucide/highlighter.svg", include_bytes!("../assets/lucide/highlighter.svg")),
+    ("hiking-stick", "icons/lucide/hiking-stick.svg", include_bytes!("../assets/lucide/hiking-stick.svg")),
+    ("hockey-stick", "icons/lucide/hockey-stick.svg", include_bytes!("../assets/lucide/hockey-stick.svg")),
     ("hop", "icons/lucide/hop.svg", include_bytes!("../assets/lucide/hop.svg")),
     ("hop-off", "icons/lucide/hop-off.svg", include_bytes!("../assets/lucide/hop-off.svg")),
     ("hospital", "icons/lucide/hospital.svg", include_bytes!("../assets/lucide/hospital.svg")),
+    ("hot-air-balloon", "icons/lucide/hot-air-balloon.svg", include_bytes!("../assets/lucide/hot-air-balloon.svg")),
     ("hotel", "icons/lucide/hotel.svg", include_bytes!("../assets/lucide/hotel.svg")),
     ("hourglass", "icons/lucide/hourglass.svg", include_bytes!("../assets/lucide/hourglass.svg")),
+    ("hourglass-cog", "icons/lucide/hourglass-cog.svg", include_bytes!("../assets/lucide/hourglass-cog.svg")),
     ("house", "icons/lucide/house.svg", include_bytes!("../assets/lucide/house.svg")),
+    ("house-cog", "icons/lucide/house-cog.svg", include_bytes!("../assets/lucide/house-cog.svg")),
     ("house-heart", "icons/lucide/house-heart.svg", include_bytes!("../assets/lucide/house-heart.svg")),
     ("house-plug", "icons/lucide/house-plug.svg", include_bytes!("../assets/lucide/house-plug.svg")),
     ("house-plus", "icons/lucide/house-plus.svg", include_bytes!("../assets/lucide/house-plus.svg")),
     ("house-wifi", "icons/lucide/house-wifi.svg", include_bytes!("../assets/lucide/house-wifi.svg")),
+    ("houses", "icons/lucide/houses.svg", include_bytes!("../assets/lucide/houses.svg")),
     ("ice-cream-bowl", "icons/lucide/ice-cream-bowl.svg", include_bytes!("../assets/lucide/ice-cream-bowl.svg")),
     ("ice-cream-cone", "icons/lucide/ice-cream-cone.svg", include_bytes!("../assets/lucide/ice-cream-cone.svg")),
     ("id-card", "icons/lucide/id-card.svg", include_bytes!("../assets/lucide/id-card.svg")),
@@ -6352,16 +6750,19 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("italic", "icons/lucide/italic.svg", include_bytes!("../assets/lucide/italic.svg")),
     ("iteration-ccw", "icons/lucide/iteration-ccw.svg", include_bytes!("../assets/lucide/iteration-ccw.svg")),
     ("iteration-cw", "icons/lucide/iteration-cw.svg", include_bytes!("../assets/lucide/iteration-cw.svg")),
+    ("iv-bag", "icons/lucide/iv-bag.svg", include_bytes!("../assets/lucide/iv-bag.svg")),
     ("japanese-yen", "icons/lucide/japanese-yen.svg", include_bytes!("../assets/lucide/japanese-yen.svg")),
     ("joystick", "icons/lucide/joystick.svg", include_bytes!("../assets/lucide/joystick.svg")),
     ("kanban", "icons/lucide/kanban.svg", include_bytes!("../assets/lucide/kanban.svg")),
     ("kayak", "icons/lucide/kayak.svg", include_bytes!("../assets/lucide/kayak.svg")),
+    ("kazakh-tenge", "icons/lucide/kazakh-tenge.svg", include_bytes!("../assets/lucide/kazakh-tenge.svg")),
     ("key", "icons/lucide/key.svg", include_bytes!("../assets/lucide/key.svg")),
     ("key-round", "icons/lucide/key-round.svg", include_bytes!("../assets/lucide/key-round.svg")),
     ("key-square", "icons/lucide/key-square.svg", include_bytes!("../assets/lucide/key-square.svg")),
     ("keyboard", "icons/lucide/keyboard.svg", include_bytes!("../assets/lucide/keyboard.svg")),
     ("keyboard-music", "icons/lucide/keyboard-music.svg", include_bytes!("../assets/lucide/keyboard-music.svg")),
     ("keyboard-off", "icons/lucide/keyboard-off.svg", include_bytes!("../assets/lucide/keyboard-off.svg")),
+    ("lambda", "icons/lucide/lambda.svg", include_bytes!("../assets/lucide/lambda.svg")),
     ("lamp", "icons/lucide/lamp.svg", include_bytes!("../assets/lucide/lamp.svg")),
     ("lamp-ceiling", "icons/lucide/lamp-ceiling.svg", include_bytes!("../assets/lucide/lamp-ceiling.svg")),
     ("lamp-desk", "icons/lucide/lamp-desk.svg", include_bytes!("../assets/lucide/lamp-desk.svg")),
@@ -6374,6 +6775,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("laptop", "icons/lucide/laptop.svg", include_bytes!("../assets/lucide/laptop.svg")),
     ("laptop-minimal", "icons/lucide/laptop-minimal.svg", include_bytes!("../assets/lucide/laptop-minimal.svg")),
     ("laptop-minimal-check", "icons/lucide/laptop-minimal-check.svg", include_bytes!("../assets/lucide/laptop-minimal-check.svg")),
+    ("laser", "icons/lucide/laser.svg", include_bytes!("../assets/lucide/laser.svg")),
     ("lasso", "icons/lucide/lasso.svg", include_bytes!("../assets/lucide/lasso.svg")),
     ("lasso-select", "icons/lucide/lasso-select.svg", include_bytes!("../assets/lucide/lasso-select.svg")),
     ("layer-arrow-down", "icons/lucide/layer-arrow-down.svg", include_bytes!("../assets/lucide/layer-arrow-down.svg")),
@@ -6384,9 +6786,12 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("layers-arrow-up", "icons/lucide/layers-arrow-up.svg", include_bytes!("../assets/lucide/layers-arrow-up.svg")),
     ("layers-minus", "icons/lucide/layers-minus.svg", include_bytes!("../assets/lucide/layers-minus.svg")),
     ("layers-plus", "icons/lucide/layers-plus.svg", include_bytes!("../assets/lucide/layers-plus.svg")),
+    ("layout-arrow-down", "icons/lucide/layout-arrow-down.svg", include_bytes!("../assets/lucide/layout-arrow-down.svg")),
+    ("layout-arrow-right", "icons/lucide/layout-arrow-right.svg", include_bytes!("../assets/lucide/layout-arrow-right.svg")),
     ("layout-dashboard", "icons/lucide/layout-dashboard.svg", include_bytes!("../assets/lucide/layout-dashboard.svg")),
     ("layout-freeform", "icons/lucide/layout-freeform.svg", include_bytes!("../assets/lucide/layout-freeform.svg")),
     ("layout-grid", "icons/lucide/layout-grid.svg", include_bytes!("../assets/lucide/layout-grid.svg")),
+    ("layout-grid-circles", "icons/lucide/layout-grid-circles.svg", include_bytes!("../assets/lucide/layout-grid-circles.svg")),
     ("layout-list", "icons/lucide/layout-list.svg", include_bytes!("../assets/lucide/layout-list.svg")),
     ("layout-panel-left", "icons/lucide/layout-panel-left.svg", include_bytes!("../assets/lucide/layout-panel-left.svg")),
     ("layout-panel-top", "icons/lucide/layout-panel-top.svg", include_bytes!("../assets/lucide/layout-panel-top.svg")),
@@ -6394,8 +6799,11 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("leaf", "icons/lucide/leaf.svg", include_bytes!("../assets/lucide/leaf.svg")),
     ("leafy-green", "icons/lucide/leafy-green.svg", include_bytes!("../assets/lucide/leafy-green.svg")),
     ("lectern", "icons/lucide/lectern.svg", include_bytes!("../assets/lucide/lectern.svg")),
+    ("lens", "icons/lucide/lens.svg", include_bytes!("../assets/lucide/lens.svg")),
     ("lens-concave", "icons/lucide/lens-concave.svg", include_bytes!("../assets/lucide/lens-concave.svg")),
     ("lens-convex", "icons/lucide/lens-convex.svg", include_bytes!("../assets/lucide/lens-convex.svg")),
+    ("letter-spacing", "icons/lucide/letter-spacing.svg", include_bytes!("../assets/lucide/letter-spacing.svg")),
+    ("letters", "icons/lucide/letters.svg", include_bytes!("../assets/lucide/letters.svg")),
     ("library", "icons/lucide/library.svg", include_bytes!("../assets/lucide/library.svg")),
     ("library-big", "icons/lucide/library-big.svg", include_bytes!("../assets/lucide/library-big.svg")),
     ("life-buoy", "icons/lucide/life-buoy.svg", include_bytes!("../assets/lucide/life-buoy.svg")),
@@ -6403,7 +6811,11 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("lightbulb", "icons/lucide/lightbulb.svg", include_bytes!("../assets/lucide/lightbulb.svg")),
     ("lightbulb-off", "icons/lucide/lightbulb-off.svg", include_bytes!("../assets/lucide/lightbulb-off.svg")),
     ("lighthouse", "icons/lucide/lighthouse.svg", include_bytes!("../assets/lucide/lighthouse.svg")),
+    ("line-dot-bottom-vertical", "icons/lucide/line-dot-bottom-vertical.svg", include_bytes!("../assets/lucide/line-dot-bottom-vertical.svg")),
+    ("line-dot-left-horizontal", "icons/lucide/line-dot-left-horizontal.svg", include_bytes!("../assets/lucide/line-dot-left-horizontal.svg")),
     ("line-dot-right-horizontal", "icons/lucide/line-dot-right-horizontal.svg", include_bytes!("../assets/lucide/line-dot-right-horizontal.svg")),
+    ("line-dot-top-vertical", "icons/lucide/line-dot-top-vertical.svg", include_bytes!("../assets/lucide/line-dot-top-vertical.svg")),
+    ("line-height", "icons/lucide/line-height.svg", include_bytes!("../assets/lucide/line-height.svg")),
     ("line-squiggle", "icons/lucide/line-squiggle.svg", include_bytes!("../assets/lucide/line-squiggle.svg")),
     ("line-style", "icons/lucide/line-style.svg", include_bytes!("../assets/lucide/line-style.svg")),
     ("link", "icons/lucide/link.svg", include_bytes!("../assets/lucide/link.svg")),
@@ -6453,6 +6865,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("mail-badge", "icons/lucide/mail-badge.svg", include_bytes!("../assets/lucide/mail-badge.svg")),
     ("mail-check", "icons/lucide/mail-check.svg", include_bytes!("../assets/lucide/mail-check.svg")),
     ("mail-clock", "icons/lucide/mail-clock.svg", include_bytes!("../assets/lucide/mail-clock.svg")),
+    ("mail-dot", "icons/lucide/mail-dot.svg", include_bytes!("../assets/lucide/mail-dot.svg")),
     ("mail-minus", "icons/lucide/mail-minus.svg", include_bytes!("../assets/lucide/mail-minus.svg")),
     ("mail-open", "icons/lucide/mail-open.svg", include_bytes!("../assets/lucide/mail-open.svg")),
     ("mail-pen", "icons/lucide/mail-pen.svg", include_bytes!("../assets/lucide/mail-pen.svg")),
@@ -6502,6 +6915,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("message-circle-plus", "icons/lucide/message-circle-plus.svg", include_bytes!("../assets/lucide/message-circle-plus.svg")),
     ("message-circle-question-mark", "icons/lucide/message-circle-question-mark.svg", include_bytes!("../assets/lucide/message-circle-question-mark.svg")),
     ("message-circle-reply", "icons/lucide/message-circle-reply.svg", include_bytes!("../assets/lucide/message-circle-reply.svg")),
+    ("message-circle-text", "icons/lucide/message-circle-text.svg", include_bytes!("../assets/lucide/message-circle-text.svg")),
     ("message-circle-warning", "icons/lucide/message-circle-warning.svg", include_bytes!("../assets/lucide/message-circle-warning.svg")),
     ("message-circle-x", "icons/lucide/message-circle-x.svg", include_bytes!("../assets/lucide/message-circle-x.svg")),
     ("message-square", "icons/lucide/message-square.svg", include_bytes!("../assets/lucide/message-square.svg")),
@@ -6521,6 +6935,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("message-square-text", "icons/lucide/message-square-text.svg", include_bytes!("../assets/lucide/message-square-text.svg")),
     ("message-square-warning", "icons/lucide/message-square-warning.svg", include_bytes!("../assets/lucide/message-square-warning.svg")),
     ("message-square-x", "icons/lucide/message-square-x.svg", include_bytes!("../assets/lucide/message-square-x.svg")),
+    ("messages-circle", "icons/lucide/messages-circle.svg", include_bytes!("../assets/lucide/messages-circle.svg")),
     ("messages-square", "icons/lucide/messages-square.svg", include_bytes!("../assets/lucide/messages-square.svg")),
     ("metronome", "icons/lucide/metronome.svg", include_bytes!("../assets/lucide/metronome.svg")),
     ("mic", "icons/lucide/mic.svg", include_bytes!("../assets/lucide/mic.svg")),
@@ -6548,6 +6963,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("monitor-down", "icons/lucide/monitor-down.svg", include_bytes!("../assets/lucide/monitor-down.svg")),
     ("monitor-off", "icons/lucide/monitor-off.svg", include_bytes!("../assets/lucide/monitor-off.svg")),
     ("monitor-pause", "icons/lucide/monitor-pause.svg", include_bytes!("../assets/lucide/monitor-pause.svg")),
+    ("monitor-pc", "icons/lucide/monitor-pc.svg", include_bytes!("../assets/lucide/monitor-pc.svg")),
     ("monitor-play", "icons/lucide/monitor-play.svg", include_bytes!("../assets/lucide/monitor-play.svg")),
     ("monitor-smartphone", "icons/lucide/monitor-smartphone.svg", include_bytes!("../assets/lucide/monitor-smartphone.svg")),
     ("monitor-speaker", "icons/lucide/monitor-speaker.svg", include_bytes!("../assets/lucide/monitor-speaker.svg")),
@@ -6571,6 +6987,8 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("mouse-pointer-ban", "icons/lucide/mouse-pointer-ban.svg", include_bytes!("../assets/lucide/mouse-pointer-ban.svg")),
     ("mouse-pointer-click", "icons/lucide/mouse-pointer-click.svg", include_bytes!("../assets/lucide/mouse-pointer-click.svg")),
     ("mouse-right", "icons/lucide/mouse-right.svg", include_bytes!("../assets/lucide/mouse-right.svg")),
+    ("mouth", "icons/lucide/mouth.svg", include_bytes!("../assets/lucide/mouth.svg")),
+    ("mouth-off", "icons/lucide/mouth-off.svg", include_bytes!("../assets/lucide/mouth-off.svg")),
     ("move", "icons/lucide/move.svg", include_bytes!("../assets/lucide/move.svg")),
     ("move-3d", "icons/lucide/move-3d.svg", include_bytes!("../assets/lucide/move-3d.svg")),
     ("move-diagonal", "icons/lucide/move-diagonal.svg", include_bytes!("../assets/lucide/move-diagonal.svg")),
@@ -6585,19 +7003,17 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("move-up-left", "icons/lucide/move-up-left.svg", include_bytes!("../assets/lucide/move-up-left.svg")),
     ("move-up-right", "icons/lucide/move-up-right.svg", include_bytes!("../assets/lucide/move-up-right.svg")),
     ("move-vertical", "icons/lucide/move-vertical.svg", include_bytes!("../assets/lucide/move-vertical.svg")),
-    ("music", "icons/lucide/music.svg", include_bytes!("../assets/lucide/music.svg")),
-    ("music-2", "icons/lucide/music-2.svg", include_bytes!("../assets/lucide/music-2.svg")),
-    ("music-3", "icons/lucide/music-3.svg", include_bytes!("../assets/lucide/music-3.svg")),
-    ("music-4", "icons/lucide/music-4.svg", include_bytes!("../assets/lucide/music-4.svg")),
     ("navigation", "icons/lucide/navigation.svg", include_bytes!("../assets/lucide/navigation.svg")),
     ("navigation-2", "icons/lucide/navigation-2.svg", include_bytes!("../assets/lucide/navigation-2.svg")),
     ("navigation-2-off", "icons/lucide/navigation-2-off.svg", include_bytes!("../assets/lucide/navigation-2-off.svg")),
     ("navigation-off", "icons/lucide/navigation-off.svg", include_bytes!("../assets/lucide/navigation-off.svg")),
+    ("nepali-rupee", "icons/lucide/nepali-rupee.svg", include_bytes!("../assets/lucide/nepali-rupee.svg")),
     ("network", "icons/lucide/network.svg", include_bytes!("../assets/lucide/network.svg")),
     ("newspaper", "icons/lucide/newspaper.svg", include_bytes!("../assets/lucide/newspaper.svg")),
     ("nfc", "icons/lucide/nfc.svg", include_bytes!("../assets/lucide/nfc.svg")),
     ("non-binary", "icons/lucide/non-binary.svg", include_bytes!("../assets/lucide/non-binary.svg")),
     ("notebook", "icons/lucide/notebook.svg", include_bytes!("../assets/lucide/notebook.svg")),
+    ("notebook-dot", "icons/lucide/notebook-dot.svg", include_bytes!("../assets/lucide/notebook-dot.svg")),
     ("notebook-pen", "icons/lucide/notebook-pen.svg", include_bytes!("../assets/lucide/notebook-pen.svg")),
     ("notebook-tabs", "icons/lucide/notebook-tabs.svg", include_bytes!("../assets/lucide/notebook-tabs.svg")),
     ("notebook-text", "icons/lucide/notebook-text.svg", include_bytes!("../assets/lucide/notebook-text.svg")),
@@ -6653,6 +7069,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("paperclip", "icons/lucide/paperclip.svg", include_bytes!("../assets/lucide/paperclip.svg")),
     ("parasol", "icons/lucide/parasol.svg", include_bytes!("../assets/lucide/parasol.svg")),
     ("parentheses", "icons/lucide/parentheses.svg", include_bytes!("../assets/lucide/parentheses.svg")),
+    ("park", "icons/lucide/park.svg", include_bytes!("../assets/lucide/park.svg")),
     ("parking-meter", "icons/lucide/parking-meter.svg", include_bytes!("../assets/lucide/parking-meter.svg")),
     ("party-popper", "icons/lucide/party-popper.svg", include_bytes!("../assets/lucide/party-popper.svg")),
     ("pause", "icons/lucide/pause.svg", include_bytes!("../assets/lucide/pause.svg")),
@@ -6669,6 +7086,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("pencil-sparkles", "icons/lucide/pencil-sparkles.svg", include_bytes!("../assets/lucide/pencil-sparkles.svg")),
     ("pentagon", "icons/lucide/pentagon.svg", include_bytes!("../assets/lucide/pentagon.svg")),
     ("percent", "icons/lucide/percent.svg", include_bytes!("../assets/lucide/percent.svg")),
+    ("perfume-bottle", "icons/lucide/perfume-bottle.svg", include_bytes!("../assets/lucide/perfume-bottle.svg")),
     ("person-standing", "icons/lucide/person-standing.svg", include_bytes!("../assets/lucide/person-standing.svg")),
     ("phi", "icons/lucide/phi.svg", include_bytes!("../assets/lucide/phi.svg")),
     ("philippine-peso", "icons/lucide/philippine-peso.svg", include_bytes!("../assets/lucide/philippine-peso.svg")),
@@ -6676,6 +7094,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("phone-call", "icons/lucide/phone-call.svg", include_bytes!("../assets/lucide/phone-call.svg")),
     ("phone-forwarded", "icons/lucide/phone-forwarded.svg", include_bytes!("../assets/lucide/phone-forwarded.svg")),
     ("phone-incoming", "icons/lucide/phone-incoming.svg", include_bytes!("../assets/lucide/phone-incoming.svg")),
+    ("phone-log", "icons/lucide/phone-log.svg", include_bytes!("../assets/lucide/phone-log.svg")),
     ("phone-missed", "icons/lucide/phone-missed.svg", include_bytes!("../assets/lucide/phone-missed.svg")),
     ("phone-off", "icons/lucide/phone-off.svg", include_bytes!("../assets/lucide/phone-off.svg")),
     ("phone-outgoing", "icons/lucide/phone-outgoing.svg", include_bytes!("../assets/lucide/phone-outgoing.svg")),
@@ -6697,6 +7116,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("plane", "icons/lucide/plane.svg", include_bytes!("../assets/lucide/plane.svg")),
     ("plane-landing", "icons/lucide/plane-landing.svg", include_bytes!("../assets/lucide/plane-landing.svg")),
     ("plane-takeoff", "icons/lucide/plane-takeoff.svg", include_bytes!("../assets/lucide/plane-takeoff.svg")),
+    ("plant-pot", "icons/lucide/plant-pot.svg", include_bytes!("../assets/lucide/plant-pot.svg")),
     ("play", "icons/lucide/play.svg", include_bytes!("../assets/lucide/play.svg")),
     ("play-off", "icons/lucide/play-off.svg", include_bytes!("../assets/lucide/play-off.svg")),
     ("playing-card", "icons/lucide/playing-card.svg", include_bytes!("../assets/lucide/playing-card.svg")),
@@ -6717,6 +7137,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("power-off", "icons/lucide/power-off.svg", include_bytes!("../assets/lucide/power-off.svg")),
     ("presentation", "icons/lucide/presentation.svg", include_bytes!("../assets/lucide/presentation.svg")),
     ("printer", "icons/lucide/printer.svg", include_bytes!("../assets/lucide/printer.svg")),
+    ("printer-3d", "icons/lucide/printer-3d.svg", include_bytes!("../assets/lucide/printer-3d.svg")),
     ("printer-check", "icons/lucide/printer-check.svg", include_bytes!("../assets/lucide/printer-check.svg")),
     ("printer-x", "icons/lucide/printer-x.svg", include_bytes!("../assets/lucide/printer-x.svg")),
     ("projector", "icons/lucide/projector.svg", include_bytes!("../assets/lucide/projector.svg")),
@@ -6786,6 +7207,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("rotate-ccw-key", "icons/lucide/rotate-ccw-key.svg", include_bytes!("../assets/lucide/rotate-ccw-key.svg")),
     ("rotate-ccw-square", "icons/lucide/rotate-ccw-square.svg", include_bytes!("../assets/lucide/rotate-ccw-square.svg")),
     ("rotate-cw", "icons/lucide/rotate-cw.svg", include_bytes!("../assets/lucide/rotate-cw.svg")),
+    ("rotate-cw-clock", "icons/lucide/rotate-cw-clock.svg", include_bytes!("../assets/lucide/rotate-cw-clock.svg")),
     ("rotate-cw-fading-clock", "icons/lucide/rotate-cw-fading-clock.svg", include_bytes!("../assets/lucide/rotate-cw-fading-clock.svg")),
     ("rotate-cw-square", "icons/lucide/rotate-cw-square.svg", include_bytes!("../assets/lucide/rotate-cw-square.svg")),
     ("route", "icons/lucide/route.svg", include_bytes!("../assets/lucide/route.svg")),
@@ -6795,6 +7217,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("rows-3", "icons/lucide/rows-3.svg", include_bytes!("../assets/lucide/rows-3.svg")),
     ("rows-4", "icons/lucide/rows-4.svg", include_bytes!("../assets/lucide/rows-4.svg")),
     ("rss", "icons/lucide/rss.svg", include_bytes!("../assets/lucide/rss.svg")),
+    ("rugby-ball", "icons/lucide/rugby-ball.svg", include_bytes!("../assets/lucide/rugby-ball.svg")),
     ("ruler", "icons/lucide/ruler.svg", include_bytes!("../assets/lucide/ruler.svg")),
     ("ruler-dimension-line", "icons/lucide/ruler-dimension-line.svg", include_bytes!("../assets/lucide/ruler-dimension-line.svg")),
     ("russian-ruble", "icons/lucide/russian-ruble.svg", include_bytes!("../assets/lucide/russian-ruble.svg")),
@@ -6828,8 +7251,10 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("scissors", "icons/lucide/scissors.svg", include_bytes!("../assets/lucide/scissors.svg")),
     ("scissors-line-dashed", "icons/lucide/scissors-line-dashed.svg", include_bytes!("../assets/lucide/scissors-line-dashed.svg")),
     ("scooter", "icons/lucide/scooter.svg", include_bytes!("../assets/lucide/scooter.svg")),
+    ("scratch-blocks", "icons/lucide/scratch-blocks.svg", include_bytes!("../assets/lucide/scratch-blocks.svg")),
     ("screen-share", "icons/lucide/screen-share.svg", include_bytes!("../assets/lucide/screen-share.svg")),
     ("screen-share-off", "icons/lucide/screen-share-off.svg", include_bytes!("../assets/lucide/screen-share-off.svg")),
+    ("screw", "icons/lucide/screw.svg", include_bytes!("../assets/lucide/screw.svg")),
     ("scroll", "icons/lucide/scroll.svg", include_bytes!("../assets/lucide/scroll.svg")),
     ("scroll-text", "icons/lucide/scroll-text.svg", include_bytes!("../assets/lucide/scroll-text.svg")),
     ("search", "icons/lucide/search.svg", include_bytes!("../assets/lucide/search.svg")),
@@ -6847,6 +7272,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("server", "icons/lucide/server.svg", include_bytes!("../assets/lucide/server.svg")),
     ("server-cog", "icons/lucide/server-cog.svg", include_bytes!("../assets/lucide/server-cog.svg")),
     ("server-crash", "icons/lucide/server-crash.svg", include_bytes!("../assets/lucide/server-crash.svg")),
+    ("server-nas", "icons/lucide/server-nas.svg", include_bytes!("../assets/lucide/server-nas.svg")),
     ("server-off", "icons/lucide/server-off.svg", include_bytes!("../assets/lucide/server-off.svg")),
     ("server-plus", "icons/lucide/server-plus.svg", include_bytes!("../assets/lucide/server-plus.svg")),
     ("settings", "icons/lucide/settings.svg", include_bytes!("../assets/lucide/settings.svg")),
@@ -6865,6 +7291,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("shield-cog-corner", "icons/lucide/shield-cog-corner.svg", include_bytes!("../assets/lucide/shield-cog-corner.svg")),
     ("shield-ellipsis", "icons/lucide/shield-ellipsis.svg", include_bytes!("../assets/lucide/shield-ellipsis.svg")),
     ("shield-half", "icons/lucide/shield-half.svg", include_bytes!("../assets/lucide/shield-half.svg")),
+    ("shield-house", "icons/lucide/shield-house.svg", include_bytes!("../assets/lucide/shield-house.svg")),
     ("shield-keyhole", "icons/lucide/shield-keyhole.svg", include_bytes!("../assets/lucide/shield-keyhole.svg")),
     ("shield-lock", "icons/lucide/shield-lock.svg", include_bytes!("../assets/lucide/shield-lock.svg")),
     ("shield-minus", "icons/lucide/shield-minus.svg", include_bytes!("../assets/lucide/shield-minus.svg")),
@@ -6900,6 +7327,8 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("signpost", "icons/lucide/signpost.svg", include_bytes!("../assets/lucide/signpost.svg")),
     ("signpost-big", "icons/lucide/signpost-big.svg", include_bytes!("../assets/lucide/signpost-big.svg")),
     ("siren", "icons/lucide/siren.svg", include_bytes!("../assets/lucide/siren.svg")),
+    ("siren-off", "icons/lucide/siren-off.svg", include_bytes!("../assets/lucide/siren-off.svg")),
+    ("sixteenth-notes", "icons/lucide/sixteenth-notes.svg", include_bytes!("../assets/lucide/sixteenth-notes.svg")),
     ("skip-back", "icons/lucide/skip-back.svg", include_bytes!("../assets/lucide/skip-back.svg")),
     ("skip-forward", "icons/lucide/skip-forward.svg", include_bytes!("../assets/lucide/skip-forward.svg")),
     ("skull", "icons/lucide/skull.svg", include_bytes!("../assets/lucide/skull.svg")),
@@ -6910,6 +7339,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("smartphone", "icons/lucide/smartphone.svg", include_bytes!("../assets/lucide/smartphone.svg")),
     ("smartphone-charging", "icons/lucide/smartphone-charging.svg", include_bytes!("../assets/lucide/smartphone-charging.svg")),
     ("smartphone-nfc", "icons/lucide/smartphone-nfc.svg", include_bytes!("../assets/lucide/smartphone-nfc.svg")),
+    ("smartphone-user-round", "icons/lucide/smartphone-user-round.svg", include_bytes!("../assets/lucide/smartphone-user-round.svg")),
     ("snail", "icons/lucide/snail.svg", include_bytes!("../assets/lucide/snail.svg")),
     ("snowflake", "icons/lucide/snowflake.svg", include_bytes!("../assets/lucide/snowflake.svg")),
     ("soap-dispenser-droplet", "icons/lucide/soap-dispenser-droplet.svg", include_bytes!("../assets/lucide/soap-dispenser-droplet.svg")),
@@ -6949,6 +7379,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("square-arrow-up-left", "icons/lucide/square-arrow-up-left.svg", include_bytes!("../assets/lucide/square-arrow-up-left.svg")),
     ("square-arrow-up-right", "icons/lucide/square-arrow-up-right.svg", include_bytes!("../assets/lucide/square-arrow-up-right.svg")),
     ("square-asterisk", "icons/lucide/square-asterisk.svg", include_bytes!("../assets/lucide/square-asterisk.svg")),
+    ("square-bookmark", "icons/lucide/square-bookmark.svg", include_bytes!("../assets/lucide/square-bookmark.svg")),
     ("square-bottom-dashed-scissors", "icons/lucide/square-bottom-dashed-scissors.svg", include_bytes!("../assets/lucide/square-bottom-dashed-scissors.svg")),
     ("square-centerline-dashed-horizontal", "icons/lucide/square-centerline-dashed-horizontal.svg", include_bytes!("../assets/lucide/square-centerline-dashed-horizontal.svg")),
     ("square-centerline-dashed-vertical", "icons/lucide/square-centerline-dashed-vertical.svg", include_bytes!("../assets/lucide/square-centerline-dashed-vertical.svg")),
@@ -6959,14 +7390,21 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("square-chevron-left", "icons/lucide/square-chevron-left.svg", include_bytes!("../assets/lucide/square-chevron-left.svg")),
     ("square-chevron-right", "icons/lucide/square-chevron-right.svg", include_bytes!("../assets/lucide/square-chevron-right.svg")),
     ("square-chevron-up", "icons/lucide/square-chevron-up.svg", include_bytes!("../assets/lucide/square-chevron-up.svg")),
+    ("square-chevrons-down", "icons/lucide/square-chevrons-down.svg", include_bytes!("../assets/lucide/square-chevrons-down.svg")),
+    ("square-chevrons-left", "icons/lucide/square-chevrons-left.svg", include_bytes!("../assets/lucide/square-chevrons-left.svg")),
+    ("square-chevrons-right", "icons/lucide/square-chevrons-right.svg", include_bytes!("../assets/lucide/square-chevrons-right.svg")),
+    ("square-chevrons-up", "icons/lucide/square-chevrons-up.svg", include_bytes!("../assets/lucide/square-chevrons-up.svg")),
     ("square-code", "icons/lucide/square-code.svg", include_bytes!("../assets/lucide/square-code.svg")),
     ("square-dashed", "icons/lucide/square-dashed.svg", include_bytes!("../assets/lucide/square-dashed.svg")),
     ("square-dashed-bottom", "icons/lucide/square-dashed-bottom.svg", include_bytes!("../assets/lucide/square-dashed-bottom.svg")),
     ("square-dashed-bottom-code", "icons/lucide/square-dashed-bottom-code.svg", include_bytes!("../assets/lucide/square-dashed-bottom-code.svg")),
     ("square-dashed-kanban", "icons/lucide/square-dashed-kanban.svg", include_bytes!("../assets/lucide/square-dashed-kanban.svg")),
     ("square-dashed-mouse-pointer", "icons/lucide/square-dashed-mouse-pointer.svg", include_bytes!("../assets/lucide/square-dashed-mouse-pointer.svg")),
+    ("square-dashed-plus", "icons/lucide/square-dashed-plus.svg", include_bytes!("../assets/lucide/square-dashed-plus.svg")),
     ("square-dashed-text", "icons/lucide/square-dashed-text.svg", include_bytes!("../assets/lucide/square-dashed-text.svg")),
     ("square-dashed-top-solid", "icons/lucide/square-dashed-top-solid.svg", include_bytes!("../assets/lucide/square-dashed-top-solid.svg")),
+    ("square-dashed-x", "icons/lucide/square-dashed-x.svg", include_bytes!("../assets/lucide/square-dashed-x.svg")),
+    ("square-dashed-x-corner", "icons/lucide/square-dashed-x-corner.svg", include_bytes!("../assets/lucide/square-dashed-x-corner.svg")),
     ("square-dimensions", "icons/lucide/square-dimensions.svg", include_bytes!("../assets/lucide/square-dimensions.svg")),
     ("square-divide", "icons/lucide/square-divide.svg", include_bytes!("../assets/lucide/square-divide.svg")),
     ("square-dot", "icons/lucide/square-dot.svg", include_bytes!("../assets/lucide/square-dot.svg")),
@@ -6995,6 +7433,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("square-scissors", "icons/lucide/square-scissors.svg", include_bytes!("../assets/lucide/square-scissors.svg")),
     ("square-sigma", "icons/lucide/square-sigma.svg", include_bytes!("../assets/lucide/square-sigma.svg")),
     ("square-slash", "icons/lucide/square-slash.svg", include_bytes!("../assets/lucide/square-slash.svg")),
+    ("square-sparkles", "icons/lucide/square-sparkles.svg", include_bytes!("../assets/lucide/square-sparkles.svg")),
     ("square-split-horizontal", "icons/lucide/square-split-horizontal.svg", include_bytes!("../assets/lucide/square-split-horizontal.svg")),
     ("square-split-vertical", "icons/lucide/square-split-vertical.svg", include_bytes!("../assets/lucide/square-split-vertical.svg")),
     ("square-square", "icons/lucide/square-square.svg", include_bytes!("../assets/lucide/square-square.svg")),
@@ -7085,6 +7524,9 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("text-align-center", "icons/lucide/text-align-center.svg", include_bytes!("../assets/lucide/text-align-center.svg")),
     ("text-align-end", "icons/lucide/text-align-end.svg", include_bytes!("../assets/lucide/text-align-end.svg")),
     ("text-align-justify", "icons/lucide/text-align-justify.svg", include_bytes!("../assets/lucide/text-align-justify.svg")),
+    ("text-align-justify-center", "icons/lucide/text-align-justify-center.svg", include_bytes!("../assets/lucide/text-align-justify-center.svg")),
+    ("text-align-justify-end", "icons/lucide/text-align-justify-end.svg", include_bytes!("../assets/lucide/text-align-justify-end.svg")),
+    ("text-align-justify-start", "icons/lucide/text-align-justify-start.svg", include_bytes!("../assets/lucide/text-align-justify-start.svg")),
     ("text-align-start", "icons/lucide/text-align-start.svg", include_bytes!("../assets/lucide/text-align-start.svg")),
     ("text-cursor", "icons/lucide/text-cursor.svg", include_bytes!("../assets/lucide/text-cursor.svg")),
     ("text-cursor-input", "icons/lucide/text-cursor-input.svg", include_bytes!("../assets/lucide/text-cursor-input.svg")),
@@ -7115,8 +7557,11 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("toggle-left", "icons/lucide/toggle-left.svg", include_bytes!("../assets/lucide/toggle-left.svg")),
     ("toggle-right", "icons/lucide/toggle-right.svg", include_bytes!("../assets/lucide/toggle-right.svg")),
     ("toilet", "icons/lucide/toilet.svg", include_bytes!("../assets/lucide/toilet.svg")),
+    ("tombstone", "icons/lucide/tombstone.svg", include_bytes!("../assets/lucide/tombstone.svg")),
     ("tool-case", "icons/lucide/tool-case.svg", include_bytes!("../assets/lucide/tool-case.svg")),
     ("toolbox", "icons/lucide/toolbox.svg", include_bytes!("../assets/lucide/toolbox.svg")),
+    ("toothbrush", "icons/lucide/toothbrush.svg", include_bytes!("../assets/lucide/toothbrush.svg")),
+    ("toothbrush-sparkles", "icons/lucide/toothbrush-sparkles.svg", include_bytes!("../assets/lucide/toothbrush-sparkles.svg")),
     ("tornado", "icons/lucide/tornado.svg", include_bytes!("../assets/lucide/tornado.svg")),
     ("torus", "icons/lucide/torus.svg", include_bytes!("../assets/lucide/torus.svg")),
     ("touchpad", "icons/lucide/touchpad.svg", include_bytes!("../assets/lucide/touchpad.svg")),
@@ -7145,9 +7590,12 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("triangle-alert", "icons/lucide/triangle-alert.svg", include_bytes!("../assets/lucide/triangle-alert.svg")),
     ("triangle-dashed", "icons/lucide/triangle-dashed.svg", include_bytes!("../assets/lucide/triangle-dashed.svg")),
     ("triangle-right", "icons/lucide/triangle-right.svg", include_bytes!("../assets/lucide/triangle-right.svg")),
+    ("triangles-centerline-dashed-horizontal", "icons/lucide/triangles-centerline-dashed-horizontal.svg", include_bytes!("../assets/lucide/triangles-centerline-dashed-horizontal.svg")),
+    ("triangles-centerline-dashed-vertical", "icons/lucide/triangles-centerline-dashed-vertical.svg", include_bytes!("../assets/lucide/triangles-centerline-dashed-vertical.svg")),
     ("trophy", "icons/lucide/trophy.svg", include_bytes!("../assets/lucide/trophy.svg")),
     ("truck", "icons/lucide/truck.svg", include_bytes!("../assets/lucide/truck.svg")),
     ("truck-electric", "icons/lucide/truck-electric.svg", include_bytes!("../assets/lucide/truck-electric.svg")),
+    ("tube-lotion", "icons/lucide/tube-lotion.svg", include_bytes!("../assets/lucide/tube-lotion.svg")),
     ("turkish-lira", "icons/lucide/turkish-lira.svg", include_bytes!("../assets/lucide/turkish-lira.svg")),
     ("turntable", "icons/lucide/turntable.svg", include_bytes!("../assets/lucide/turntable.svg")),
     ("turtle", "icons/lucide/turtle.svg", include_bytes!("../assets/lucide/turtle.svg")),
@@ -7191,13 +7639,17 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("user-round-pen", "icons/lucide/user-round-pen.svg", include_bytes!("../assets/lucide/user-round-pen.svg")),
     ("user-round-plus", "icons/lucide/user-round-plus.svg", include_bytes!("../assets/lucide/user-round-plus.svg")),
     ("user-round-search", "icons/lucide/user-round-search.svg", include_bytes!("../assets/lucide/user-round-search.svg")),
+    ("user-round-shield", "icons/lucide/user-round-shield.svg", include_bytes!("../assets/lucide/user-round-shield.svg")),
+    ("user-round-star", "icons/lucide/user-round-star.svg", include_bytes!("../assets/lucide/user-round-star.svg")),
     ("user-round-x", "icons/lucide/user-round-x.svg", include_bytes!("../assets/lucide/user-round-x.svg")),
     ("user-search", "icons/lucide/user-search.svg", include_bytes!("../assets/lucide/user-search.svg")),
     ("user-shield", "icons/lucide/user-shield.svg", include_bytes!("../assets/lucide/user-shield.svg")),
     ("user-star", "icons/lucide/user-star.svg", include_bytes!("../assets/lucide/user-star.svg")),
     ("user-x", "icons/lucide/user-x.svg", include_bytes!("../assets/lucide/user-x.svg")),
     ("users", "icons/lucide/users.svg", include_bytes!("../assets/lucide/users.svg")),
+    ("users-collaboration", "icons/lucide/users-collaboration.svg", include_bytes!("../assets/lucide/users-collaboration.svg")),
     ("users-round", "icons/lucide/users-round.svg", include_bytes!("../assets/lucide/users-round.svg")),
+    ("users-round-collaboration", "icons/lucide/users-round-collaboration.svg", include_bytes!("../assets/lucide/users-round-collaboration.svg")),
     ("utensils", "icons/lucide/utensils.svg", include_bytes!("../assets/lucide/utensils.svg")),
     ("utensils-crossed", "icons/lucide/utensils-crossed.svg", include_bytes!("../assets/lucide/utensils-crossed.svg")),
     ("utility-pole", "icons/lucide/utility-pole.svg", include_bytes!("../assets/lucide/utility-pole.svg")),
@@ -7254,6 +7706,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("wifi", "icons/lucide/wifi.svg", include_bytes!("../assets/lucide/wifi.svg")),
     ("wifi-cog", "icons/lucide/wifi-cog.svg", include_bytes!("../assets/lucide/wifi-cog.svg")),
     ("wifi-high", "icons/lucide/wifi-high.svg", include_bytes!("../assets/lucide/wifi-high.svg")),
+    ("wifi-lock", "icons/lucide/wifi-lock.svg", include_bytes!("../assets/lucide/wifi-lock.svg")),
     ("wifi-low", "icons/lucide/wifi-low.svg", include_bytes!("../assets/lucide/wifi-low.svg")),
     ("wifi-off", "icons/lucide/wifi-off.svg", include_bytes!("../assets/lucide/wifi-off.svg")),
     ("wifi-pen", "icons/lucide/wifi-pen.svg", include_bytes!("../assets/lucide/wifi-pen.svg")),
@@ -7261,6 +7714,7 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("wifi-zero", "icons/lucide/wifi-zero.svg", include_bytes!("../assets/lucide/wifi-zero.svg")),
     ("wind", "icons/lucide/wind.svg", include_bytes!("../assets/lucide/wind.svg")),
     ("wind-arrow-down", "icons/lucide/wind-arrow-down.svg", include_bytes!("../assets/lucide/wind-arrow-down.svg")),
+    ("wind-arrow-up", "icons/lucide/wind-arrow-up.svg", include_bytes!("../assets/lucide/wind-arrow-up.svg")),
     ("wine", "icons/lucide/wine.svg", include_bytes!("../assets/lucide/wine.svg")),
     ("wine-off", "icons/lucide/wine-off.svg", include_bytes!("../assets/lucide/wine-off.svg")),
     ("workflow", "icons/lucide/workflow.svg", include_bytes!("../assets/lucide/workflow.svg")),
@@ -7287,11 +7741,12 @@ static ICONS: [(&str, &str, &[u8]); 1818] = [
     ("zoom-in", "icons/lucide/zoom-in.svg", include_bytes!("../assets/lucide/zoom-in.svg")),
     ("zoom-out", "icons/lucide/zoom-out.svg", include_bytes!("../assets/lucide/zoom-out.svg")),
 ];
-static ALIASES: [(&str, LucideIcon); 259] = [
+static ALIASES: [(&str, LucideIcon); 269] = [
     ("activity-square", LucideIcon::SquareActivity),
     ("alarm-check", LucideIcon::AlarmClockCheck),
     ("alarm-minus", LucideIcon::AlarmClockMinus),
     ("alarm-plus", LucideIcon::AlarmClockPlus),
+    ("album", LucideIcon::SquareBookmark),
     ("alert-circle", LucideIcon::CircleAlert),
     ("alert-octagon", LucideIcon::OctagonAlert),
     ("alert-triangle", LucideIcon::TriangleAlert),
@@ -7301,6 +7756,7 @@ static ALIASES: [(&str, LucideIcon); 259] = [
     ("align-right", LucideIcon::TextAlignEnd),
     ("angry", LucideIcon::FaceAngry),
     ("annoyed", LucideIcon::FaceExpressionless),
+    ("archive-restore", LucideIcon::ArchiveArrowUp),
     ("area-chart", LucideIcon::ChartArea),
     ("arrow-down-01", LucideIcon::ArrowDown01),
     ("arrow-down-10", LucideIcon::ArrowDown10),
@@ -7369,8 +7825,10 @@ static ALIASES: [(&str, LucideIcon); 259] = [
         "between-horizonal-start",
         LucideIcon::BetweenHorizontalStart,
     ),
+    ("book-marked", LucideIcon::BookBookmark),
     ("book-template", LucideIcon::BookDashed),
     ("box-select", LucideIcon::SquareDashed),
+    ("building-2", LucideIcon::BuildingComplex),
     ("candlestick-chart", LucideIcon::ChartCandlestick),
     ("check-circle", LucideIcon::CircleCheckBig),
     ("check-circle-2", LucideIcon::CircleCheck),
@@ -7436,7 +7894,15 @@ static ALIASES: [(&str, LucideIcon); 259] = [
         "flip-horizontal",
         LucideIcon::SquareCenterlineDashedHorizontal,
     ),
+    (
+        "flip-horizontal-2",
+        LucideIcon::TrianglesCenterlineDashedHorizontal,
+    ),
     ("flip-vertical", LucideIcon::SquareCenterlineDashedVertical),
+    (
+        "flip-vertical-2",
+        LucideIcon::TrianglesCenterlineDashedVertical,
+    ),
     ("folder-cog-2", LucideIcon::FolderCog),
     ("folder-edit", LucideIcon::FolderPen),
     ("fork-knife", LucideIcon::Utensils),
@@ -7495,6 +7961,10 @@ static ALIASES: [(&str, LucideIcon); 259] = [
         LucideIcon::SquareDashedMousePointer,
     ),
     ("move-3-d", LucideIcon::Move3d),
+    ("music", LucideIcon::EighthNotes),
+    ("music-2", LucideIcon::EighthNote),
+    ("music-3", LucideIcon::HalfNote),
+    ("music-4", LucideIcon::SixteenthNotes),
     ("outdent", LucideIcon::ListIndentDecrease),
     ("paintbrush-2", LucideIcon::PaintbrushVertical),
     ("palmtree", LucideIcon::TreePalm),

@@ -1,7 +1,7 @@
 # gpui-icons
 
-The complete Lucide icon set for GPUI: **1,818 canonical icons and 259 aliases**
-from Lucide 1.43.0. Every icon uses the original upstream SVG, embedded in your
+The complete Lucide icon set for GPUI: **1,924 canonical icons and 269 aliases**
+from Lucide 1.63.0. Every icon uses the original upstream SVG, embedded in your
 application. Native and WASM use the same assets without fetching anything at runtime.
 
 This is a standalone icon library. You can use it with any GPUI application;
@@ -17,7 +17,7 @@ Or add it to `Cargo.toml` yourself:
 
 ```toml
 [dependencies]
-gpui-icons = "0.4.2"
+gpui-icons = "0.5.0"
 ```
 
 It needs Rust 1.97 or newer and the GPUI runtime described in
@@ -85,24 +85,26 @@ impl<S: AssetSource> AssetSource for AppAssets<S> {
 
 ## Reproducible source
 
-GPUI is pinned to `gpui-pre = 0.3.5`, matching GPUI Kit 0.6.4. Applications can
-use `gpui-kit = "=0.6.4"` or `gpui = { package = "gpui-pre", version = "=0.3.5" }`.
+GPUI is pinned to `gpui-pre = 0.3.10`, matching GPUI Kit 0.8.1. Applications can
+use `gpui-kit = "=0.8.1"` or `gpui = { package = "gpui-pre", version = "=0.3.10" }`.
 Do not mix these types with a separate Zed Git dependency.
 
 GPUI Kit now includes its own Lucide catalog. Use its assets for applications
 that only need named icons. This crate retains canonical and alias lookup,
 search metadata, exact upstream hashes, and a complete embedded asset source
 on both native and WASM. `LucideIcon::Trash2` remains an alias for `Trash`.
+Icons that Lucide renamed after 1.43.0, such as `LucideIcon::Music`, remain
+constants for their new names.
 
 The [release manifest](RELEASE-MANIFEST.json) records canonical names, aliases,
 tags, categories, contributors, and hashes for every upstream SVG and metadata
-file. Schema 3 records `crate.gpui_package` and `crate.gpui_version` in place
-of the former Git-only `crate.gpui_revision`. Assets come from [Lucide 1.43.0](https://github.com/lucide-icons/lucide/tree/ba95e4c988b1e1b39cf5544e73b25a74b76816ee).
+file. Schema 4 drops `upstream.archive_sha256`: the generator now verifies the
+pinned commit with git instead of hashing a GitHub tarball. Assets come from [Lucide 1.63.0](https://github.com/lucide-icons/lucide/tree/2ca268e74888d3506b3319fb8f94aaaaf70ceca9).
 
-To regenerate, run `python3 scripts/generate.py`. The script downloads the
-pinned upstream archive and verifies its SHA-256 before reading it. You can
-also pass a local copy of that archive as its first argument. Python and
-rustfmt are the only generation tools; consumers do not run a build script.
+To regenerate, run `python3 scripts/generate.py`. The script fetches the
+pinned upstream commit with git, checks its hash, and reads it with
+`git archive`. You can also pass a local tar archive of that commit as its
+first argument. Python, git and rustfmt are the only generation tools; consumers do not run a build script.
 
 Run `cargo test --lib` to check every icon's lookup, asset path, bytes, metadata
 hash, aliases, and license against the pinned release. Run `cargo fmt --check`

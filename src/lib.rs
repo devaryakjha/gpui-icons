@@ -1,6 +1,6 @@
 //! The complete, embedded Lucide icon set for GPUI.
 //!
-//! All canonical icons and aliases come from the pinned Lucide 1.43.0 release.
+//! All canonical icons and aliases come from the pinned Lucide 1.63.0 release.
 //! Native and WASM applications render the same upstream SVG bytes, with no
 //! network requests, font glyphs, or substitute shapes.
 
@@ -159,13 +159,13 @@ mod tests {
     #[test]
     fn full_release_is_searchable_and_matches_upstream() {
         let manifest: serde_json::Value = serde_json::from_str(RELEASE_MANIFEST).unwrap();
-        assert_eq!(manifest["schema_version"], 3);
+        assert_eq!(manifest["schema_version"], 4);
         assert_eq!(manifest["crate"]["version"], env!("CARGO_PKG_VERSION"));
         assert_eq!(manifest["crate"]["gpui_package"], "gpui-pre");
-        assert_eq!(manifest["crate"]["gpui_version"], "=0.3.5");
+        assert_eq!(manifest["crate"]["gpui_version"], "=0.3.10");
         let entries = manifest["icons"].as_array().unwrap();
         let renderer = gpui::SvgRenderer::new(std::sync::Arc::new(LucideAssetSource));
-        assert_eq!(entries.len(), 1818);
+        assert_eq!(entries.len(), 1924);
         assert_eq!(LucideIcon::ALL.len(), entries.len());
         for (icon, entry) in LucideIcon::ALL.into_iter().zip(entries) {
             assert_eq!(icon.canonical_name(), entry["canonical_name"]);
@@ -205,6 +205,8 @@ mod tests {
             entries.len()
         );
         assert_eq!(LucideIcon::from_name("trash-2"), Some(LucideIcon::Trash2));
+        assert_eq!(LucideIcon::from_name("music"), Some(LucideIcon::Music));
+        assert_eq!(LucideIcon::Music, LucideIcon::EighthNotes);
         assert!(LucideIcon::from_name("not-an-icon").is_none());
         assert_eq!(LucideIcon::AlarmClock.to_string(), "alarm-clock");
         assert_eq!("alarm-clock".parse(), Ok(LucideIcon::AlarmClock));
