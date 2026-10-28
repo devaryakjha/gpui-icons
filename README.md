@@ -20,7 +20,7 @@ Or add it to `Cargo.toml` yourself:
 gpui-icons = "0.5.0"
 ```
 
-It needs Rust 1.97 or newer and the GPUI runtime described in
+It needs Rust 1.98 or newer and the GPUI runtime described in
 [Reproducible source](#reproducible-source).
 
 ## Use
