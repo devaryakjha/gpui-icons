@@ -110,6 +110,15 @@ Run `cargo test --lib` to check every icon's lookup, asset path, bytes, metadata
 hash, aliases, and license against the pinned release. Run `cargo fmt --check`
 and `cargo clippy --lib --tests -- -D warnings` before a release.
 
+## Releases
+
+Merging a version bump to `main` is the release. Bump `version` in
+`Cargo.toml` and `RELEASE-MANIFEST.json` together. When CI passes on `main`,
+the **Release** workflow tags the commit `v<version>`, publishes the crate to
+crates.io with Trusted Publishing (environment `release`) and publishes the
+GitHub release. A merge that doesn't change the version releases nothing.
+Release gpui-icons before a gpuicn release that needs the new version.
+
 ## License
 
 The Rust code is MIT-licensed in [LICENSES/gpui-icons-MIT](LICENSES/gpui-icons-MIT).
