@@ -2,9 +2,9 @@
   "schema_version": 4,
   "crate": {
     "name": "gpui-icons",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "gpui_package": "gpui-pre",
-    "gpui_version": "=0.3.10"
+    "gpui_version": "=0.3.11"
   },
   "generator": {
     "name": "scripts/generate.py",

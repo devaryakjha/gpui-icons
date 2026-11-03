@@ -162,7 +162,7 @@ mod tests {
         assert_eq!(manifest["schema_version"], 4);
         assert_eq!(manifest["crate"]["version"], env!("CARGO_PKG_VERSION"));
         assert_eq!(manifest["crate"]["gpui_package"], "gpui-pre");
-        assert_eq!(manifest["crate"]["gpui_version"], "=0.3.10");
+        assert_eq!(manifest["crate"]["gpui_version"], "=0.3.11");
         let entries = manifest["icons"].as_array().unwrap();
         let renderer = gpui::SvgRenderer::new(std::sync::Arc::new(LucideAssetSource));
         assert_eq!(entries.len(), 1924);

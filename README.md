@@ -17,7 +17,7 @@ Or add it to `Cargo.toml` yourself:
 
 ```toml
 [dependencies]
-gpui-icons = "0.5.0"
+gpui-icons = "0.6.0"
 ```
 
 It needs Rust 1.98 or newer and the GPUI runtime described in
@@ -85,8 +85,8 @@ impl<S: AssetSource> AssetSource for AppAssets<S> {
 
 ## Reproducible source
 
-GPUI is pinned to `gpui-pre = 0.3.10`, matching GPUI Kit 0.8.1. Applications can
-use `gpui-kit = "=0.8.1"` or `gpui = { package = "gpui-pre", version = "=0.3.10" }`.
+GPUI is pinned to `gpui-pre = 0.3.11`, matching GPUI Kit 0.9.0. Applications can
+use `gpui-kit = "=0.9.0"` or `gpui = { package = "gpui-pre", version = "=0.3.11" }`.
 Do not mix these types with a separate Zed Git dependency.
 
 GPUI Kit now includes its own Lucide catalog. Use its assets for applications
