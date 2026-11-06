@@ -55,7 +55,7 @@ jobs:
             echo "release=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          if curl -fsS -o /dev/null -A "gpui-icons-release (https://github.com/devaryakjha/gpui-icons)" \
+          if curl -fsS -o /dev/null -A "gpui-icons-release (https://github.com/karyalabs/gpui-icons)" \
             "https://crates.io/api/v1/crates/gpui-icons/$version"; then
             published=true
           else
