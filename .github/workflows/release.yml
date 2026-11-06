@@ -1,13 +1,14 @@
 name: Release
 
 # Merging a version bump to main is the release. Every push to main runs CI
-# here, and the release jobs start only when it passes. When tag v<version>
-# already points at an older commit, the version wasn't bumped and nothing
-# happens. Otherwise it tags the commit, publishes gpui-icons to crates.io and
-# publishes the GitHub release. Every step skips work that is already done, so
-# "Re-run failed jobs" is safe. It runs CI itself first instead of listening
-# for CI's workflow_run event: crates.io Trusted Publishing refuses tokens to
-# workflow_run triggers.
+# (T2) here, and the release starts only when it passes. When v<version> is
+# already fully released, nothing happens; when an earlier run tagged it and
+# then failed, this run finishes it. It tags the commit, publishes gpui-icons
+# to crates.io, publishes the GitHub release, then opens gpuicn's pin bump
+# pull request. Every step skips work that is already done, so "Re-run
+# failed jobs" is safe. It runs CI itself instead of listening for CI's
+# workflow_run event: crates.io Trusted Publishing refuses tokens to
+# workflow_run triggers, and it trusts this file.
 on:
   push:
     branches: [main]
@@ -31,54 +32,40 @@ jobs:
     permissions:
       contents: write
       id-token: write # crates.io Trusted Publishing
+    outputs:
+      release: ${{ steps.plan.outputs.release }}
+      version: ${{ steps.plan.outputs.version }}
     env:
-      HAS_CARGO_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN != '' }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
       - id: plan
-        run: |
-          version="$(python3 -c 'import tomllib; print(tomllib.load(open("Cargo.toml", "rb"))["package"]["version"])')"
-          manifest="$(python3 -c 'import json; print(json.load(open("RELEASE-MANIFEST.json"))["crate"]["version"])')"
-          if [ "$version" != "$manifest" ]; then
-            echo "::error::Cargo.toml says $version but RELEASE-MANIFEST.json says $manifest."
-            exit 1
-          fi
-          tag="v$version"
-          sha="$(git rev-parse HEAD)"
-          # The peeled line (^{}) of an annotated tag comes last.
-          tagged="$(git ls-remote origin "refs/tags/$tag" "refs/tags/$tag^{}" | tail -n 1 | cut -f 1)"
-          if [ -n "$tagged" ] && [ "$tagged" != "$sha" ]; then
-            echo "$tag is already released from ${tagged:0:7}; bump the version to release again."
-            echo "release=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          if curl -fsS -o /dev/null -A "gpui-icons-release (https://github.com/karyalabs/gpui-icons)" \
-            "https://crates.io/api/v1/crates/gpui-icons/$version"; then
-            published=true
-          else
-            published=false
-          fi
-          {
-            echo "release=true"
-            echo "version=$version"
-            echo "tag=$tag"
-            echo "published=$published"
-            echo "tagged=$([ -n "$tagged" ] && echo true || echo false)"
-          } >> "$GITHUB_OUTPUT"
-      - if: steps.plan.outputs.release == 'true' && steps.plan.outputs.tagged != 'true'
-        run: git push origin "HEAD:refs/tags/${{ steps.plan.outputs.tag }}"
-      - if: steps.plan.outputs.release == 'true' && steps.plan.outputs.published != 'true'
-        uses: dtolnay/rust-toolchain@1.99.1
-      - id: auth
-        if: steps.plan.outputs.release == 'true' && steps.plan.outputs.published != 'true' && env.HAS_CARGO_TOKEN != 'true'
-        uses: rust-lang/crates-io-auth-action@v1
-      - if: steps.plan.outputs.release == 'true' && steps.plan.outputs.published != 'true'
+        uses: karyalabs/.github/actions/release-plan@v1
+        with:
+          crates: gpui-icons
+      - if: steps.plan.outputs.release == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.plan.outputs.sha }}
+      - if: steps.plan.outputs.release == 'true'
         env:
-          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN || steps.auth.outputs.token }}
-        run: cargo publish --locked
+          TAG: ${{ steps.plan.outputs.tag }}
+        run: |
+          if [ -n "$(git ls-remote origin "refs/tags/$TAG")" ]; then
+            echo "$TAG exists"
+          else
+            git push origin "HEAD:refs/tags/$TAG"
+          fi
+      - if: steps.plan.outputs.release == 'true'
+        uses: karyalabs/.github/actions/rust-toolchain@v1
+      - if: steps.plan.outputs.release == 'true'
+        uses: karyalabs/.github/actions/crates-publish@v1
+        with:
+          crates: gpui-icons
+          version: ${{ steps.plan.outputs.version }}
+          token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
       - if: steps.plan.outputs.release == 'true'
         env:
           TAG: ${{ steps.plan.outputs.tag }}
@@ -88,3 +75,20 @@ jobs:
           else
             gh release create "$TAG" --verify-tag --title "gpui-icons $TAG" --generate-notes
           fi
+
+  # gpuicn's own CI checks the new version in the pull request this opens.
+  bump-gpuicn:
+    needs: release
+    if: needs.release.outputs.release == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: karyalabs/.github/actions/bump-downstream@v1
+        with:
+          repository: karyalabs/gpuicn
+          crate: gpui-icons
+          toolchain-file: release-pins.toml
+          toolchain-key: rust.toolchain
+          version: ${{ needs.release.outputs.version }}
+          app-id: ${{ secrets.KARYA_BOT_APP_ID }}
+          private-key: ${{ secrets.KARYA_BOT_PRIVATE_KEY }}

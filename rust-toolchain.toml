@@ -1,0 +1,5 @@
+[toolchain]
+# The toolchain CI lints and tests with; the MSRV job checks rust-version.
+channel = "1.99.1"
+components = ["rustfmt", "clippy"]
+profile = "minimal"
