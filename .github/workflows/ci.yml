@@ -8,20 +8,15 @@ name: CI
 # - T2, every push to main (from release.yml, before it releases): T1 plus
 #   the tests and the MSRV check.
 #
-# The `tests` label runs T2 on a pull request. gpuicn is built against this
+# The `tests` label runs T2 on a pull request (add it, then push). gpuicn is built against this
 # tree in canary.yml.
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review, labeled]
   workflow_call:
 
-# A new push to a pull request cancels its older run. A label that is not
-# `tests` gets a group of its own, so it never cancels a real run.
+# A new push to a pull request cancels its older run.
 concurrency:
-  group: >-
-    ci-${{ github.event.pull_request.number || github.sha }}${{
-    github.event.action == 'labeled' && github.event.label.name != 'tests' &&
-    format('-label-{0}', github.run_id) || '' }}
+  group: ci-${{ github.event.pull_request.number || github.sha }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
@@ -32,7 +27,6 @@ env:
 
 jobs:
   lint:
-    if: github.event.action != 'labeled' || github.event.label.name == 'tests'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -71,29 +65,16 @@ jobs:
           save-if: ${{ github.ref == 'refs/heads/main' }}
       - run: cargo check --locked
 
-  # The one check to wait on. A run for a label that is not `tests` checks
-  # nothing itself, so it repeats the latest other `ci` result on the commit.
+  # The one check to wait on.
   ci:
     if: ${{ !cancelled() }}
     needs: [lint, msrv]
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    permissions:
-      checks: read
     steps:
       - env:
-          IGNORED: ${{ github.event.action == 'labeled' && github.event.label.name != 'tests' }}
-          SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-          GH_TOKEN: ${{ github.token }}
           RESULTS: ${{ needs.lint.result }} ${{ needs.msrv.result }}
         run: |
-          if [ "$IGNORED" = true ]; then
-            latest="$(gh api "repos/$GITHUB_REPOSITORY/commits/$SHA/check-runs?check_name=ci&filter=all" \
-              --jq "[.check_runs[] | select(.details_url | contains(\"/runs/$GITHUB_RUN_ID/\") | not)] | sort_by(.started_at) | last | .conclusion // \"\"")"
-            echo "The latest other ci check on ${SHA::7}: ${latest:-none or still running}"
-            [ "$latest" != failure ] && [ "$latest" != timed_out ]
-            exit
-          fi
           echo "$RESULTS"
           for r in $RESULTS; do
             case "$r" in success|skipped) ;; *) exit 1 ;; esac
