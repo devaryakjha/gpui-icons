@@ -5,13 +5,16 @@ name: CI
 #
 # - T1, every pull request: fmt, clippy, and the release manifest agrees
 #   with Cargo.toml.
-# - T2, every push to main (from release.yml, before it releases): T1 plus
+# - T2, the merge queue and every push to main (from release.yml, before
+#   it releases): T1 plus
 #   the tests and the MSRV check.
 #
 # The `tests` label runs T2 on a pull request (add it, then push). gpuicn is built against this
 # tree in canary.yml.
 on:
   pull_request:
+  # The merge queue checks the tree about to land.
+  merge_group:
   workflow_call:
 
 # A new push to a pull request cancels its older run.
